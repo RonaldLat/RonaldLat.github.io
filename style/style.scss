@@ -1,0 +1,67 @@
+@import './nav.scss';
+@import './home';
+@import './about';
+@import './portofolio';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background: burlywood;
+    position: relative;
+    height: 95vh;
+    overflow-x:scroll;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: cadetblue;
+    // display: flex;
+    position: relative;
+    overflow-x: scroll;
+    display: flex;
+    // flex-direction: row;
+    section{
+        width: 100vw;
+        height: 80vh;
+        // margin-top: 8vh;
+        position: absolute;
+        // top: 8vh;
+        left: 0;
+        transform: translateX(-100%);
+        // transform: translateX(100%);
+    }
+}
+.pages-nav{
+    width: 70vw;
+    height: 30px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer{
+    width: 100vw;
+    height: 30px;
+    background: black;
+    position: fixed;
+    bottom: 0;
+    color: rgb(158, 158, 158);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .copyrights{
+        text-align: center;
+    }
+}
+.page-active{
+    transform: translateX(0);
+
+}
