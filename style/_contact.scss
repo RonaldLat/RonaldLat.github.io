@@ -1,0 +1,26 @@
+.contact{
+    background: black;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        width: 60%;
+        input, textarea{
+            width: 100%;
+            margin-bottom: 5px;
+            resize: none;
+        }
+        button{
+            width: 50%;
+            height: 35px;
+            background: red;
+            margin-left: 50%;
+            color: white;
+            border: none;
+        }
+    }
+
+}
