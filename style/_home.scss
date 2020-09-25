@@ -1,24 +1,26 @@
 .home{
-    background: rgb(7, 5, 5);
+    background: rgb(0, 0, 0);
     // width: 100%;
     height: 100%;
     color: rgb(211, 211, 211);
+    height: 100%;
+    padding-bottom: 80px;
     // transform: translateX(0);
     transition: transform 0.4s ease-in-out;
     // z-index: 1;
     .home-container{
-        height: 80%;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         .about-me{
             display: flex;
             flex-direction: column;
             text-align: center;
             font-family: sans-serif;
-            
+            height: auto;
 
             h1{
                 font-size: 1.9rem;
@@ -43,18 +45,31 @@
             // background: coral;
             display: flex;
             align-items: center;
+            .separator{
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(top, chartreuse, black);
+
+                // background: chartreuse;
+            }
             button{
                 min-width: 150px;
                 height: 35px;
                 // margin: 0 auto;
                 margin-right: 10px;
                 margin-left: 10px;
-                background: chartreuse;
-                border: none;
+                background: rgb(139, 139, 139);
+                color: black;
+                border: 1px solid chartreuse;
+                // border: none;
                 font-size: 1.3rem;
                 text-transform: capitalize;
                 font-weight: 800;
                 padding: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: chartreuse;
+                }
             }
         }
     }
@@ -62,3 +77,4 @@
 .home-acive{
     transform: translateX(0);
 }
+
