@@ -64,8 +64,49 @@
 
 }
 .skills{
-    display: none;
+    color: rgb(0, 0, 0);
+    // background: white;
+    margin: 5px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr  ;
+    grid-gap: 5px;
+    width: 95%;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    text-align: left;
+    // margin-left: 80%;
+
+    div{
+        // margin: 5px;
+        height: 25px;
+        background: rgb(150, 150, 150);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:nth-child(5){
+                grid-area: 2/1/span 1/span 2;
+                // background: red;
+        }
+        &:nth-child(6){
+                grid-area: 2/3/span 2/span 2;
+                // background: rgb(0, 255, 76);
+        }
+
+    }
+
 }
 .about-acive{
     transform: translateX(0);
+}
+.skills-heading{
+    color: greenyellow;
+    padding: 10px;
+    font-size: 1.1rem;
+    // font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+
 }

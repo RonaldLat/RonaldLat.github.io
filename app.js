@@ -1,62 +1,52 @@
+// let iconNav = () =>{
+//     let portofolio = document.querySelector('.portofolio');
+//     let main = document.querySelector('main');
+
+//     let callBackF = (entries)=>{
+//         console.log(entries[0])
+//     }
+
+//     const observer = new IntersectionObserver(callBackF, {
+//         threshold: .6
+//         // root: main
+//     });
 
 
-//bottom navigation
-let bottomNav = ()=>{
+//     observer.observe(portofolio);
+
+// }
+
+// iconNav();
+let pageIndicator =(entries)=>{
+    let navIcons =document.querySelectorAll('.nav-icons i')
+    for(const entry of entries){
+        // console.log(`${entry.target.className} is in view: ${entry.isIntersecting}`);
+        //
+        if(entry.isIntersecting){
+            for(const icon of navIcons){
+                if(entry.target.className == icon.target.id){
+                    alert('i did it')
+                }
+            }
 
 
-    let home = document.querySelector('#home');
-    let about = document.querySelector('#about');
-    let portofolio = document.querySelector('#portofolio');
-    let contact = document.querySelector('#contact');
+            // console.log(entry.target.className)
+            // if(entry.target.className == 'home'){
+            //     // alert('yes')
+            //     navIcons[0].style.opacity = '1'
+            //     console.log(navIcons[0])
+            // }else{
+            //     navIcons[0].style.opacity = '.4'
+            // }
+            // entry.classList.add('.active');
 
-    let homePage = document.querySelector('.home');
-    let aboutPage = document.querySelector('.about');
-    let portofolioPage = document.querySelector('.portofolio');
-    let contactPage = document.querySelector('.contact');
-    let main = document.querySelector('main')
-    //all buttons
-    let allButtons = [home, about, portofolio, contact];
-    //page tracker
-    let pageTracker;
-    //all pages array
-    let allPages= [homePage, aboutPage, portofolioPage, contactPage];
-
-    //event listeners for all buttons
-
-    allButtons[0].addEventListener('click', ()=>{
-        
-    });
-
-    // homePage.classList.add('page-active')
-    // home.addEventListener('click', function(){
-    //     if(pageTracker !==homePage){
-    //         pageTracker=homePage;
-    //         console.log(pageTracker)
-
-    //     }
-
-
-    // })
-    // about.addEventListener('click', function(){
-    //     if(pageTracker !== aboutPage){
-    //         pageTracker=aboutPage;
-    //         console.log(pageTracker)
-    //     }
-
-    // })
-    // portofolio.addEventListener('click', function(){
-    //     // if(portofolioPage.classList.c)
-
-
-    // })
-    // contact.addEventListener('click', function(){
-
-    // })
+        }
+    }
 }
+const io = new IntersectionObserver(pageIndicator, {
+    threshold:.7
+});
 
-
-let app = ()=>{
-    // navSlide();
-    bottomNav();
-}
-app();
+const sections = document.querySelectorAll('section');
+// console.log(sections)
+sections.forEach(sect => io.observe(sect));

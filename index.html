@@ -13,11 +13,22 @@
     <main>
       <nav>
         <div class="logo">
+          <i class="fa fa-terminal "></i>
+
           Ronald Otieno
         </div>
         <div class="menu">
-          <i class="fa fa-home"></i>
+          <!-- <i class="fa fa-home"></i> -->
         </div>
+        <div class="nav-icons" >
+          <i class="fa fa-home" id="home"></i>
+          <i class="fa fa-question" id="about"></i>
+          <i class="fa fa-briefcase" id="portofolio"></i>
+          <i class="fas fa-envelope " id="contact"></i>
+          <!-- <i class="fab fa-twitter"></i> -->
+        </div>
+
+
       </nav>
       <section class="home">
         <div class="home-container">
@@ -33,6 +44,23 @@
             <button>view my work</button>
             <div class="separator"></div>
             <button>contact me</button>
+          </div>
+
+          <!-- nav -->
+          <div class="pages-nav">
+            <div id="home">
+              <button>Home</button>
+            </div>
+            <div id="about">
+              <button>About</button>
+            </div>
+            <div id="portofolio">
+              <button>Portofolio</button>
+            </div>
+            <div id="contact">
+              <button>Contact</button>
+            </div>
+      
           </div>
         </div>
       </section>
@@ -67,11 +95,16 @@
                 Static websites are silver, dynamic pages are gold.
               </div>
             </div>
+            <div class="skills-heading">
+              <span><i class="fa fa-code"></i></span>
+              Skills</div>
+
             <div class="skills">
               <div>Javascript</div>
               <div>CSS</div>
               <div>HTML</div>
               <div>SASS</div>
+              <div>Python</div>
               <div>MySQL</div>
             </div>
           </div>
@@ -121,10 +154,13 @@
           </div>
           <form action="">
             <div>
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+            spellcheck="false"
+             type="text" name="name" id="name" placeholder="Name" />
             </div>
             <div>
               <input
+              spellcheck="false"
               type="email"
               name="email"
               id="email"
@@ -133,6 +169,7 @@
             </div>
             <div>
               <textarea
+              spellcheck="false"
               name="message"
               id="message"
               cols="30"
@@ -148,32 +185,20 @@
         </div>
       </section>
       <footer>
-        <div class="social-media-buttons">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+
         <div class="copyrights">
           <span>Rotie Websense </span> <span>&copy2020</span>
         </div>
       </footer>
 
     </main>
-    <div class="pages-nav">
-      <div id="home">
-        <button>Home</button>
-      </div>
-      <div id="about">
-        <button>About</button>
-      </div>
-      <div id="portofolio">
-        <button>Portofolio</button>
-      </div>
-      <div id="contact">
-        <button>Contact</button>
-      </div>
 
+    <div class="social-buttons">
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fa fa-envelope"></i>
+      <i class="fab fa-whatsapp"></i>
     </div>
     <script src="app.js"></script>
   </body>

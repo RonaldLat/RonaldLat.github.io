@@ -7,6 +7,7 @@
     padding-bottom: 80px;
     // transform: translateX(0);
     transition: transform 0.4s ease-in-out;
+
     // z-index: 1;
     .home-container{
         height: 100%;
@@ -15,6 +16,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        position: relative;
+
         .about-me{
             display: flex;
             flex-direction: column;
@@ -22,9 +25,12 @@
             font-family: sans-serif;
             height: auto;
 
+
             h1{
                 font-size: 1.9rem;
-                font-weight: 100;
+                    color: chartreuse;
+                    font-weight: 100;
+
             }
             h2{
                 color: white;
@@ -36,7 +42,7 @@
                 font-weight: 100;
             }
             p{
-                font-size: 1.5rem;
+                font-size: 1.0rem;
             }
         }
         .cta-buttons{
@@ -62,7 +68,7 @@
                 color: black;
                 border: 1px solid chartreuse;
                 // border: none;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 text-transform: capitalize;
                 font-weight: 800;
                 padding: 5px;
