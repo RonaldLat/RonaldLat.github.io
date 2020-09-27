@@ -188,7 +188,7 @@ footer{
 
     i{
         position: relative;
-    opacity: .4;
+        // opacity: .4;
 
         &::after{
             content: "";
@@ -199,14 +199,14 @@ footer{
             top: 0;
             left: 0;
             cursor: pointer;
-            // transform: translateX(-100%);
+            transform: translateX(-100%);
             opacity: 0;
             transition: transform .5s ease;
         }
     }
-    .active{
-        // transform: translateX(0%);
-        opacity: 1;
+    i.activel::after{
+        transform: translateX(0%);
+        // opacity: 1;
     }
 
 }

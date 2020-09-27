@@ -592,7 +592,6 @@ footer .copyrights {
 
 .nav-icons i {
   position: relative;
-  opacity: .4;
 }
 
 .nav-icons i::after {
@@ -604,6 +603,8 @@ footer .copyrights {
   top: 0;
   left: 0;
   cursor: pointer;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   opacity: 0;
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;
@@ -611,7 +612,8 @@ footer .copyrights {
   transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
-.nav-icons .active {
-  opacity: 1;
+.nav-icons i.activel::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 /*# sourceMappingURL=style.css.map */

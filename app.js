@@ -1,44 +1,38 @@
-// let iconNav = () =>{
-//     let portofolio = document.querySelector('.portofolio');
-//     let main = document.querySelector('main');
 
-//     let callBackF = (entries)=>{
-//         console.log(entries[0])
-//     }
-
-//     const observer = new IntersectionObserver(callBackF, {
-//         threshold: .6
-//         // root: main
-//     });
-
-
-//     observer.observe(portofolio);
-
-// }
-
-// iconNav();
 let pageIndicator =(entries)=>{
-    let navIcons =document.querySelectorAll('.nav-icons i')
+    let navIcons =document.querySelectorAll('.nav-icons i');
     for(const entry of entries){
         // console.log(`${entry.target.className} is in view: ${entry.isIntersecting}`);
         //
         if(entry.isIntersecting){
-            for(const icon of navIcons){
-                if(entry.target.className == icon.target.id){
-                    alert('i did it')
-                }
-            }
 
+        
+            if(entry.target.className == 'home'){
+                navIcons[0].style.opacity = '1'
+                navIcons[0].classList.add("activel")
+            }else{
+                navIcons[0].style.opacity = '.4'
+                navIcons[0].classList.remove("activel")
 
-            // console.log(entry.target.className)
-            // if(entry.target.className == 'home'){
-            //     // alert('yes')
-            //     navIcons[0].style.opacity = '1'
-            //     console.log(navIcons[0])
-            // }else{
-            //     navIcons[0].style.opacity = '.4'
-            // }
-            // entry.classList.add('.active');
+            };
+
+            if(entry.target.className == 'about'){
+                navIcons[1].style.opacity = '1'
+            }else{
+                navIcons[1].style.opacity = '.4'
+            };
+
+            if(entry.target.className == 'portofolio'){
+                navIcons[2].style.opacity = '1'
+            }else{
+                navIcons[2].style.opacity = '.4'
+            };
+
+            if(entry.target.className == 'contact'){
+                navIcons[3].style.opacity = '1'
+            }else{
+                navIcons[3].style.opacity = '.4'
+            };
 
         }
     }
