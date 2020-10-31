@@ -83,12 +83,13 @@
   height: 35px;
   margin-right: 10px;
   margin-left: 10px;
-  background: #8b8b8b;
-  color: black;
-  border: 1px solid chartreuse;
+  color: #8b8b8b;
+  background: transparent;
+  border: 1.5px solid chartreuse;
+  border-radius: 1rem;
+  outline: none;
   font-size: 1.2rem;
   text-transform: capitalize;
-  font-weight: 800;
   padding: 5px;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-out;
@@ -125,6 +126,12 @@ nav {
 
 nav .logo {
   padding: 5px;
+  cursor: pointer;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: chartreuse;
 }
 
 nav .nav-icons {
@@ -497,5 +504,9 @@ html body main {
 html body section {
   width: 100%;
   padding-top: 20px;
+}
+
+.section-heading {
+  color: chartreuse;
 }
 /*# sourceMappingURL=style.css.map */
