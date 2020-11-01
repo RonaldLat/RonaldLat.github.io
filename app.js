@@ -33,12 +33,11 @@ function pageIndicator() {
       if (entry.isIntersecting) {
         let section = entry.target.getAttribute("id");
         let navActive = document.querySelector(`a[href="#${section}"]`);
-        icons.forEach(icon=> icon.classList.remove('page-active'))
+        icons.forEach(icon => icon.classList.remove('page-active'))
         navActive.classList.add("page-active");
-        console.log(navActive);
 
-      } 
-      
+      }
+
     });
   }, options);
   sections.forEach((section) => {
@@ -46,5 +45,29 @@ function pageIndicator() {
   });
 }
 
+function aos() {
+  let options = {
+    threshold: 0.2,
+  };
+  let boxes = document.querySelectorAll(".boxes");
+  let left = document.querySelectorAll('.left');
+  let right = document.querySelectorAll('.right');
+
+  let observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = 'translateX(0)'
+        entry.target.style.opacity = '100%'
+
+        observer.unobserve(entry.target)
+        console.log(entry.target)
+      }
+    })
+  }, options)
+  boxes.forEach((box) => {
+    observer.observe(box);
+  });
+}
+aos()
 toggleNav();
 pageIndicator();

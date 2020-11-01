@@ -1,8 +1,10 @@
-$overlay: rgb(41, 41, 41);
+$overlay: rgb(24, 24, 24);
 
 .about {
   background: radial-gradient(rgb(233, 224, 224), rgb(27, 27, 27));
   color: rgb(219, 203, 203);
+  font-weight: 300;
+  font-family: 'Cairo', sans-serif;
   // width: 100%;
   // height: 100%;
   // transform: translateX(0);
@@ -63,11 +65,15 @@ $overlay: rgb(41, 41, 41);
     // }
 
     h3 {
-      color: rgb(172, 255, 89);
+      color: rgb(172, 172, 172);
       letter-spacing: 2px;
+      font-size: 1.5rem;
+
     }
     p {
-      color: rgb(233, 233, 233);
+      color: rgb(182, 182, 182);
+      font-weight: 400;
+      font-size: 1.1rem;
     }
 
     &:nth-child(1) {
@@ -150,7 +156,7 @@ $overlay: rgb(41, 41, 41);
 }
 .skills-heading {
   //   color: greenyellow;
-  color: rgb(91, 243, 71);
+  color: rgb(108, 184, 98);
   text-shadow: 1px 1px 2px rgb(16, 17, 15);
   padding: 10px;
   font-size: 1.2rem;
@@ -158,4 +164,20 @@ $overlay: rgb(41, 41, 41);
   // font-family: sans-serif;
   text-align: center;
   letter-spacing: 2px;
+}
+.left{
+  // transform: translateY(50%);
+  opacity: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in;
+}
+.right{
+  // transform: translateY(50%);
+  opacity: 50%;
+
+  transition: all 0.5s ease-in;
+  transform: translateX(50%);
+}
+.delay{
+  transition-delay: 0.3s;
 }

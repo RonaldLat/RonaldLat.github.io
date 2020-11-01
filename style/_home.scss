@@ -4,6 +4,7 @@
   height: 100vh;
   color: rgb(211, 211, 211);
   padding-bottom: 80px;
+
   // transform: translateX(0);
   transition: transform 0.4s ease-in-out;
 
@@ -20,60 +21,82 @@
     .about-me {
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
       text-align: center;
-      font-family: sans-serif;
-      height: auto;
+      height: 50%;
+
+      // background-color: aqua;
+      .what-i-do p {
+        color: rgb(156, 156, 156);
+        font-size: 2.8rem;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 300;
+        line-height: 2.5rem;
+
+      }
 
       h1 {
-        font-size: 1.9rem;
-        color: chartreuse;
-        font-weight: 100;
+        font-size: 3.1rem;
+        color: rgb(96, 187, 6);
+        font-weight: 600;
+        font-family: 'Cairo', sans-serif;
       }
-      h2 {
-        color: white;
-        text-transform: capitalize;
-        font-size: 2rem;
-        margin: 5px 0;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        font-weight: 100;
-      }
-      p {
-        font-size: 1.8rem;
+
+      .who {
+        font-size: 3rem;
+        line-height: 4rem;
+        background: -webkit-linear-gradient(left, rgb(115, 131, 115), rgb(61, 121, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+
       }
     }
+
     .cta-buttons {
       // width: 100%;
       height: 40px;
       // background: coral;
       display: flex;
       align-items: center;
+      a{
+        text-decoration: none;
+      }
+
       .separator {
         width: 1px;
         height: 100%;
-        background: linear-gradient(top, chartreuse, black);
+        background: linear-gradient(to top, chartreuse, black);
 
         // background: chartreuse;
       }
+
       button {
         min-width: 150px;
         height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         // margin: 0 auto;
         margin-right: 10px;
         margin-left: 10px;
         // background: rgb(139, 139, 139);
-        color: rgb(139,139,139);
+        color: rgb(139, 139, 139);
         background: transparent;
         // color: black;
-        border: 1.5px solid chartreuse;
+        border: 2px solid chartreuse;
         border-radius: 1rem;
         outline: none;
         font-size: 1.2rem;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 300;
         text-transform: capitalize;
         // font-weight: 100;
         padding: 5px;
         cursor: pointer;
         transition: all 0.4s ease-out;
+
         &:hover {
           background: rgb(29, 24, 24);
         }
@@ -81,6 +104,7 @@
     }
   }
 }
+
 .home-acive {
   transform: translateX(0);
 }
@@ -97,14 +121,18 @@ nav {
   z-index: 3;
   background: rgba(black, 0.7);
 
-  .logo{
+  .logo {
     padding: 5px;
     cursor: pointer;
-    a{
+
+    a {
       text-decoration: none;
       color: chartreuse;
+      font-family: 'Share Tech Mono', monospace;
+      font-weight: 400;
     }
   }
+
   //   opacity: 0;
   transition: all 0.4s ease-in;
   //   transform: translateY(-100%);
@@ -122,9 +150,11 @@ nav {
       list-style: none;
       padding-right: 5px;
       padding-top: 5px;
+
       li {
         overflow: hidden;
       }
+
       a {
         text-decoration: none;
         color: chartreuse;
@@ -140,11 +170,12 @@ nav {
           position: absolute;
           border-bottom: 2px solid chartreuse;
           transform: translateX(-100%);
-          transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s ;
+          transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
 
 
         }
       }
+
       .page-active::after {
         transform: translate(0);
       }
@@ -156,4 +187,3 @@ nav {
     }
   }
 }
-
