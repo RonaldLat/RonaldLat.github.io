@@ -1,45 +1,72 @@
-.contact{
-    background: rgb(26, 26, 26);
-    color: rgb(206, 206, 206);
+.contact {
+    background: #242629;
+    color: #72757e;
     font-family: 'Cairo', sans-serif;
+    padding-bottom: 20px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    div{
+    font-family: 'Cairo', sans-serif;
+
+    div {
+        font-family: 'Cairo', sans-serif;
         width: 80%;
-        input, textarea{
+
+        input,
+        textarea {
             width: 100%;
             height: 25px;
             margin-bottom: 5px;
             resize: none;
             outline: none;
-            background: gray;
+            background: #16161a;
             border: none;
             transition: all .4s ease;
-            
-            &::placeholder{
-                color: rgb(255, 255, 255);
+
+            &::placeholder {
+                color: #94a1b2;
+                font-family: 'Cairo', sans-serif;
+
             }
-            &:focus{
-                background: white;
+
+            &:focus {
+                background: #72757e;
             }
         }
-        textarea{
+
+        textarea {
             height: 80px;
         }
-        button{
-            width: 50%;
+
+        button {
+            width: 100%;
             height: 35px;
-            background: chartreuse;
-            margin-left: 50%;
-            color: rgb(34, 34, 34);
-            border: none;
+            background: transparent;
+            border: 4px solid $liveColor;
+            border-radius: 1rem;
+            // margin-left: 50%;
+            color: $heading;
+            // border: none;
+            // display: flex;
+            // align-items: center;
+            justify-items: center;
+            font-family: 'Cairo', sans-serif;
             cursor: pointer;
+            position: relative;
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 
 }
+.form-div>h5{
+  font-family: 'Cairo', sans-serif;
 
-
+}

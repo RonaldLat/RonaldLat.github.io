@@ -1,7 +1,31 @@
+// $mainColor:#3da9fc;
+// $mainColor:#a786df;
+// $mainColor:#00ebc7;
+// $mainColor:#2cb67d;
+// $mainColor:#078080;
+// $liveColor:#4fc4cf;
+$liveColor:#3da9fc;
+// $mainColor:#dcdcdc;
+// $mainColor:#d9d9d9;
+// $mainColor:#bfbfbf;
+// $mainColor:#246475;
+// $mainColor: orangered;
+// $mainColor: #3d4246;
+$mainColor: #606368;
+// $mainColor: #BB86FC;
+
+$heading:#fffffe;
+$subheading:#94a1b2;
+$bg:#16161a;
+
+$text:#86898f;
+
 @import "./home";
 @import './about';
 @import './portofolio';
 @import './contact';
+
+
 
 * {
   margin: 0;
@@ -17,13 +41,16 @@ html {
   scroll-behavior: smooth;
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
+
   body {
+
     // width: 100%;
     main {
       width: 100%;
-      background: gold;
-    //   position: relative;
+      //   position: relative;
+      overflow: hidden;
     }
+
     section {
       width: 100%;
       padding-top: 20px;
@@ -34,10 +61,11 @@ html {
   }
 }
 
-.section-heading{
-      color: chartreuse;
+.section-heading {
+  color: $heading;
+
   // padding-left: 5px;
-  h2{
+  h2 {
     font-size: 1.6rem;
 
   }

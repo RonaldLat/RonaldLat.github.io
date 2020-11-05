@@ -1,8 +1,12 @@
 .home {
-  background: black;
+  background-color: #16161a;
+  background-image: url("/images/triangles_bg.webp");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
-  color: lightgray;
+  color: #fffffe;
   padding-bottom: 80px;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
@@ -43,8 +47,8 @@
 }
 
 .home .home-container .about-me .what-i-do p {
-  color: #9c9c9c;
-  font-size: 2.3rem;
+  color: #fffffe;
+  font-size: 2.2rem;
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
   line-height: 2.5rem;
@@ -52,15 +56,15 @@
 
 .home .home-container .about-me h1 {
   font-size: 3.1rem;
-  color: #60bb06;
+  color: #3da9fc;
   font-weight: 600;
   font-family: 'Cairo', sans-serif;
 }
 
 .home .home-container .about-me .who {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 4rem;
-  background: -webkit-linear-gradient(left, #738373, #3d7901);
+  background: -webkit-linear-gradient(left, #fffffe, #3da9fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Cairo', sans-serif;
@@ -75,6 +79,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
 }
 
 .home .home-container .cta-buttons a {
@@ -84,8 +89,8 @@
 .home .home-container .cta-buttons .separator {
   width: 1px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(chartreuse), to(black));
-  background: linear-gradient(to top, chartreuse, black);
+  background: -webkit-gradient(linear, left bottom, left top, from(#3da9fc), to(black));
+  background: linear-gradient(to top, #3da9fc, black);
 }
 
 .home .home-container .cta-buttons button {
@@ -104,10 +109,9 @@
   margin-left: 10px;
   color: #8b8b8b;
   background: transparent;
-  border: 2px solid chartreuse;
+  border: 3px solid #3da9fc;
   border-radius: 1rem;
   outline: none;
-  font-size: 1.2rem;
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
   text-transform: capitalize;
@@ -115,6 +119,10 @@
   cursor: pointer;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+}
+
+.home .home-container .cta-buttons button p {
+  font-size: 1.2rem;
 }
 
 .home .home-container .cta-buttons button:hover {
@@ -131,8 +139,8 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 30px;
-  color: chartreuse;
+  height: 50px;
+  color: #606368;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +148,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 3;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(22, 22, 26, 0.7);
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
@@ -152,7 +160,7 @@ nav .logo {
 
 nav .logo a {
   text-decoration: none;
-  color: chartreuse;
+  color: #3da9fc;
   font-family: 'Share Tech Mono', monospace;
   font-weight: 400;
 }
@@ -174,7 +182,6 @@ nav .nav-icons ul {
           justify-content: space-between;
   list-style: none;
   padding-right: 5px;
-  padding-top: 5px;
 }
 
 nav .nav-icons ul li {
@@ -183,7 +190,7 @@ nav .nav-icons ul li {
 
 nav .nav-icons ul a {
   text-decoration: none;
-  color: chartreuse;
+  color: #fffffe;
   position: relative;
 }
 
@@ -191,11 +198,11 @@ nav .nav-icons ul a::after {
   content: "";
   width: 100%;
   height: 100%;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: transparent;
   position: absolute;
-  border-bottom: 2px solid chartreuse;
+  border-bottom: 2px solid #3da9fc;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
@@ -212,7 +219,7 @@ nav .nav-icons ul li i {
 }
 
 .about {
-  background: radial-gradient(#e9e0e0, #1b1b1b);
+  background: radial-gradient(#72757e, #16161a);
   color: #dbcbcb;
   font-weight: 300;
   font-family: 'Cairo', sans-serif;
@@ -245,7 +252,6 @@ nav .nav-icons ul li i {
 
 .about-sites {
   height: 70%;
-  color: #362f2f;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (0.9fr)[2];
@@ -277,13 +283,13 @@ nav .nav-icons ul li i {
 }
 
 .about-sites div h3 {
-  color: #acacac;
+  color: #94a1b2;
   letter-spacing: 2px;
   font-size: 1.5rem;
 }
 
 .about-sites div p {
-  color: #b6b6b6;
+  color: #86898f;
   font-weight: 400;
   font-size: 1.1rem;
 }
@@ -292,7 +298,7 @@ nav .nav-icons ul li i {
   background: url("../images/fast.png");
   background-size: cover;
   background-position: center;
-  background-color: #181818;
+  background-color: #16161a;
   background-blend-mode: overlay;
 }
 
@@ -300,7 +306,7 @@ nav .nav-icons ul li i {
   background: url("../images/design.png");
   background-size: cover;
   background-position: center;
-  background-color: #181818;
+  background-color: #16161a;
   background-blend-mode: overlay;
 }
 
@@ -309,7 +315,7 @@ nav .nav-icons ul li i {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #181818;
+  background-color: #16161a;
   background-blend-mode: overlay;
 }
 
@@ -317,13 +323,13 @@ nav .nav-icons ul li i {
   background: url("../images/progressiveApp.png");
   background-size: cover;
   background-position: center;
-  background-color: #181818;
+  background-color: #16161a;
   background-blend-mode: overlay;
 }
 
 .skills {
-  color: black;
-  background: #363b31;
+  color: #fffffe;
+  background: transparent;
   padding-top: 4px;
   display: -ms-grid;
   display: grid;
@@ -351,7 +357,7 @@ nav .nav-icons ul li i {
 
 .skills div {
   height: 50px;
-  background: white;
+  background: #16161a;
   text-align: center;
   text-transform: uppercase;
   display: -webkit-box;
@@ -387,8 +393,8 @@ nav .nav-icons ul li i {
 }
 
 .skills-heading {
-  color: #6cb862;
-  text-shadow: 1px 1px 2px #10110f;
+  color: #606368;
+  text-shadow: 1px 1px 2px #010101;
   padding: 10px;
   font-size: 1.2rem;
   font-weight: 600;
@@ -422,9 +428,8 @@ nav .nav-icons ul li i {
 }
 
 .portofolio {
-  background: #7c7a7a;
+  background: #242629;
   width: 100%;
-  height: 100vh;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
@@ -436,15 +441,26 @@ nav .nav-icons ul li i {
   height: 90%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 20px;
 }
 
-.portofolio .portofolio-container div {
-  background: white;
+.portofolio .portofolio-container .portofolio-img img {
+  -webkit-filter: drop-shadow(0.1rem 0.1rem 0.1rem #72757e);
+          filter: drop-shadow(0.1rem 0.1rem 0.1rem #72757e);
+}
+
+.portofolio .portofolio-container h3 {
+  color: #94a1b2;
+}
+
+.portofolio .portofolio-container p {
+  color: #86898f;
+}
+
+.portofolio-container > div {
+  background: #16161a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,14 +475,8 @@ nav .nav-icons ul li i {
       justify-content: space-around;
   text-align: center;
   padding: 5px;
-}
-
-.portofolio .portofolio-container div:nth-child(3) {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 2/1/span 1/span 2;
+  -webkit-box-shadow: 0 10px 10px -5px;
+          box-shadow: 0 10px 10px -5px;
 }
 
 .portofolio-acive {
@@ -475,9 +485,10 @@ nav .nav-icons ul li i {
 }
 
 .contact {
-  background: #1a1a1a;
-  color: #cecece;
+  background: #242629;
+  color: #72757e;
   font-family: 'Cairo', sans-serif;
+  padding-bottom: 20px;
 }
 
 form {
@@ -491,42 +502,54 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Cairo', sans-serif;
 }
 
 form div {
+  font-family: 'Cairo', sans-serif;
   width: 80%;
 }
 
-form div input, form div textarea {
+form div input,
+form div textarea {
   width: 100%;
   height: 25px;
   margin-bottom: 5px;
   resize: none;
   outline: none;
-  background: gray;
+  background: #16161a;
   border: none;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
-form div input::-webkit-input-placeholder, form div textarea::-webkit-input-placeholder {
-  color: white;
+form div input::-webkit-input-placeholder,
+form div textarea::-webkit-input-placeholder {
+  color: #94a1b2;
+  font-family: 'Cairo', sans-serif;
 }
 
-form div input:-ms-input-placeholder, form div textarea:-ms-input-placeholder {
-  color: white;
+form div input:-ms-input-placeholder,
+form div textarea:-ms-input-placeholder {
+  color: #94a1b2;
+  font-family: 'Cairo', sans-serif;
 }
 
-form div input::-ms-input-placeholder, form div textarea::-ms-input-placeholder {
-  color: white;
+form div input::-ms-input-placeholder,
+form div textarea::-ms-input-placeholder {
+  color: #94a1b2;
+  font-family: 'Cairo', sans-serif;
 }
 
-form div input::placeholder, form div textarea::placeholder {
-  color: white;
+form div input::placeholder,
+form div textarea::placeholder {
+  color: #94a1b2;
+  font-family: 'Cairo', sans-serif;
 }
 
-form div input:focus, form div textarea:focus {
-  background: white;
+form div input:focus,
+form div textarea:focus {
+  background: #72757e;
 }
 
 form div textarea {
@@ -534,13 +557,28 @@ form div textarea {
 }
 
 form div button {
-  width: 50%;
+  width: 100%;
   height: 35px;
-  background: chartreuse;
-  margin-left: 50%;
-  color: #222222;
-  border: none;
+  background: transparent;
+  border: 4px solid #3da9fc;
+  border-radius: 1rem;
+  color: #fffffe;
+  justify-items: center;
+  font-family: 'Cairo', sans-serif;
   cursor: pointer;
+  position: relative;
+}
+
+form div button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.form-div > h5 {
+  font-family: 'Cairo', sans-serif;
 }
 
 * {
@@ -559,7 +597,7 @@ html {
 
 html body main {
   width: 100%;
-  background: gold;
+  overflow: hidden;
 }
 
 html body section {
@@ -570,7 +608,7 @@ html body section {
 }
 
 .section-heading {
-  color: chartreuse;
+  color: #fffffe;
 }
 
 .section-heading h2 {
