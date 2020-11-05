@@ -1,3 +1,6 @@
+
+
+
 function toggleNav() {
   let options = {
     threshold: 0.2,
@@ -68,6 +71,33 @@ function aos() {
     observer.observe(box);
   });
 }
+
+function skillIn() {
+  let skill = document.querySelector('.skills');
+  let skillHeader = document.querySelector('.skills-heading');
+  let options = {
+    threshold: 0.6,
+  };
+  let observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.transform = 'translateX(0)'
+
+        observer.unobserve(entry.target)
+        console.log(entry.target)
+      }
+    })
+  }, options)
+
+  observer.observe(skill);
+  observer.observe(skillHeader);
+
+}
+
+
+
+
+skillIn()
 aos()
 toggleNav();
 pageIndicator();

@@ -129,6 +129,8 @@ $overlay: rgb(24, 24, 24);
   position: relative;
   text-align: left;
   // margin-left: 80%;
+  transition: 0.5s ease-in ;
+  transform: translateY(50%);
 
   div {
     // margin: 5px;
@@ -164,6 +166,8 @@ $overlay: rgb(24, 24, 24);
   // font-family: sans-serif;
   text-align: center;
   letter-spacing: 2px;
+  transition: 0.4s ease-in ;
+  transform: translateY(50%);
 }
 .left{
   // transform: translateY(50%);

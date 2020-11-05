@@ -44,7 +44,7 @@
 
 .home .home-container .about-me .what-i-do p {
   color: #9c9c9c;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
   line-height: 2.5rem;
@@ -58,7 +58,7 @@
 }
 
 .home .home-container .about-me .who {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 4rem;
   background: -webkit-linear-gradient(left, #738373, #3d7901);
   -webkit-background-clip: text;
@@ -343,6 +343,10 @@ nav .nav-icons ul li i {
           align-items: flex-start;
   position: relative;
   text-align: left;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .skills div {
@@ -390,6 +394,10 @@ nav .nav-icons ul li i {
   font-weight: 600;
   text-align: center;
   letter-spacing: 2px;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .left {
