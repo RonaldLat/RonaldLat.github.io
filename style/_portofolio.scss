@@ -1,32 +1,39 @@
-.portofolio{
+.portofolio {
     background: #242629;
     width: 100%;
     // height: 100vh;
     // transform: translateX(0);
     transition: transform 0.4s ease-in-out;
+
     // z-index: 2;
-    .portofolio-container{
+    .portofolio-container {
         width: 100%;
-        height: 90%;
+        // height: 90%;
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         // grid-template-rows: repeat(auto,1fr)  ;
         grid-gap: 20px;
-        .portofolio-img img{
+
+        .portofolio-img img {
             filter: drop-shadow(0.1rem 0.1rem 0.1rem #72757e);
-            
+            max-width: 100%;
+            height: auto;
+
         }
-        h3{
+
+        h3 {
             color: $subheading;
         }
-        p{
+
+        p {
             color: $text;
         }
- 
+
 
     }
 }
-.portofolio-container>div{
+
+.portofolio-container>div {
     // background: rgba(black, .5);
     background: #16161a;
     display: flex;
@@ -35,13 +42,47 @@
     justify-content: space-around;
     text-align: center;
     padding: 5px;
-    box-shadow: 0 10px 10px -5px ;
+    box-shadow: 0 10px 10px -5px;
     // &:nth-child(3){
     //     grid-area: 2/1/span 1/span 2;
     // }
 
 
 }
-.portofolio-acive{
+
+.visit {
+    // background: yellow;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    button {
+        background: $bg;
+        position: relative;
+        // box-shadow: inset 5px 5px 5px rgba(black, 0.2)
+        //     // inset -5px -5px 15px rgba(white, 0.1),
+        //     // 5px 5px 5px  rgba(black, 0.3),
+        //     // -5px -5px 15px rgba(white, 0.1)
+        // ;
+
+        // border-radius: 15px;
+        height: 40px;
+        width: 25%;
+        border: 1px solid $text;
+        outline: none;
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.portofolio-acive {
     transform: translateX(0);
 }

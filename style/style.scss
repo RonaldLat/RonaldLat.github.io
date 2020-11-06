@@ -43,7 +43,7 @@ html {
   font-weight: 300;
 
   body {
-
+    background: $bg;
     // width: 100%;
     main {
       width: 100%;
@@ -69,4 +69,27 @@ html {
     font-size: 1.6rem;
 
   }
+}
+
+.left{
+  // transform: translateY(50%);
+
+  transition: all 0.5s ease-in;
+}
+.right{
+  // transform: translateY(50%);
+  opacity: 0%;
+
+  transition: all 0.5s ease-in;
+  transform: translateX(50%);
+}
+.delay{
+  transition-delay: 0.3s;
+}
+
+.up-animation{
+  // opacity: 0%;
+  // transform: translateX(-50%);
+  transition: 0.4s ease-in ;
+  transform: translateY(50%);
 }

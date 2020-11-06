@@ -5,6 +5,8 @@ $overlay: #16161a;
   color: rgb(219, 203, 203);
   font-weight: 300;
   font-family: 'Cairo', sans-serif;
+  padding-top: 80px;
+
   // width: 100%;
   // height: 100%;
   // transform: translateX(0);
@@ -86,7 +88,7 @@ $overlay: #16161a;
       // grid-area: 1/2/span 1/ span 2;
     }
     &:nth-child(2) {
-      background: url("../images/design.png");
+      background: url("../images/mordern.png");
       background-size: cover;
       background-position: center;
       background-color: $overlay;
@@ -94,7 +96,7 @@ $overlay: #16161a;
       // grid-area: 1/1/span 1/span 3;
     }
     &:nth-child(3) {
-      background: url("../images/responsive.png");
+      background: url("../images/resoponsive.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -103,7 +105,7 @@ $overlay: #16161a;
       // grid-area: 1/1/span 1/span 3;
     }
     &:nth-child(4) {
-      background: url("../images/progressiveApp.png");
+      background: url("../images/dynamic.png");
       background-size: cover;
       background-position: center;
       background-color: $overlay;
@@ -116,12 +118,15 @@ $overlay: #16161a;
   color: #fffffe;
   background: transparent;
   padding-top: 4px;
+  margin-bottom: 80px;
+
   // margin: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   grid-gap: 5px;
+  grid-row-gap:30px ;
   width: 95%;
   justify-content: space-around;
   align-items: flex-start;
@@ -133,18 +138,25 @@ $overlay: #16161a;
 
   div {
     // margin: 5px;
-    height: 50px;
+    // height: 50px;
     // background: rgb(150, 150, 150);
-    background: #16161a;
+    // background: #16161a;
     text-align: center;
     text-transform: uppercase;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    img{
+      width: 100%;
+      height: 60px;
+    }
 
     &:nth-child(5) {
       grid-area: 2/1 / span 1 / span 2;
-      // background: red;
+      // background: url('/images/css.svg');
+
+
     }
     &:nth-child(6) {
       grid-area: 2/3 / span 2 / span 2;
@@ -156,6 +168,8 @@ $overlay: #16161a;
   transform: translateX(0);
 }
 .skills-heading {
+  margin-top: 80px;
+  margin-bottom: 50px;
   // color: rgb(108, 184, 98);
   color:$mainColor;
   text-shadow: 1px 1px 2px #010101;
@@ -165,22 +179,8 @@ $overlay: #16161a;
   // font-family: sans-serif;
   text-align: center;
   letter-spacing: 2px;
-  transition: 0.4s ease-in ;
-  transform: translateY(50%);
-}
-.left{
-  // transform: translateY(50%);
-  opacity: 50%;
-  transform: translateX(-50%);
-  transition: all 0.5s ease-in;
-}
-.right{
-  // transform: translateY(50%);
-  opacity: 50%;
 
-  transition: all 0.5s ease-in;
-  transform: translateX(50%);
-}
-.delay{
-  transition-delay: 0.3s;
+  i{
+    color: $liveColor;
+  }
 }

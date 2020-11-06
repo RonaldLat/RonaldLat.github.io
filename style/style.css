@@ -1,6 +1,6 @@
 .home {
   background-color: #16161a;
-  background-image: url("/images/triangles_bg.webp");
+  background-image: url("/images/oti.png");
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
@@ -12,6 +12,13 @@
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.home img {
+  max-width: 100%;
+  -webkit-filter: drop-shadow(5rem 5rem 5rem, #000000);
+          filter: drop-shadow(5rem 5rem 5rem, #000000);
+  position: absolute;
 }
 
 .home .home-container {
@@ -51,7 +58,7 @@
   font-size: 2.2rem;
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
 }
 
 .home .home-container .about-me h1 {
@@ -94,7 +101,7 @@
 }
 
 .home .home-container .cta-buttons button {
-  min-width: 150px;
+  min-width: 170px;
   height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,10 +126,18 @@
   cursor: pointer;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  position: relative;
 }
 
 .home .home-container .cta-buttons button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 1.2rem;
+  display: inline-block;
+  width: 100%;
 }
 
 .home .home-container .cta-buttons button:hover {
@@ -223,6 +238,7 @@ nav .nav-icons ul li i {
   color: #dbcbcb;
   font-weight: 300;
   font-family: 'Cairo', sans-serif;
+  padding-top: 80px;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
@@ -303,7 +319,7 @@ nav .nav-icons ul li i {
 }
 
 .about-sites div:nth-child(2) {
-  background: url("../images/design.png");
+  background: url("../images/mordern.png");
   background-size: cover;
   background-position: center;
   background-color: #16161a;
@@ -311,7 +327,7 @@ nav .nav-icons ul li i {
 }
 
 .about-sites div:nth-child(3) {
-  background: url("../images/responsive.png");
+  background: url("../images/resoponsive.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,7 +336,7 @@ nav .nav-icons ul li i {
 }
 
 .about-sites div:nth-child(4) {
-  background: url("../images/progressiveApp.png");
+  background: url("../images/dynamic.png");
   background-size: cover;
   background-position: center;
   background-color: #16161a;
@@ -331,6 +347,7 @@ nav .nav-icons ul li i {
   color: #fffffe;
   background: transparent;
   padding-top: 4px;
+  margin-bottom: 80px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -341,6 +358,7 @@ nav .nav-icons ul li i {
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 5px;
+  grid-row-gap: 30px;
   width: 95%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -356,19 +374,26 @@ nav .nav-icons ul li i {
 }
 
 .skills div {
-  height: 50px;
-  background: #16161a;
   text-align: center;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills div img {
+  width: 100%;
+  height: 60px;
 }
 
 .skills div:nth-child(5) {
@@ -393,6 +418,8 @@ nav .nav-icons ul li i {
 }
 
 .skills-heading {
+  margin-top: 80px;
+  margin-bottom: 50px;
   color: #606368;
   text-shadow: 1px 1px 2px #010101;
   padding: 10px;
@@ -400,31 +427,10 @@ nav .nav-icons ul li i {
   font-weight: 600;
   text-align: center;
   letter-spacing: 2px;
-  -webkit-transition: 0.4s ease-in;
-  transition: 0.4s ease-in;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
 }
 
-.left {
-  opacity: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-}
-
-.right {
-  opacity: 50%;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-}
-
-.delay {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+.skills-heading i {
+  color: #3da9fc;
 }
 
 .portofolio {
@@ -438,7 +444,6 @@ nav .nav-icons ul li i {
 
 .portofolio .portofolio-container {
   width: 100%;
-  height: 90%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -449,6 +454,8 @@ nav .nav-icons ul li i {
 .portofolio .portofolio-container .portofolio-img img {
   -webkit-filter: drop-shadow(0.1rem 0.1rem 0.1rem #72757e);
           filter: drop-shadow(0.1rem 0.1rem 0.1rem #72757e);
+  max-width: 100%;
+  height: auto;
 }
 
 .portofolio .portofolio-container h3 {
@@ -479,6 +486,38 @@ nav .nav-icons ul li i {
           box-shadow: 0 10px 10px -5px;
 }
 
+.visit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0;
+}
+
+.visit button {
+  background: #16161a;
+  position: relative;
+  height: 40px;
+  width: 25%;
+  border: 1px solid #86898f;
+  outline: none;
+}
+
+.visit button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+}
+
 .portofolio-acive {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -489,6 +528,10 @@ nav .nav-icons ul li i {
   color: #72757e;
   font-family: 'Cairo', sans-serif;
   padding-bottom: 20px;
+}
+
+.contact h5 {
+  padding: 10px 0;
 }
 
 form {
@@ -513,12 +556,13 @@ form div {
 form div input,
 form div textarea {
   width: 100%;
-  height: 25px;
+  height: 45px;
   margin-bottom: 5px;
   resize: none;
   outline: none;
   background: #16161a;
   border: none;
+  padding: 2rem 1rem;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -553,16 +597,17 @@ form div textarea:focus {
 }
 
 form div textarea {
-  height: 80px;
+  height: 120px;
 }
 
 form div button {
   width: 100%;
-  height: 35px;
+  height: 45px;
   background: transparent;
   border: 4px solid #3da9fc;
   border-radius: 1rem;
   color: #fffffe;
+  outline: none;
   justify-items: center;
   font-family: 'Cairo', sans-serif;
   cursor: pointer;
@@ -581,6 +626,17 @@ form div button p {
   font-family: 'Cairo', sans-serif;
 }
 
+.contact-details {
+  background: #94a1b2;
+  width: 80%;
+  color: #16161a;
+  padding: 5px;
+}
+
+.contact-details i {
+  color: #16161a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -593,6 +649,10 @@ html {
   scroll-behavior: smooth;
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
+}
+
+html body {
+  background: #16161a;
 }
 
 html body main {
@@ -613,5 +673,30 @@ html body section {
 
 .section-heading h2 {
   font-size: 1.6rem;
+}
+
+.left {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.right {
+  opacity: 0%;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.delay {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.up-animation {
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 /*# sourceMappingURL=style.css.map */
