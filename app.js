@@ -63,7 +63,6 @@ function aos() {
         entry.target.style.opacity = '100%'
 
         observer.unobserve(entry.target)
-        console.log(entry.target)
       }
     })
   }, options)
@@ -73,24 +72,25 @@ function aos() {
 }
 
 function skillIn() {
-  let skill = document.querySelector('.skills');
-  let skillHeader = document.querySelector('.skills-heading');
+  let element = document.querySelectorAll('.up-animation');
   let options = {
-    threshold: 0.6,
+    threshold: 0.5,
   };
   let observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.style.transform = 'translateX(0)'
-
         observer.unobserve(entry.target)
-        console.log(entry.target)
       }
+
     })
   }, options)
 
-  observer.observe(skill);
-  observer.observe(skillHeader);
+  // observer.observe(skill);
+  // observer.observe(skillHeader);
+  element.forEach(el=>{
+    observer.observe(el)
+  })
 
 }
 
