@@ -62,6 +62,8 @@ function aos() {
         entry.target.style.transform = 'translateX(0)'
         entry.target.style.opacity = '100%'
 
+        // left.style.transform='translate(0)'
+
         observer.unobserve(entry.target)
       }
     })
@@ -74,7 +76,7 @@ function aos() {
 function skillIn() {
   let element = document.querySelectorAll('.up-animation');
   let options = {
-    threshold: 0.5,
+    threshold: 0.3,
   };
   let observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry) => {
