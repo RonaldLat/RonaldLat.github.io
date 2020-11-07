@@ -73,7 +73,7 @@ html {
 }
 
 .left {
-  transform: translateY(50%);
+  transform: translateY(25%);
 
   transition: all 0.5s ease-in;
 }
@@ -83,7 +83,7 @@ html {
   opacity: 0%;
 
   transition: all 0.5s ease-in;
-  transform: translateX(50%);
+  transform: translateX(25%);
 }
 
 .delay {
@@ -94,7 +94,7 @@ html {
   // opacity: 0%;
   // transform: translateX(-50%);
   transition: 0.8s ease-in;
-  transform: translateY(50%);
+  transform: translateY(25%);
 }
 
 /* ----------------------------------------------

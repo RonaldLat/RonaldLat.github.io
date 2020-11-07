@@ -780,8 +780,8 @@ html body section {
 }
 
 .left {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
@@ -790,8 +790,8 @@ html body section {
   opacity: 0%;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
 }
 
 .delay {
@@ -802,8 +802,8 @@ html body section {
 .up-animation {
   -webkit-transition: 0.8s ease-in;
   transition: 0.8s ease-in;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
 }
 
 /* ----------------------------------------------

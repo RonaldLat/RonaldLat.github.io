@@ -50,7 +50,7 @@ function pageIndicator() {
 
 function aos() {
   let options = {
-    threshold: 0.2,
+    threshold: 0.3,
   };
   let boxes = document.querySelectorAll(".boxes");
   let left = document.querySelectorAll('.left');
