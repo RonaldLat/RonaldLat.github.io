@@ -1,21 +1,10 @@
-// $mainColor:#00ebc7;
-// $mainColor:#3da9fc;
-
 .home {
-  // background: rgb(0, 0, 0);
   background-color: $bg;
-  // background-color: $liveColor;
-  // background-attachment: fixed;
-
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100vh;
-  color: $heading;
-  // padding-bottom: 80px;
-
-  // transform: translateX(0);
   transition: transform 0.4s ease-in-out;
 
   img {
@@ -25,7 +14,6 @@
 
   }
 
-  // z-index: 1;
   .home-container {
     height: 100%;
     width: 100%;
@@ -36,70 +24,8 @@
     position: relative;
     margin-top: 20px;
 
-    // background: red;
-
-    // .me-photo{
-    //   background: gray;
-    //   // border-radius: 100%;
-    //   // width: 100%;
-    //   // height: 40%;
-    //   width: 300px;
-    //   height: 300px;
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    //   margin: 10px;
-    //   overflow: hidden;
-    //   position: relative;
-    //     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    //   .me{
-    //     max-width: 100%;
-    //     max-height: 100%;
-    //     object-fit: contain;
-    //     display: inline-block;
-    //     position: absolute;
-    //   }
-    // }
-    // svg{
-    //   overflow: hidden;
-    //   position: relative;
-    //   image{
-    //     position: absolute;
-    //   }
-    // }
-
-    .me {
-      width: 220px;
-      height: 220px;
-
-      // margin: 30px;
-      background: $liveColor;
-      // background: #74ebd5;
-      /* fallback for old browsers */
-      // background: -webkit-linear-gradient(to right, #ACB6E5, $liveColor);  /* Chrome 10-25, Safari 5.1-6 */
-      // background: linear-gradient(to right, #ACB6E5, $liveColor); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-      /* fallback for old browsers */
-      // background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, $liveColor, $bg);
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-      border: none;
-      border: 3px solid $bg;
-      border-radius: 78% 22% 25% 75% / 44% 43% 57% 56%;
-      position: relative;
-      overflow: hidden;
-      object-fit: cover;
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-      }
-    }
 
     .about-me {
       display: flex;
@@ -138,12 +64,33 @@
 
       }
     }
+    .me {
+      width: 220px;
+      height: 220px;
+      background: $liveColor;
+      /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, $liveColor, $bg);
+      border: none;
+      border: 3px solid $bg;
+      border-radius: 78% 22% 25% 75% / 44% 43% 57% 56%;
+      position: relative;
+      overflow: hidden;
+      object-fit: cover;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
 
 
 
     .cta-container {
       height: 50px;
-      // width: 100%;
       margin-bottom: 40px;
       display: flex;
       align-items: center;
@@ -151,12 +98,8 @@
 
     }
 
-
-
     .cta-buttons {
-      // width: 50%;
       height: 40px;
-      // background: coral;
       display: flex;
       align-items: center;
       justify-items: center;
@@ -169,8 +112,6 @@
         width: 1px;
         height: 100%;
         background: linear-gradient(to top, $liveColor, black);
-
-        // background: chartreuse;
       }
 
       button {
@@ -179,20 +120,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // margin: 0 auto;
         margin-right: 10px;
         margin-left: 10px;
-        // background: rgb(139, 139, 139);
         color: rgb(139, 139, 139);
         background: transparent;
-        // color: black;
         border: 3px solid $liveColor;
         border-radius: 1rem;
         outline: none;
         font-family: 'Cairo', sans-serif;
         font-weight: 300;
         text-transform: capitalize;
-        // font-weight: 100;
         padding: 5px;
         cursor: pointer;
         transition: all 0.4s ease-out;
