@@ -34,35 +34,70 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin-top: 20px;
+
     // background: red;
 
-    .me-photo{
-      background: gray;
-      // border-radius: 100%;
-      // width: 100%;
-      // height: 40%;
-      width: 300px;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px;
-      overflow: hidden;
+    // .me-photo{
+    //   background: gray;
+    //   // border-radius: 100%;
+    //   // width: 100%;
+    //   // height: 40%;
+    //   width: 300px;
+    //   height: 300px;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   margin: 10px;
+    //   overflow: hidden;
+    //   position: relative;
+    //     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    //   .me{
+    //     max-width: 100%;
+    //     max-height: 100%;
+    //     object-fit: contain;
+    //     display: inline-block;
+    //     position: absolute;
+    //   }
+    // }
+    // svg{
+    //   overflow: hidden;
+    //   position: relative;
+    //   image{
+    //     position: absolute;
+    //   }
+    // }
+
+    .me {
+      width: 220px;
+      height: 220px;
+
+      // margin: 30px;
+      background: $liveColor;
+      // background: #74ebd5;
+      /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to right, #ACB6E5, $liveColor);  /* Chrome 10-25, Safari 5.1-6 */
+      // background: linear-gradient(to right, #ACB6E5, $liveColor); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      /* fallback for old browsers */
+      // background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, $liveColor, $bg);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+      border: none;
+      border: 3px solid $bg;
+      border-radius: 78% 22% 25% 75% / 44% 43% 57% 56%;
       position: relative;
-        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-      .me{
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        display: inline-block;
-        position: absolute;
-      }
-    }
-    svg{
       overflow: hidden;
-      position: relative;
-      image{
+      object-fit: cover;
+
+      img {
         position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -76,9 +111,10 @@
 
       .what-i-do p {
         color: #fffffe;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         font-family: 'Cairo', sans-serif;
         font-weight: 300;
+
         // line-height: 2.2rem;
 
       }
@@ -92,7 +128,7 @@
       }
 
       .who {
-        font-size: 2.3rem;
+        font-size: 1.7rem;
         // line-height: auto;
         background: -webkit-linear-gradient(left, #fffffe, $liveColor);
         -webkit-background-clip: text;
@@ -103,12 +139,12 @@
       }
     }
 
-  
 
-    .cta-container{
-      // height: 50px;
+
+    .cta-container {
+      height: 50px;
       // width: 100%;
-      margin-bottom:30px ;
+      margin-bottom: 40px;
       display: flex;
       align-items: center;
       justify-items: center;
@@ -161,6 +197,8 @@
         cursor: pointer;
         transition: all 0.4s ease-out;
         position: relative;
+        transition: all 0.5s ease-in;
+
 
         p {
           position: absolute;
@@ -173,7 +211,8 @@
         }
 
         &:hover {
-          background: rgb(29, 24, 24);
+          background: rgba($liveColor, 0.1);
+          transform: translateY(-5px);
         }
       }
     }
@@ -279,59 +318,35 @@ nav {
  * animation scale-in-center
  * ----------------------------------------
  */
- @-webkit-keyframes scale-in-center {
+@-webkit-keyframes scale-in-center {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes scale-in-center {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
 
 .scale-in-center {
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.rr{
-  width: 333px;
-  height: 333px;
-  // background: $liveColor;
-  background: #74ebd5;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #ACB6E5, $liveColor);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #ACB6E5, $liveColor); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-background: #000046;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, $liveColor, $bg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-  border: none;
-  border: 3px solid $bg;
-  border-radius: 78% 22% 25% 75% / 44% 43% 57% 56% ;
-  position: relative;
-  overflow: hidden;
-  object-fit: cover;
-  img{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

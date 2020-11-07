@@ -72,6 +72,7 @@
         width: 25%;
         border: 1px solid $text;
         outline: none;
+        transition: all 0.5s ease-in;
 
         p {
             position: absolute;
@@ -80,6 +81,10 @@
             transform: translate(-50%, -50%);
             font-size: 1.4rem;
         }
+        &:hover {
+            background: rgba($liveColor, 0.1);
+            transform: translateY(-5px);
+          }
     }
 }
 

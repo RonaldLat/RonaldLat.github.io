@@ -36,44 +36,33 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  margin-top: 20px;
 }
 
-.home .home-container .me-photo {
-  background: gray;
-  width: 300px;
-  height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px;
-  overflow: hidden;
+.home .home-container .me {
+  width: 220px;
+  height: 220px;
+  background: #3da9fc;
+  /* fallback for old browsers */
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#3da9fc), to(#16161a));
+  background: linear-gradient(to right, #3da9fc, #16161a);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  border: 3px solid #16161a;
+  border-radius: 78% 22% 25% 75% / 44% 43% 57% 56%;
   position: relative;
-  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
-
-.home .home-container .me-photo .me {
-  max-width: 100%;
-  max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: inline-block;
-  position: absolute;
-}
-
-.home .home-container svg {
   overflow: hidden;
-  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.home .home-container svg image {
+.home .home-container .me img {
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .home .home-container .about-me {
@@ -92,7 +81,7 @@
 
 .home .home-container .about-me .what-i-do p {
   color: #fffffe;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
 }
@@ -105,7 +94,7 @@
 }
 
 .home .home-container .about-me .who {
-  font-size: 2.3rem;
+  font-size: 1.7rem;
   background: -webkit-linear-gradient(left, #fffffe, #3da9fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,7 +103,8 @@
 }
 
 .home .home-container .cta-container {
-  margin-bottom: 30px;
+  height: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +163,8 @@
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   position: relative;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .home .home-container .cta-buttons button p {
@@ -187,7 +179,9 @@
 }
 
 .home .home-container .cta-buttons button:hover {
-  background: #1d1818;
+  background: rgba(61, 169, 252, 0.1);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .home-acive {
@@ -321,32 +315,6 @@ nav .nav-icons ul li i {
 .scale-in-center {
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.rr {
-  width: 333px;
-  height: 333px;
-  background: #74ebd5;
-  /* fallback for old browsers */
-  background: #000046;
-  /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#3da9fc), to(#16161a));
-  background: linear-gradient(to right, #3da9fc, #16161a);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: none;
-  border: 3px solid #16161a;
-  border-radius: 78% 22% 25% 75% / 44% 43% 57% 56%;
-  position: relative;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.rr img {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
 }
 
 .about {
@@ -623,6 +591,8 @@ nav .nav-icons ul li i {
   width: 25%;
   border: 1px solid #86898f;
   outline: none;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .visit button p {
@@ -632,6 +602,12 @@ nav .nav-icons ul li i {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 1.4rem;
+}
+
+.visit button:hover {
+  background: rgba(61, 169, 252, 0.1);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .portofolio-acive {
