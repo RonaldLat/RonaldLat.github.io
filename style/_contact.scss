@@ -3,7 +3,8 @@
     color: #72757e;
     font-family: 'Cairo', sans-serif;
     padding-bottom: 20px;
-    h5{
+
+    h5 {
         padding: 10px 0;
     }
 }
@@ -60,27 +61,36 @@ form {
             font-family: 'Cairo', sans-serif;
             cursor: pointer;
             position: relative;
-            p{
+            transition: all 0.5s ease-in;
+
+            p {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+
+            &:hover {
+                background: rgba($liveColor, 0.1);
+                transform: translateY(-5px);
+            }
         }
     }
 
 }
-.form-div>h5{
-  font-family: 'Cairo', sans-serif;
+
+.form-div>h5 {
+    font-family: 'Cairo', sans-serif;
 
 }
 
-.contact-details{
+.contact-details {
     background: $subheading;
     width: 95%;
     color: $bg;
     padding: 5px;
-    i{
+
+    i {
         color: $bg;
     }
 }

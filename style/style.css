@@ -9,6 +9,7 @@
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 .home img {
@@ -36,6 +37,7 @@
           justify-content: space-between;
   position: relative;
   margin-top: 20px;
+  background: inherit;
 }
 
 .home .home-container .about-me {
@@ -316,6 +318,7 @@ nav .nav-icons ul li i {
 
 .about {
   background: radial-gradient(#72757e, #16161a);
+  overflow: hidden;
   color: #dbcbcb;
   font-weight: 300;
   font-family: 'Cairo', sans-serif;
@@ -517,6 +520,7 @@ nav .nav-icons ul li i {
 .portofolio {
   background: #242629;
   width: 100%;
+  overflow: hidden;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
@@ -701,6 +705,8 @@ form div button {
   font-family: 'Cairo', sans-serif;
   cursor: pointer;
   position: relative;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 form div button p {
@@ -709,6 +715,12 @@ form div button p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+form div button:hover {
+  background: rgba(61, 169, 252, 0.1);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .form-div > h5 {
