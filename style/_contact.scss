@@ -43,7 +43,7 @@ form {
         }
 
         textarea {
-            height: 120px;
+            height: 140px;
         }
 
         button {
@@ -74,6 +74,9 @@ form {
                 background: rgba($liveColor, 0.1);
                 transform: translateY(-5px);
             }
+            &:focus-within{
+                background: $mainColor;
+            }
         }
     }
 
@@ -84,11 +87,34 @@ form {
 
 }
 
+.verification{
+    color: rgb(73, 252, 73);
+    width: 90%;
+    // border: 1px solid rgb(73, 252, 73);
+    display: none;
+    p{
+        padding: 5px;
+    }
+}
+.warning{
+    color: rgb(255, 49, 49);
+    width: 90%;
+    // border: 1px solid rgb(73, 252, 73);
+    display: none;
+    p{
+        padding: 5px;
+    }
+}
+
 .contact-details {
     background: $subheading;
     width: 95%;
     color: $bg;
     padding: 5px;
+    a{
+        text-decoration: none;
+        color: $bg;
+    }
 
     i {
         color: $bg;

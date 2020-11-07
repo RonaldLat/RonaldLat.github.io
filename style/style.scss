@@ -20,10 +20,7 @@ $bg:#16161a;
 
 $text:#86898f;
 
-@import "./home";
-@import './about';
-@import './portofolio';
-@import './contact';
+
 
 
 
@@ -69,6 +66,43 @@ html {
   h2 {
     font-size: 1.6rem;
 
+  }
+}
+
+footer {
+  background: $bg;
+  color: $subheading;
+  width: 100%;
+  text-align: center;
+
+  .social-icons {
+    width: 100%;
+
+    i {
+      margin: 5px 20px;
+      cursor: pointer;
+    color: $heading;
+    transition: all 0.4s ease-in;
+
+      a {
+        color: $heading;
+        text-decoration: none;
+      }
+
+      &:nth-child(1) {
+        &:hover {
+          color: #00acee;
+          transform: translateY(-10px);
+        }
+      }
+
+      &:nth-child(2) {
+        &:hover {
+          color: $heading;
+          transform: translateY(-10px);
+        }
+      }
+    }
   }
 }
 
@@ -133,3 +167,8 @@ html {
   -webkit-animation: bg-pan-left 8s both;
   animation: bg-pan-left 8s both;
 }
+
+@import "./home";
+@import './about';
+@import './portofolio';
+@import './contact';

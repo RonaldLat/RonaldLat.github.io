@@ -73,6 +73,10 @@
         border: 1px solid $text;
         outline: none;
         transition: all 0.5s ease-in;
+        &:focus-within{
+            background: $mainColor;
+            cursor: pointer;
+        }
 
         p {
             position: absolute;

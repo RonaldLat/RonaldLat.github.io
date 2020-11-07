@@ -204,17 +204,23 @@
           </div>
           <div>
             <span><i class="fa fa-phone"></i></span>
-            <span>(+254) 712 973 489</span>
+            <span><a href="tel:+254712973489">(+254) 712 973 489</a></span>
           </div>
           <div>
             <span><i class="fa fa-envelope"></i></span>
-            <span><email>ronnlats@gmail.com</email></span>
+            <span><a href="mailto:youremailaddress?subject=I WANT A WEBSITE">ronnlats@gmail.com</a></span>
           </div>
         </div>
 
         <div class="contact-container up-animation delay">
           <div class="form-div">
             <h5>Have a question or want to work together</h5>
+          </div>
+          <div class="verification">
+            <p>Message has been sent. Thank You &#128522;</p>
+          </div>
+          <div class="warning">
+            <p>Please fill in all the fields &#9785;</p>
           </div>
           <form action="">
             <div>
@@ -229,10 +235,19 @@
             <div>
               <input
                 spellcheck="false"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+              />
+            </div>
+            <div>
+              <input
+                spellcheck="false"
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Enter email"
+                placeholder="Email"
               />
             </div>
             <div>
@@ -246,26 +261,23 @@
               ></textarea>
             </div>
             <div>
-              <button class="submit" type="submit"><p>Submit</p></button>
+              <button class="submit up-animation" type="submit"><p>Submit</p></button>
             </div>
           </form>
         </div>
       </section>
-      <!-- <footer>
+      <footer>
+        <div class="social-icons">
+          <a href="https://github.com/RonaldLat" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://twitter.com/Ron_Lats/status/1319389114014355458" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
 
         <div class="copyrights">
-          <span>Rotie Websense </span> <span>&copy2020</span>
+          <span>Ronald Otieno</span> <span>&copy2020</span>
         </div>
-      </footer> -->
+
+      </footer>
     </main>
-    <!-- 
-    <div class="social-buttons">
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fa fa-envelope"></i>
-      <i class="fab fa-whatsapp"></i>
-    </div> -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>

@@ -25,19 +25,42 @@ var messageRef = firebase.database().ref('messages');
 let submitBtn = document.querySelector('.submit');
 document.querySelector('form').addEventListener('submit', submitForm)
 
+
+
 //submit form
 function submitForm(e) {
     e.preventDefault()
 
     //get values
+    let verification = document.querySelector('.verification')
+    let warning = document.querySelector('.warning')
+
     let name = getInputVal('#name')
     let email = getInputVal('#email')
+    let phone = getInputVal('#phone')
     let time = firebase.database.ServerValue.TIMESTAMP
     let message = getInputVal('#message')
 
-    //save message
-    saveMessage(name, email, time, message)
-    document.querySelector('form').reset()
+    if (name == '' || email == '' || phone == '' || message == '') {
+    warning.style.display = 'block'
+
+    setTimeout(() => {
+    warning.style.display = 'none'
+        
+    }, 4000);
+    } else {
+        //save message
+        saveMessage(name, phone, email, time, message)
+        document.querySelector('form').reset()
+
+        verification.style.display = 'block'
+
+        setTimeout(() => {
+            verification.style.display = 'none'
+
+        }, 4000);
+    }
+
 }
 
 //function to get form values
@@ -46,14 +69,14 @@ function getInputVal(id) {
 }
 
 //save message to  firebase
-function saveMessage(name, email,time, message) {
+function saveMessage(name, phone, email, time, message) {
 
     let newMessageRef = messageRef.push();
     newMessageRef.set({
         name: name,
         email: email,
+        phone: phone,
         message: message,
         time: time
     });
 }
-

@@ -13,6 +13,7 @@
       <table style="width: 100%" id="ex-table">
         <tr id="tr">
           <th>Name</th>
+          <th>Phone</th>
           <th>Email</th>
           <th>Message</th>
           <th>Time</th>
@@ -58,13 +59,14 @@
               d.getMinutes();
             content += "<tr>";
             content += "<td>" + val.name + "</td>";
+            content += "<td>" + val.phone + "</td>";
             content += "<td>" + val.email + "</td>";
             content += "<td>" + val.message + "</td>";
             content += "<td>" + datestring + "</td>";
             let t = val.time;
-            console.log(new Date(t));
+            // console.log(new Date(t));
             content += "</tr>";
-            console.log(val.email);
+            // console.log(val.email);
           });
           let table = document.querySelector("#ex-table");
           table.innerHTML += content;
