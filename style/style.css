@@ -457,6 +457,7 @@ nav .nav-icons ul li i {
 .about {
   background: radial-gradient(#72757e, #16161a);
   overflow: hidden;
+  max-width: 100%;
   color: #dbcbcb;
   font-weight: 300;
   font-family: 'Cairo', sans-serif;
@@ -658,6 +659,7 @@ nav .nav-icons ul li i {
 .portofolio {
   background: #242629;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
