@@ -74,7 +74,8 @@ form {
                 background: rgba($liveColor, 0.1);
                 transform: translateY(-5px);
             }
-            &:focus-within{
+
+            &:focus-within {
                 background: $mainColor;
             }
         }
@@ -87,21 +88,24 @@ form {
 
 }
 
-.verification{
+.verification {
     color: rgb(73, 252, 73);
     width: 90%;
     // border: 1px solid rgb(73, 252, 73);
     display: none;
-    p{
+
+    p {
         padding: 5px;
     }
 }
-.warning{
+
+.warning {
     color: rgb(255, 49, 49);
     width: 90%;
     // border: 1px solid rgb(73, 252, 73);
     display: none;
-    p{
+
+    p {
         padding: 5px;
     }
 }
@@ -111,12 +115,54 @@ form {
     width: 95%;
     color: $bg;
     padding: 5px;
-    a{
+
+    a {
         text-decoration: none;
         color: $bg;
     }
 
     i {
         color: $bg;
+    }
+}
+
+// Media queries
+@media only screen and (min-width : 1200px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". .";
+
+        // width: 80%;
+        // justify-content: center;
+        // align-items: center;
+        .contact-details {
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.4);
+            position: relative;
+            z-index: 1;
+
+            .blur {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(1px);
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                // z-index: 1;
+            }
+        }
     }
 }

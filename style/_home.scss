@@ -1,5 +1,9 @@
 .home {
-  background-color: $bg;
+  // background-color: $bg;
+  background: #1488CC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
@@ -7,6 +11,8 @@
   height: 100vh;
   transition: transform 0.4s ease-in-out;
   overflow: hidden;
+  position: relative;
+
 
   img {
     max-width: 100%;
@@ -15,16 +21,33 @@
 
   }
 
+  .sidebar {
+    height: 98%;
+    width: 30%;
+    background: rgba($text, 0.25);
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    margin: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+
+  }
+
   .home-container {
     height: 100%;
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     position: relative;
     margin-top: 20px;
-    background: inherit;
+    background: transparent;
 
 
 
@@ -65,6 +88,7 @@
 
       }
     }
+
     .me {
       width: 220px;
       height: 220px;
@@ -181,7 +205,8 @@ nav {
 
     a {
       text-decoration: none;
-      color: $liveColor;
+      // color: $liveColor;
+      color: $livePale;
       font-family: 'Share Tech Mono', monospace;
       font-weight: 400;
     }
@@ -207,11 +232,13 @@ nav {
 
       li {
         overflow: hidden;
+        margin: -1px;
       }
 
       a {
         text-decoration: none;
-        color: $heading;
+        // color: $heading;
+        color: $livePale;
         position: relative;
         z-index: 1;
 
@@ -224,6 +251,7 @@ nav {
           z-index: -1;
           background: transparent;
           position: absolute;
+          // border-bottom: 2px solid $liveColor;
           border-bottom: 2px solid $liveColor;
           transform: translateX(-100%);
           transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
@@ -287,4 +315,34 @@ nav {
 .scale-in-center {
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@media only screen and (min-width : 1200px) {
+  .home {
+    // background: #4776E6;
+    // /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    // /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #8E54E9, #4776E6);
+    // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  }
+
+  .sidebar {
+    display: block !important;
+  }
+
+  .home-container {
+    width: 60%;
+    margin-left: 30%;
+
+  }
+
+  .cta-buttons {
+    display: none !important;
+  }
 }

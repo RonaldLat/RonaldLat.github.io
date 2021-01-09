@@ -99,7 +99,7 @@ function skillIn() {
 
 
 
-skillIn()
-aos()
+// skillIn()
+// aos()
 toggleNav();
 pageIndicator();

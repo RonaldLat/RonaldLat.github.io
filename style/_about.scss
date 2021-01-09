@@ -14,10 +14,13 @@ $overlay: #16161a;
   // height: 100%;
   // transform: translateX(0);
   transition: transform 0.4s ease-in-out;
+
   // z-index: 2;
   .skills-container {
     // height: 100vh;
     width: 100%;
+
+    
 
     .kind-of-sites {
       // height: 100%;
@@ -25,6 +28,7 @@ $overlay: #16161a;
       display: flex;
       flex-direction: column;
       align-items: center;
+
       h2 {
         color: rgb(255, 255, 255);
         // margin: 0 auto;
@@ -33,6 +37,7 @@ $overlay: #16161a;
     }
   }
 }
+
 .about-sites {
   height: 70%;
   // background: white;
@@ -74,6 +79,7 @@ $overlay: #16161a;
       font-size: 1.5rem;
 
     }
+
     p {
       color: $text;
       font-weight: 400;
@@ -90,6 +96,7 @@ $overlay: #16161a;
 
       // grid-area: 1/2/span 1/ span 2;
     }
+
     &:nth-child(2) {
       background: url("../images/mordern.png");
       background-size: cover;
@@ -98,6 +105,7 @@ $overlay: #16161a;
       background-blend-mode: overlay;
       // grid-area: 1/1/span 1/span 3;
     }
+
     &:nth-child(3) {
       background: url("../images/resoponsive.png");
       background-size: cover;
@@ -107,6 +115,7 @@ $overlay: #16161a;
       background-blend-mode: overlay;
       // grid-area: 1/1/span 1/span 3;
     }
+
     &:nth-child(4) {
       background: url("../images/dynamic.png");
       background-size: cover;
@@ -117,42 +126,57 @@ $overlay: #16161a;
     }
   }
 }
+
 .skills {
   color: #fffffe;
   background: transparent;
   padding-top: 4px;
-  margin-bottom: 80px;
-
+  // margin-bottom: 80px;
+  position: relative;
   // margin: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   grid-gap: 5px;
-  grid-row-gap:30px ;
+  grid-row-gap: 30px;
   width: 95%;
   justify-content: space-around;
   align-items: flex-start;
   position: relative;
   text-align: left;
   // margin-left: 80%;
-  transition: 0.5s ease-in ;
-  transform: translateY(50%);
+  transition: 0.5s ease-in;
+  // transform: translateY(50%);
+
+
 
   div {
     // margin: 5px;
     // height: 50px;
     // background: rgb(150, 150, 150);
     // background: #16161a;
+    // background: rgba( $subheading, 0.15 );
+    // box-shadow: 0 8px 32px 0 rgba( $bg, 0.37 );
+    // backdrop-filter: blur( 1.5px );
+    // -webkit-backdrop-filter: blur( 1.5px );
+    // border-radius: 10px;
+    // padding: 5px;
+
     text-align: center;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    img{
+
+    img {
       width: 100%;
       height: 60px;
+    }
+     
+    p{
+      display: inline-block;
     }
 
     &:nth-child(5) {
@@ -161,20 +185,33 @@ $overlay: #16161a;
 
 
     }
+
     &:nth-child(6) {
       grid-area: 2/3 / span 2 / span 2;
       // background: rgb(0, 255, 76);
     }
   }
 }
+
 .about-acive {
   transform: translateX(0);
 }
+
+.skills-hold{
+  background: rgba( $subheading, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( $bg, 0.37 );
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .skills-heading {
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   // color: rgb(108, 184, 98);
-  color:$mainColor;
+  color: $mainColor;
   text-shadow: 1px 1px 2px #010101;
   padding: 10px;
   font-size: 1.2rem;
@@ -183,7 +220,38 @@ $overlay: #16161a;
   text-align: center;
   letter-spacing: 2px;
 
-  i{
+  i {
     color: $liveColor;
+  }
+}
+
+// Media queries
+
+@media only screen and (min-width : 1200px) {
+  .about{
+    // width: 70%;
+    // margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". .";
+
+    // .skills-container{
+    //   grid-area: span 2;
+    // }
+  }
+  .kind-of-sites{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". .";
+
+  }
+  .skills-hold{
+    width: 90%;
   }
 }

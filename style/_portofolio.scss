@@ -1,5 +1,5 @@
 .portofolio {
-    background: #242629;
+    // background: #242629;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -8,16 +8,20 @@
 
     // z-index: 2;
     .portofolio-container {
-        width: 100%;
+        // width: 90%;
         // height: 90%;
         display: grid;
-        grid-template-columns: 1fr;
-        // grid-template-rows: repeat(auto,1fr)  ;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
+        grid-template-rows: repeat(auto,1fr)  ;
         grid-gap: 20px;
+        // justify-content: center;
+        // align-items: center;
+        margin: 0 auto;
 
         .portofolio-img img {
             filter: drop-shadow(0.1rem 0.1rem 0.1rem #72757e);
-            max-width: 100%;
+            // max-width: 100%;
+            width: 300px;
             height: auto;
 
         }
@@ -36,6 +40,8 @@
 
 .portofolio-container>div {
     // background: rgba(black, .5);
+    width: 100%;
+    height: 400px;
     background: #16161a;
     display: flex;
     flex-direction: column;
@@ -44,9 +50,8 @@
     text-align: center;
     padding: 5px;
     box-shadow: 0 10px 10px -5px;
-    // &:nth-child(3){
-    //     grid-area: 2/1/span 1/span 2;
-    // }
+    // margin: 0 auto;
+
 
 
 }
@@ -69,12 +74,13 @@
         // ;
 
         // border-radius: 15px;
-        height: 40px;
-        width: 25%;
+        height: 35px;
+        width: 20%;
         border: 1px solid $text;
         outline: none;
         transition: all 0.5s ease-in;
-        &:focus-within{
+
+        &:focus-within {
             background: $mainColor;
             cursor: pointer;
         }
@@ -84,15 +90,46 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 1.4rem;
+            font-size: 1.2rem;
+            letter-spacing: 5px;
         }
+
         &:hover {
             background: rgba($liveColor, 0.1);
             transform: translateY(-5px);
-          }
+        }
     }
 }
 
 .portofolio-acive {
     transform: translateX(0);
+}
+
+// Media queries
+
+@media only screen and (min-width : 1200px) {
+    .portofolio {
+        // margin: 0 auto;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". .";
+        // margin: 0 auto;
+
+    }
+
+    .portofolio-container {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr ;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". .";
+        // background-color: yellow;
+        width: 90%;
+   
+    }
+
 }
