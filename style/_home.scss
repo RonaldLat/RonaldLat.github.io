@@ -1,9 +1,14 @@
 .home {
   // background-color: $bg;
-  background: #1488CC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
+  background: #757F9A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #D7DDE8, #757F9A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
@@ -24,17 +29,81 @@
   .sidebar {
     height: 98%;
     width: 30%;
-    background: rgba($text, 0.25);
-    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    background: rgba(0, 78, 124, 0.60);
+    backdrop-filter: blur(3.0px);
+    -webkit-backdrop-filter: blur(3.0px);
+    border-radius: 10px;
     border-radius: 10px;
     margin: 5px;
     position: absolute;
     top: 0;
     left: 0;
+    position: sticky;
     z-index: 1;
     display: none;
+
+    .sidebar-container {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "."
+        "."
+        ".";
+
+      .sidebar-cta {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 10px 20px;
+        background: black;
+
+
+        .btn {
+          padding: 12px 48px;
+          
+
+          color: #ffffff;
+          background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+          background-position: 0;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: shine 3s infinite linear;
+          animation-fill-mode: forwards;
+          -webkit-text-size-adjust: none;
+          font-weight: 600;
+          font-size: 16px;
+          text-decoration: none;
+          white-space: nowrap;
+        }
+
+        @keyframes shine {
+          0% {
+            background-position: 0;
+          }
+
+          60% {
+            background-position: 180px;
+          }
+
+          100% {
+            background-position: 180px;
+          }
+        }
+
+
+
+
+
+      }
+    }
+
 
   }
 
@@ -60,12 +129,12 @@
 
 
       .what-i-do p {
-        color: #fffffe;
+        // color: #fffffe;
+        color: $bg;
         font-size: 1.8rem;
         font-family: 'Cairo', sans-serif;
         font-weight: 300;
-
-        // line-height: 2.2rem;
+        text-align: center;
 
       }
 
@@ -75,17 +144,55 @@
         color: $liveColor;
         font-weight: 600;
         font-family: 'Cairo', sans-serif;
+        display: none;
       }
 
       .who {
-        font-size: 1.7rem;
         // line-height: auto;
-        background: -webkit-linear-gradient(left, #fffffe, $liveColor);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: 'Cairo', sans-serif;
-        font-weight: 600;
+        // background: -webkit-linear-gradient(left, #c2c2c2, $liveColor);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // background: $liveColor;
+        padding: 40px 20px;
+        border-radius: 83% 17% 87% 13% / 31% 70% 30% 69%;
 
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+
+        p {
+          font-size: 1.7rem;
+          font-family: 'Cairo', sans-serif;
+          font-weight: 600;
+          color: #ffffff;
+
+          &:before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+          }
+
+
+        }
+
+
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
       }
     }
 
@@ -136,7 +243,7 @@
       .separator {
         width: 1px;
         height: 100%;
-        background: linear-gradient(to top, $liveColor, black);
+        background: linear-gradient(to bottom, $liveColor, #337bae);
       }
 
       button {
@@ -147,7 +254,7 @@
         justify-content: center;
         margin-right: 10px;
         margin-left: 10px;
-        color: rgb(139, 139, 139);
+        color: $bg;
         background: transparent;
         border: 3px solid $liveColor;
         border-radius: 1rem;
@@ -197,7 +304,12 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 3;
-  background: rgba($bg, 0.7);
+  // background: rgba($bg, 0.7);
+  background: rgba(0, 78, 124, 0.60);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.0px);
+  -webkit-backdrop-filter: blur(3.0px);
+  border-radius: 10px;
 
   .logo {
     padding: 5px;
@@ -252,7 +364,7 @@ nav {
           background: transparent;
           position: absolute;
           // border-bottom: 2px solid $liveColor;
-          border-bottom: 2px solid $liveColor;
+          border-bottom: 2px solid $livePale;
           transform: translateX(-100%);
           transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
 
@@ -325,10 +437,12 @@ nav {
     // /* Chrome 10-25, Safari 5.1-6 */
     // background: linear-gradient(to right, #8E54E9, #4776E6);
     // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #1488CC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #757F9A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D7DDE8, #757F9A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
 
@@ -344,5 +458,21 @@ background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, F
 
   .cta-buttons {
     display: none !important;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  .me {
+    width: 440px !important;
+    height: 440px !important;
+
+
+    img {
+
+      height: 100%;
+      width: 100%;
+    }
   }
 }

@@ -1,7 +1,12 @@
 $overlay: #16161a;
 
 .about {
-  background: radial-gradient(#72757e, #16161a);
+  // background: radial-gradient(#72757e, #16161a);
+  background: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   overflow: hidden;
   max-width: 100%;
 
@@ -77,6 +82,7 @@ $overlay: #16161a;
       color: $subheading;
       letter-spacing: 2px;
       font-size: 1.5rem;
+      font-weight: 300;
 
     }
 
@@ -212,13 +218,16 @@ $overlay: #16161a;
   margin-bottom: 20px;
   // color: rgb(108, 184, 98);
   color: $mainColor;
-  text-shadow: 1px 1px 2px #010101;
+  // text-shadow: 1px 1px 2px #010101;
+  border-bottom: solid 1px black;
+  width: fit-content;
   padding: 10px;
   font-size: 1.2rem;
   font-weight: 600;
   // font-family: sans-serif;
   text-align: center;
   letter-spacing: 2px;
+  margin-left: 20px;
 
   i {
     color: $liveColor;

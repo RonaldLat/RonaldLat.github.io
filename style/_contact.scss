@@ -1,5 +1,13 @@
 .contact {
-    background: #242629;
+    // background: #242629;
+    background: #757F9A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #232526, #757F9A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #232526, #757F9A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     color: #72757e;
     font-family: 'Cairo', sans-serif;
     padding-bottom: 20px;
@@ -22,14 +30,15 @@ form {
         input,
         textarea {
             width: 100%;
-            height: 45px;
+            height: 10px;
             margin-bottom: 5px;
             resize: none;
             outline: none;
             background: #16161a;
             border: none;
-            padding: 2rem 1rem;
+            padding: 1rem 1rem;
             transition: all .4s ease;
+            border-radius: 5px;
 
             &::placeholder {
                 color: #94a1b2;
@@ -43,15 +52,15 @@ form {
         }
 
         textarea {
-            height: 140px;
+            height: 160px;
         }
 
         button {
             width: 100%;
             height: 45px;
-            background: transparent;
+            background: $liveColor;
             border: 4px solid $liveColor;
-            border-radius: 1rem;
+            border-radius: 5px;
             // margin-left: 50%;
             color: $heading;
             // border: none;
@@ -115,6 +124,10 @@ form {
     width: 95%;
     color: $bg;
     padding: 5px;
+    background: rgba(0, 78, 124, 0.60);
+    backdrop-filter: blur(3.0px);
+    -webkit-backdrop-filter: blur(3.0px);
+    border-radius: 10px;
 
     a {
         text-decoration: none;
@@ -146,23 +159,13 @@ form {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.4);
-            position: relative;
-            z-index: 1;
+            justify-content: space-around;
+            // glassmorphism bg
+            background: rgba(0, 78, 124, 0.60);
+            backdrop-filter: blur(3.0px);
+            -webkit-backdrop-filter: blur(3.0px);
+            border-radius: 10px;
 
-            .blur {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(255, 255, 255, 0.4);
-                backdrop-filter: blur(1px);
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                // z-index: 1;
-            }
         }
     }
 }
