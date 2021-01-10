@@ -8,6 +8,7 @@
 // $liveColor:#07575b;
 
 $liveColor: #004E7C;
+$liveDark: #00304d;
 $livePale: #d0e1f9;
 
 // $mainColor:#dcdcdc;
@@ -52,9 +53,9 @@ html {
     // width: 100%;
     main {
       width: 100%;
-      //   position: relative;
+        position: relative;
       overflow: hidden;
-      
+
     }
 
     section {
@@ -142,14 +143,14 @@ footer {
 // .left {
 //   transform: translateY(25%);
 
-//   transition: all 0.5s ease-in;
+//   transition: all 0.5s cubic-bezier(1, .99, .06, .98);
 // }
 
 // .right {
 //   // transform: translateY(50%);
 //   opacity: 0%;
 
-//   transition: all 0.5s ease-in;
+//   transition: all 0.5s cubic-bezier(1, .99, .06, .98);
 //   transform: translateX(25%);
 // }
 
@@ -160,7 +161,7 @@ footer {
 // .up-animation {
 //   // opacity: 0%;
 //   // transform: translateX(-50%);
-//   transition: 0.8s ease-in;
+//   transition: 0.8s cubic-bezier(1,.99,.06,.98);
 //   transform: translateY(25%);
 // }
 
@@ -200,6 +201,8 @@ footer {
   -webkit-animation: bg-pan-left 8s both;
   animation: bg-pan-left 8s both;
 }
+
+
 
 // Media queries
 @media only screen and (min-width : 1200px) {

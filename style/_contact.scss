@@ -111,7 +111,6 @@ form {
 .warning {
     color: rgb(255, 49, 49);
     width: 90%;
-    // border: 1px solid rgb(73, 252, 73);
     display: none;
 
     p {
@@ -122,12 +121,26 @@ form {
 .contact-details {
     background: $subheading;
     width: 95%;
+    // height: ;
     color: $bg;
     padding: 5px;
     background: rgba(0, 78, 124, 0.60);
     backdrop-filter: blur(3.0px);
     -webkit-backdrop-filter: blur(3.0px);
     border-radius: 10px;
+
+    div {
+        margin: 10px 0;
+        padding: 20px 10px;
+        width: fit-content;
+        transition: 0.5s ease;
+
+        &:hover {
+            background: rgba($livePale, 0.4);
+            border-radius: 5px;
+ 
+        }
+    }
 
     a {
         text-decoration: none;
@@ -149,9 +162,6 @@ form {
         grid-template-areas:
             ". .";
 
-        // width: 80%;
-        // justify-content: center;
-        // align-items: center;
         .contact-details {
             width: 80%;
             height: 100%;

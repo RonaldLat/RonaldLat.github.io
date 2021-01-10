@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#16161a" />
-    <title>Ron the web developer</title>
+    <title>Ronald Otieno - Web developer.</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap"
       rel="stylesheet"
@@ -23,9 +23,12 @@
   <body>
     <main>
       <nav>
-        <div class="logo">
+        <div class="logo" onclick="window.location='#'">
           <a href="#home">
-            <i class="fa fa-terminal"></i>
+            <!-- <i class="fa fa-terminal"></i> -->
+            <div class="my-avatar">
+              <img src="./favicon.png" alt="">
+            </div>
 
             Ronald_Otieno
           </a>
@@ -63,13 +66,40 @@
       <section class="home" id="home">
         <div class="sidebar">
           <div class="sidebar-container">
+            <!-- <div></div> -->
             <div class="sidebar-cta">
               <a href="#portofolio" class="scale-in-center link">
                 <button class="btn"><span>view my work</span></button></a
               >
               <a href="#contact" class="scale-in-center link"
-                ><button class="btn"><span>contact me</span></button></a
+                ><button class="btn btn-2"><span>contact me</span></button></a
               >
+            </div>
+            <div class="testimonials">
+              <h2>Testimonials</h2>
+              <div class="reviews">
+                <div class="card">
+                  <h3 class="person">Milly Cakes</h3>
+                  <q class="message">
+                    I have received a tremendous increase of customers ever
+                    since I invested in a website. I advice any other business
+                    owner to do the same.
+                  </q>
+                </div>
+                <div class="card">
+                  <h3 class="person">Ronald Otieno</h3>
+                  <q class="message">
+                    A huge percentage of my clients come from this platform.
+                    Talk of practicing what you preach :)
+                  </q>
+                </div>
+                <div class="card">
+                  <h3 class="person">James</h3>
+                  <q class="message">
+                    Online presence is essential for any business. Period!
+                  </q>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -77,17 +107,16 @@
         <div class="home-container">
           <div class="about-me">
             <div class="who">
-              <p>Ronald Otieno is my name, and coding is my game.</p>
+              <p>Ronald Otieno is my name, <br> and coding is my game.</p>
             </div>
             <div class="what-i-do">
               <p>
-                I provide solutions for personal and business <br />
-                real-world problems.
+                I help businesses and individuals <br> acquire online presence.
               </p>
             </div>
           </div>
           <div class="me">
-            <img src="/images/lat2-smaller.png" alt="Ronald Otieno's photo" />
+            <img src="/images/ron21.png" alt="Ronald Otieno's photo" />
           </div>
 
           <div class="cta-container">
@@ -131,7 +160,7 @@
               </div>
               <div class="right delay boxes">
                 <h3>Dynamic</h3>
-                <p>Static websites are silver, dynamic pages are gold.</p>
+                <p>Why have a static website when you have a dynamic life?</p>
               </div>
             </div>
 
@@ -178,39 +207,45 @@
         </div>
         <div class="portofolio-container">
           <div class="up-animation delay">
-            <h3>Dudi Resort</h3>
-            <p>A resort Website with hotel reservation system</p>
+            <div class="portofolio-hover">
+              <h3>Dudi Resort</h3>
+              <p>A resort Website with hotel reservation system</p>
+              <div class="visit">
+                <button>
+                  <a
+                    href="https://boring-tesla-0143e9.netlify.app/"
+                    target="_blank"
+                    ><p>visit</p></a
+                  >
+                </button>
+              </div>
+            </div>
+
             <div class="portofolio-img">
               <img src="/images/dr_portofolio.png" alt="" />
-            </div>
-            <div class="visit">
-              <button>
-                <a
-                  href="https://boring-tesla-0143e9.netlify.app/"
-                  target="_blank"
-                  ><p>visit</p></a
-                >
-              </button>
             </div>
           </div>
 
           <div class="up-animation">
-            <h3>Milly Cakes</h3>
-            <p>
-              Home bakery business website where customers can make orders and
-              do payments
-            </p>
+            <div class="portofolio-hover">
+              <h3>Milly Cakes</h3>
+              <p>
+                Home bakery business website where customers can make orders and
+                do payments
+              </p>
+              <div class="visit">
+                <button>
+                  <a
+                    href="https://kind-almeida-bdcbd0.netlify.app/#products"
+                    target="_blank"
+                    ><p>visit</p></a
+                  >
+                </button>
+              </div>
+            </div>
+
             <div class="portofolio-img">
               <img src="/images/mc_portofolio.png" alt="" />
-            </div>
-            <div class="visit">
-              <button>
-                <a
-                  href="https://kind-almeida-bdcbd0.netlify.app/#products"
-                  target="_blank"
-                  ><p>visit</p></a
-                >
-              </button>
             </div>
           </div>
         </div>

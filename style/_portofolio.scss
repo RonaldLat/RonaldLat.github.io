@@ -13,7 +13,7 @@
         // height: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
-        grid-template-rows: repeat(auto,1fr)  ;
+        grid-template-rows: repeat(auto, 1fr);
         grid-gap: 20px;
         // justify-content: center;
         // align-items: center;
@@ -54,6 +54,35 @@
     padding: 5px;
     box-shadow: 0 10px 10px -5px;
     // margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    .portofolio-hover {
+        background: rgba($liveColor, 0.45);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        // border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+        opacity: 0;
+        transition: ease-out 0.5s;
+        p , h3{
+        color: $livePale;
+        background-blend-mode: overlay;
+        }
+        &:hover {
+            opacity: 1;
+
+        }
+    }
 
 
 
@@ -69,31 +98,26 @@
 
     button {
         background: $bg;
-        position: relative;
-        // box-shadow: inset 5px 5px 5px rgba(black, 0.2)
-        //     // inset -5px -5px 15px rgba(white, 0.1),
-        //     // 5px 5px 5px  rgba(black, 0.3),
-        //     // -5px -5px 15px rgba(white, 0.1)
-        // ;
-
-        // border-radius: 15px;
         height: 30px;
-        width: 15%;
+        width: fit-content;
         border: 1px solid $text;
         outline: none;
         transition: all 0.5s ease-in;
-        padding: 2px;
+        padding: 2px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:focus-within {
             background: $mainColor;
             cursor: pointer;
         }
 
+        a{
+            text-decoration: none;
+        }
+
         p {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             font-size: 1rem;
             letter-spacing: 4px;
         }
@@ -126,14 +150,14 @@
 
     .portofolio-container {
         display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas:
             ". .";
         // background-color: yellow;
         width: 90%;
-   
+
     }
 
 }

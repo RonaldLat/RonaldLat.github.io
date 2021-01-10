@@ -19,6 +19,8 @@ firebase.analytics();
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 //Reference message collection
+let verification = document.querySelector('.verification')
+
 
 var messageRef = firebase.database().ref('messages');
 
@@ -32,7 +34,6 @@ function submitForm(e) {
     e.preventDefault()
 
     //get values
-    let verification = document.querySelector('.verification')
     let warning = document.querySelector('.warning')
 
     let name = getInputVal('#name')
@@ -42,23 +43,17 @@ function submitForm(e) {
     let message = getInputVal('#message')
 
     if (name == '' || email == '' || phone == '' || message == '') {
-    warning.style.display = 'block'
+        warning.style.display = 'block'
 
-    setTimeout(() => {
-    warning.style.display = 'none'
-        
-    }, 4000);
+        setTimeout(() => {
+            warning.style.display = 'none'
+
+        }, 4000);
     } else {
         //save message
         saveMessage(name, phone, email, time, message)
-        document.querySelector('form').reset()
 
-        verification.style.display = 'block'
 
-        setTimeout(() => {
-            verification.style.display = 'none'
-
-        }, 4000);
     }
 
 }
@@ -71,12 +66,24 @@ function getInputVal(id) {
 //save message to  firebase
 function saveMessage(name, phone, email, time, message) {
 
+
     let newMessageRef = messageRef.push();
     newMessageRef.set({
-        name: name,
-        email: email,
-        phone: phone,
-        message: message,
-        time: time
-    });
+            name: name,
+            email: email,
+            phone: phone,
+            message: message,
+            time: time
+        })
+        .then(() => {
+
+            document.querySelector('form').reset()
+
+            verification.style.display = 'block'
+
+            setTimeout(() => {
+                verification.style.display = 'none'
+
+            }, 4000);
+        });
 }

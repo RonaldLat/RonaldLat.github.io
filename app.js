@@ -1,6 +1,3 @@
-
-
-
 function toggleNav() {
   let options = {
     threshold: 0.2,
@@ -90,11 +87,12 @@ function skillIn() {
 
   // observer.observe(skill);
   // observer.observe(skillHeader);
-  element.forEach(el=>{
+  element.forEach(el => {
     observer.observe(el)
   })
 
 }
+
 
 
 
