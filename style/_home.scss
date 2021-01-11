@@ -13,6 +13,8 @@
   background-position: center;
   width: 100%;
   height: 100vh;
+  min-height: -webkit-fill-available;
+
   transition: transform 0.4s ease-in-out;
   overflow: hidden;
   position: relative;
@@ -490,6 +492,10 @@ nav {
     }
   }
 
+  .testimonials-mobile{
+    display: none !important;
+  }
+
   .testimonials {
 
     // background: #ccc;
@@ -538,6 +544,49 @@ nav {
           
         }
       }
+    }
+  }
+}
+.testimonials-mobile{
+  background: rgba($liveColor, 0.2);
+}
+.reviews {
+  // background: #ee7752;
+  // display: fle
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr 1fr;
+  grid-gap: 10px;
+  height: 100%;
+  width: 100%;
+  // background: transparent;
+
+  // overflow: scroll;
+  // overflow: hidden;
+
+  .card {
+    // width: 90%;
+    height: 100%;
+    padding: 10px;
+    // border :2px solid black;
+    text-align: right;
+    background: transparent;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Cairo', sans-serif;
+
+    h3 {
+      font-weight: 500;
+      color: $livePale;
+    }
+
+    q {
+      font-weight: 100;
+      color: rgb(145, 145, 145);
+      
     }
   }
 }
