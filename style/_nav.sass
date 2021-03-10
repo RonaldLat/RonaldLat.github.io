@@ -1,0 +1,71 @@
+nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: auto
+    z-index: 30
+    display: flex
+    align-items: center
+    background-color: #0A192F
+    opacity: 0.8
+    // justify-content: center
+    justify-content: space-between
+    .logo
+        color: #66ffda
+        height: 2rem
+        width: 3rem
+        margin: 0.6rem 0
+        // margin-left: 1rem
+        position: relative
+        &::before
+            content: "R"
+            position: absolute
+            color: #66ffda
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        #logo
+            height: 100%
+            width: 100%
+    .burger
+        background: yellow
+        // flex-grow: 2
+        display: none
+
+    .nav-items
+        // flex-grow: 1
+        width: auto
+        font-size: 0.7rem
+        font-family: 'Stick', sans-serif
+        // display: flex
+        // align-items: center
+        // justify-content: center
+
+        ul
+            width: 100%
+
+            display: flex
+            align-items: center
+            // justify-content: center
+            justify-content: space-between
+            text-align: center
+            li
+                padding: 0.5rem
+                list-style-type: none
+                width: 100%
+                // border: 1px solid #64fdda
+                margin-left: 0.2rem
+                text-align: center
+                a
+                    text-decoration: none
+                    text-transform: uppercase
+                    color: #ccd6f6
+
+                    transition: color 0.5s ease
+                    display: flex
+                    .nav-number
+                        color: #66ffda
+                    &:hover
+                        color: #66ffda
+                        font-family: 'Stick', sans-serif
