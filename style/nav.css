@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=nav.css.map */
+nav {
+  background: cyan;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 200;
+}
+/*# sourceMappingURL=nav.css.map */
