@@ -1,21 +1,32 @@
+@mixin hover-animate-bg
+    &:hover
 
+        transform: translateY(-5px)
+        background: #66ffda1a
+@mixin hover-animate-color
+    &:hover
+        transform: translateY(-5px)
+        color: #66ffda
 *
     margin: 0
     box-sizing: border-box
     padding: 0
+    // font-family: 'Play', sans-serif
 
 html
     // min-height: -webkit-fill-available
-    width: 100%
+    width: 100vw
     min-width: 100%
+    max-width: 100vw
     margin: 0
     padding: 0
     overflow-x: hidden
     background-color: #0A192F
+    p
+        max-width: 80ch
 
 body
-    padding: 0 0.5rem
-    // padding: 0
+    // margin: 0
     box-sizing: border-box
     width: 100%
     min-width: 100vw
@@ -30,9 +41,8 @@ body
     font-family: 'Poppins', sans-serif
     position: relative
 
-
     main
-        padding: 0 1rem
+        padding: 0 2rem
         section
             padding-bottom: 3rem
     aside
@@ -49,6 +59,7 @@ body
         align-items: center
         z-index: 3
         display: none
+        font-family: 'Play', sans-serif
 
         .aside-icons
             display: flex
@@ -56,6 +67,9 @@ body
             li
                 list-style: none
                 padding-bottom: 1rem
+                transition: color 0.5s ease, transform 0.5s ease-in-out
+                cursor: pointer
+                @include hover-animate-color
         .empty-flex
             flex: 1
         .horizontal-line
@@ -71,6 +85,9 @@ body
             writing-mode: vertical-rl
             letter-spacing: 0.1em
             padding-bottom: 1rem
+            transition: color 0.5s ease, transform 0.5s ease-in-out
+            cursor: pointer
+            @include hover-animate-color
 
     .section-heading
         color: #ccd6f6
@@ -78,13 +95,13 @@ body
         align-items: flex-start
         width: 100%
         padding-bottom: 2rem
-        // font-size: 1.1rem
+        letter-spacing: 2px
         &::before
             // content: 
         .heading-number
             color: #66ffda
             padding-right: 1rem
-            font-family: 'Stick', sans-serif
+            font-family: 'Play', sans-serif
 
 @media (min-width: 480px)
     body
@@ -93,8 +110,6 @@ body
         grid-template-rows: 1fr
         aside
             display: flex
-
-
 
 // @import "preloader"
 @import "contact"

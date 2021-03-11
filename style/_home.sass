@@ -6,33 +6,7 @@
     .home-container
         height: 100%
         width: 100%
-        .hero-image
-            height: 200px
-            width: 200px
-            width: fit-content
-            position: relative
-            margin-bottom: 1rem
-            margin-top: 1rem
-            position: relative
-            z-index: 1
 
-            &::before
-                content: ""
-                width: 100%
-                height: 100%
-                position: absolute
-                top: 10%
-                left: 10%
-                border: 1px solid #64ffda
-                // background: red
-                z-index: -1
-            img
-                height: 100%
-                width: auto
-                background-color: #64ffda
-                // background-color: #0A192F
-                border: 1px solid #64ffda
-                object-fit: cover
 
         .about-me
             display: flex
@@ -40,24 +14,34 @@
             justify-content: space-around
             .greeting
                 color: #64ffda
+                letter-spacing: 1px
+
             .my-name
                 color: #ccd6f6
                 text-transform: uppercase
+                margin: 3rem 0
+                font-size: clamp(40px, 8vw, 80px)
+                letter-spacing: 1px
+                font-family: 'Play', sans-serif
                 margin-top: 1rem
-                // font-size: 1.3125rem
-                font-size: 3rem
-                font-family: 'Stick', sans-serif
-                margin-top: 1rem
+                line-height: 1.2
 
             .catch-phrase
                 color: #8892b0
                 // font-size: 1.25rem
-                font-size: 3rem
-
+                font-size: clamp(40px, 8vw, 80px)
+                font-weight: 600
+                font-family: 'Play', sans-serif
+                letter-spacing: 1px
                 padding: 1rem 0
             .brief-intro
                 font-size: 1.3rem
                 margin: 2rem 0
+                font-family: 'Play', sans-serif
+                font-weight: 300
+                line-height: 1.2
+                letter-spacing: 1px
+                max-width: 80ch
 
             .cta
                 margin: 4rem 0
@@ -71,10 +55,10 @@
                     align-items: center
                     justify-content: center
                     border-radius: 0.4rem
-                    transition: background 0.5s ease
+                    cursor: pointer
+                    transition: background 0.5s ease, transform 0.5s ease-in-out
+                    @include hover-animate-bg
 
-                    &:hover
-                        background: #64ffda1a
                     span
                         text-transform: capitalize
                         font-size: 1.2rem

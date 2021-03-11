@@ -26,6 +26,10 @@ nav
             top: 50%
             left: 50%
             transform: translate(-50%, -50%)
+            margin: 0
+            padding: 0
+            font-family: 'Play', sans-serif
+
         #logo
             height: 100%
             width: 100%
@@ -38,7 +42,8 @@ nav
         // flex-grow: 1
         width: auto
         font-size: 0.7rem
-        font-family: 'Stick', sans-serif
+        font-family: 'Play', sans-serif
+        font-weight: 400
         // display: flex
         // align-items: center
         // justify-content: center
@@ -58,15 +63,21 @@ nav
                 // border: 1px solid #64fdda
                 margin-left: 0.2rem
                 text-align: center
+                transition: color 0.5s ease, transform 0.5s ease-in-out
+                cursor: pointer
                 a
                     text-decoration: none
-                    text-transform: uppercase
+                    text-transform: capitalize
                     color: #ccd6f6
-
-                    transition: color 0.5s ease
+                    letter-spacing: 1px
+                    font-size: 1rem
+                    transition: color 0.5s ease, transform 0.5s ease-in-out
                     display: flex
+                    @include hover-animate-color
+
                     .nav-number
                         color: #66ffda
-                    &:hover
-                        color: #66ffda
-                        font-family: 'Stick', sans-serif
+                        margin-right: 2px
+                        transition: color 0.5s ease, transform 0.5s ease-in-out
+                        cursor: pointer
+                        @include hover-animate-color

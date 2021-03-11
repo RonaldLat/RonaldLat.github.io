@@ -11,7 +11,7 @@
 
     position: relative
     padding-left: 1rem
-    padding-bottom: 
+    padding-bottom:
     padding-right: 3rem
 
     &::before
@@ -26,8 +26,38 @@
       display: none
 .detailed-description
   width: 100%
+  display: flex
+  flex-direction: column
   p
     padding-bottom: 1rem
+
+  .hero-image
+    height: 200px
+    width: 200px
+    width: fit-content
+    position: relative
+    margin: 2rem 0
+    margin-bottom: 3rem
+    position: relative
+    z-index: 1
+
+    &::before
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 10%
+      left: 10%
+      border: 1px solid #64ffda
+                // background: red
+      z-index: -1
+    img
+      height: 100%
+      width: auto
+      background-color: #64ffda
+                // background-color: #0A192F
+      border: 1px solid #64ffda
+      object-fit: cover
 
 .arsenal
   // height: 20px
