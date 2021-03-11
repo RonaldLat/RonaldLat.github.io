@@ -20,6 +20,11 @@ html p {
   max-width: 80ch;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -37,7 +42,7 @@ body {
 }
 
 body main {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 body main section {
@@ -547,7 +552,7 @@ nav .nav-items ul li {
   padding: 0.5rem;
   list-style-type: none;
   width: 100%;
-  margin-left: 0.2rem;
+  margin-left: 0.1rem;
   text-align: center;
   -webkit-transition: color 0.5s ease, -webkit-transform 0.5s ease-in-out;
   transition: color 0.5s ease, -webkit-transform 0.5s ease-in-out;
