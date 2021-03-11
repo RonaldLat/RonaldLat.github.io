@@ -46,7 +46,7 @@ body main {
 }
 
 body main section {
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 
 body aside {
@@ -218,7 +218,7 @@ body .section-heading .heading-number {
 
 .contact-form-container {
   margin-top: 4rem;
-  border: 1px solid #112240;
+  border-top: 1px solid #112240;
   border-radius: 2px;
   margin-bottom: 2rem;
   padding: 1rem 0.1rem;
@@ -278,6 +278,7 @@ body .section-heading .heading-number {
   padding: 0.5rem 0;
   font-size: 1.1rem;
   text-align: justify;
+  color: #66ffda;
 }
 
 #contact-form {
@@ -382,7 +383,7 @@ body .section-heading .heading-number {
 .home {
   height: auto;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 10rem;
 }
 
 .home .home-container {
@@ -410,12 +411,11 @@ body .section-heading .heading-number {
 .home .home-container .about-me .my-name {
   color: #ccd6f6;
   text-transform: uppercase;
-  margin: 3rem 0;
+  margin: 1.2rem 0;
   font-size: clamp(40px, 8vw, 80px);
   letter-spacing: 1px;
   font-family: 'Play', sans-serif;
-  margin-top: 1rem;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .home .home-container .about-me .catch-phrase {
@@ -424,12 +424,13 @@ body .section-heading .heading-number {
   font-weight: 600;
   font-family: 'Play', sans-serif;
   letter-spacing: 1px;
-  padding: 1rem 0;
+  padding-bottom: 1.2rem;
+  line-height: 1.1;
 }
 
 .home .home-container .about-me .brief-intro {
   font-size: 1.3rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   font-family: 'Play', sans-serif;
   font-weight: 300;
   line-height: 1.2;
@@ -439,7 +440,7 @@ body .section-heading .heading-number {
 
 .home .home-container .about-me .cta {
   margin: 4rem 0;
-  margin-bottom: 10rem;
+  margin-bottom: 14rem;
 }
 
 .home .home-container .about-me .cta .cta-button {
@@ -546,6 +547,17 @@ nav .nav-items ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
+}
+
+nav .nav-items ul #contact {
+  border: 1px solid #66ffda;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+nav .nav-items ul #contact a {
+  color: #66ffda;
+  font-size: 0.9rem;
 }
 
 nav .nav-items ul li {
