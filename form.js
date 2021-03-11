@@ -43,10 +43,11 @@ function submitForm(e) {
     let message = getInputVal('#message')
 
     if (name == '' || email == '' || phone == '' || message == '') {
-        warning.style.display = 'block'
+        warning.style.transform = 'translateX(0)'
 
         setTimeout(() => {
-            warning.style.display = 'none'
+            warning.style.transform = 'translateX(-100%)'
+
 
         }, 4000);
     } else {
@@ -79,10 +80,12 @@ function saveMessage(name, phone, email, time, message) {
 
             document.querySelector('form').reset()
 
-            verification.style.display = 'block'
+            verification.style.transform = 'translateX(0)'
+
 
             setTimeout(() => {
-                verification.style.display = 'none'
+                verification.style.transform = 'translateX(-100%)'
+
 
             }, 4000);
         });

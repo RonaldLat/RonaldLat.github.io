@@ -60,6 +60,13 @@ nav
                 border: 1px solid #66ffda
                 padding: 0.5rem
                 border-radius: 0.3rem
+                transition: color 0.5s ease, transform 0.5s ease-in-out
+                @include hover-animate-bg
+                &:hover
+                    a
+                        transform: none
+                        color: none
+
                 a
                     color: #66ffda
                     font-size: 0.9rem
