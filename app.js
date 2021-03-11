@@ -99,5 +99,5 @@ function skillIn() {
 
 // skillIn()
 // aos()
-toggleNav();
-pageIndicator();
+// toggleNav();
+// pageIndicator();
