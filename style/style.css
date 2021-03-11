@@ -196,7 +196,7 @@ body .section-heading .heading-number {
 }
 
 .contact-details > * {
-  margin: .5rem 1rem;
+  margin: .7rem 0rem;
   padding: 0.7rem 0.4rem;
   border-radius: 2px;
   background: #112240;
@@ -319,7 +319,7 @@ body .section-heading .heading-number {
   outline: none;
   color: #ccd6f6;
   padding: .7rem 0.4rem;
-  margin: .3rem 1rem;
+  margin: .3rem 0rem;
   background: #112240;
   border-radius: 2px;
 }
@@ -334,7 +334,7 @@ body .section-heading .heading-number {
   border: 1px solid #66ffda;
   padding: 1rem 0;
   outline: none;
-  margin: 1rem 1rem;
+  margin: 1rem 0rem;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -549,10 +549,10 @@ nav .nav-items ul {
 }
 
 nav .nav-items ul li {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   list-style-type: none;
   width: 100%;
-  margin-left: 0.1rem;
+  margin-left: 0.7rem;
   text-align: center;
   -webkit-transition: color 0.5s ease, -webkit-transform 0.5s ease-in-out;
   transition: color 0.5s ease, -webkit-transform 0.5s ease-in-out;
