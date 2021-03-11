@@ -9,7 +9,7 @@
             margin-bottom: 2rem
             position: relative
             margin-bottom: 4rem
-            padding: 1.5rem 
+            padding: 1.5rem
             border: 1px solid #233554
             border-radius: 10px
             z-index: 2
@@ -108,3 +108,8 @@
         margin-left: 3rem
     li
         padding-left: 1rem
+@media screen and ( min-width:600px  )
+    .portofolio-container
+        display: grid
+        gap: 1rem
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))

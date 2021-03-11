@@ -9,7 +9,7 @@
 html {
   width: 100vw;
   min-width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -29,7 +29,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   line-height: 1.3;
   overflow-x: hidden;
@@ -43,6 +43,8 @@ body {
 
 body main {
   padding: 0 1rem;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 body main section {
@@ -493,6 +495,48 @@ body .section-heading .heading-number {
   opacity: 1;
 }
 
+@media (min-width: 600px) {
+  .contact {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-;
+        -ms-flex-pack: space-;
+            justify-content: space-;
+    padding-top: 3rem;
+  }
+  .contact .contact-details {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    border-top: 1px solid #112240;
+    border-left: 1px solid #112240;
+    border-bottom: 1px solid #112240;
+    padding-left: 2rem;
+    border-radius: 10px;
+  }
+  .contact .section-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .contact .contact-form-container {
+    margin-left: 2rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    border-top: 1px solid #112240;
+    border-left: 1px solid #112240;
+    border-bottom: 1px solid #112240;
+    padding-left: 2rem;
+    border-radius: 10px;
+  }
+}
+
 .home {
   height: auto;
   width: 100%;
@@ -549,6 +593,7 @@ body .section-heading .heading-number {
   line-height: 1.2;
   letter-spacing: 1px;
   max-width: 80ch;
+  font-weight: 400;
 }
 
 .home .home-container .about-me .cta {
@@ -618,8 +663,8 @@ nav {
 
 nav .logo {
   color: #66ffda;
-  height: 2rem;
-  width: 3rem;
+  height: 3rem;
+  width: 4rem;
   margin: 0.6rem 0;
   position: relative;
 }
@@ -640,11 +685,6 @@ nav .logo::before {
 nav .logo #logo {
   height: 100%;
   width: 100%;
-}
-
-nav .burger {
-  background: yellow;
-  display: none;
 }
 
 nav .nav-items {
@@ -750,20 +790,43 @@ nav .nav-items ul li a .nav-number:hover {
   color: #66ffda;
 }
 
+@media (min-width: 600px) {
+  nav {
+    padding: 0 3rem;
+  }
+}
+
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.skills .skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 0.5rem;
 }
 
 .skills .skill {
@@ -794,6 +857,7 @@ nav .nav-items ul li a .nav-number:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 960px;
 }
 
 .detailed-description p {
@@ -836,6 +900,41 @@ nav .nav-items ul li a .nav-number:hover {
 .arsenal img {
   height: 1.5ch;
   width: 1.1ch;
+}
+
+@media (min-width: 600px) {
+  .about-container {
+    display: -ms-grid;
+    display: grid;
+    gap: 1rem;
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 0;
+  }
+  .skills .skills-list {
+    padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .portofolio .portofolio-container {
@@ -1004,6 +1103,16 @@ nav .nav-items ul li a .nav-number:hover {
 
 .align-right li {
   padding-left: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .portofolio-container {
+    display: -ms-grid;
+    display: grid;
+    gap: 1rem;
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 }
 
 footer {

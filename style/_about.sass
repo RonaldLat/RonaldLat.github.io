@@ -1,11 +1,19 @@
 
 .skills
   display: flex
-  width: fit-content
+  flex-direction: column
   // max-width: 50ch
   align-items: center
   justify-content: space-between
-  padding: 20px
+  padding: 20px 0
+  width: 100%
+  align-items: flex-start
+  .skills-list
+    display: flex
+    align-items: flex-start
+    padding-top: 1rem
+    width: 100%
+    padding-left: 0.5rem
 
   .skill
 
@@ -28,6 +36,7 @@
   width: 100%
   display: flex
   flex-direction: column
+  max-width: 960px
   p
     padding-bottom: 1rem
 
@@ -64,3 +73,21 @@
   img
     height: 1.5ch
     width: 1.1ch
+
+@media  (min-width: 600px)
+  .about-container
+    display: grid
+    gap: 1rem
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    // grid-auto-rows: auto
+  .skills
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    height: fit-content
+    padding-top: 0
+    .skills-list
+      display: 
+      padding: 1rem 0
+      display: flex

@@ -14,8 +14,8 @@ nav
 
     .logo
         color: #66ffda
-        height: 2rem
-        width: 3rem
+        height: 3rem
+        width: 4rem
         margin: 0.6rem 0
         // margin-left: 1rem
         position: relative
@@ -33,10 +33,6 @@ nav
         #logo
             height: 100%
             width: 100%
-    .burger
-        background: yellow
-        // flex-grow: 2
-        display: none
 
     .nav-items
         // flex-grow: 1
@@ -95,3 +91,14 @@ nav
                         transition: color 0.5s ease, transform 0.5s ease-in-out
                         cursor: pointer
                         @include hover-animate-color
+@media (min-width: 600px)
+    nav
+        padding: 0 3rem
+        // .logo
+        //     height: 3rem
+        //     width: 4rem
+        //     // padding: 2rem 0
+
+        // #logo
+        //     height: 100%
+        //     width: 100%
