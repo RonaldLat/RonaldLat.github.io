@@ -6,7 +6,10 @@ html.style.overflowY = 'hidden'
 window.addEventListener("load", function () {
   setTimeout(() => {
     loaderWrapper.style.opacity = "0"
-    loaderWrapper.style.display = "none"
+    setTimeout(() => {
+      loaderWrapper.style.display = "none"
+
+    }, 3000);
     html.style.overflowY = 'unset'
 
 
