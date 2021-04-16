@@ -1,0 +1,27 @@
+---
+layout: default-layout.njk
+pagination:
+  data: collections.post
+  size: 10
+  reverse: true
+  alias: posts
+---
+{% for post in posts %}
+  <article>
+    <div class="article-card-image">
+      <img src="blog_images/{{ post.data.image }}">
+    </div>
+
+    <div class="article-card">
+      <h1>
+        <a href="../blog{{ post.url | url }}">{{ post.data.title }}</a>
+      </h1>
+      {# <p>{{ post.data.teaser }}</p> #}
+      <h6>{{ post.date.toDateString() }}</h6>
+      <div class="article-link">
+        <a href="../blog{{ post.url | url }}">Read article</a>
+      </div>
+    </div>
+
+  </article>
+{% endfor %}

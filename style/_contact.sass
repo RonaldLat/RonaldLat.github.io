@@ -1,46 +1,250 @@
-.contact-details
-    margin-bottom: 2rem
+// .contact
+//     .contact-title
+//         color: $whitish
+//         margin-bottom: 2rem
+//         text-align: center
+// .contact-container
+//     display: flex
+//     justify-content: center
+//     flex-wrap: wrap
+//     width: 100%
+//     gap: 2rem
+//     & > *
+//         // flex: 1 1 400px
+// .contact-details
+//     margin-bottom: 2rem
+//     display: flex
+//     justify-content: space-between
+//     flex-wrap: wrap
+//     gap: 2rem
+//     width: 100%
+//     & * a
+//         color: inherit
+//         text-decoration: none
+//         &:last-child
+//             color: $whitish
+//             transition: color 0.3s ease
+//             &:hover
+//                 color: $mainColor
+
+//     & > *
+//         padding: 0.7rem 0.4rem
+//         border-radius: 2px
+//         background: $lightNavy
+//         flex: 1 1 200px
+//         display: flex
+//         // flex-direction: column
+//         align-items: center
+//         justify-content: center
+//         & > *
+//             padding: 0.7rem
+// .contact-form-container
+//     margin-top: 4rem
+//     border-radius: 2px
+//     margin-bottom: 2rem
+//     padding: 1rem 0.1rem
+//     display: flex
+//     flex-direction: column
+//     margin: .5rem 0rem
+//     max-width: 600px
+//     width: 100%
+
+//     & > *
+//         margin: 0.5rem 0
+//     .form-feedback
+//         position: relative
+//         overflow: hidden
+//         max-height: 6rem
+//         min-height: 3rem
+
+//     .warning, .verification
+//         // display: none
+//         margin: .2rem 0rem
+//         padding: 0.2rem 0.4rem
+//         position: absolute
+//         top: 0
+//         left: 0
+//         transform: translateX(calc( -100% + -2rem ))
+//         transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56)
+//         z-index: 1
+//     .verification
+//         display: block
+//         color: #23c552
+//     .warning
+//         display: block
+//         color: #F84F31
+//     // & > *
+//     //     margin: 0.5rem 0
+
+// .form-title
+//     margin: .5rem 0
+//     padding: 0.5rem 0
+//     font-size: 1.3rem
+//     text-align: center
+//     // color: #ccd6f6
+//     color: $mainColor
+
+// #contact-form
+//     padding: 0.5rem
+//     width: 100%
+//     display: flex
+//     align-items: center
+//     justify-content: center
+//     flex-direction: column
+//     font-size: 1rem
+
+//     & > *
+//         width: 100%
+//         // margin-bottom: 0.5rem
+//         display: flex
+//         align-items: center
+//         justify-content: center
+//         overflow: hidden
+
+//         & > *
+//             width: 100%
+//             border: none
+//             border-left: 2px solid $lightNavy
+//             transition: all 0.5s ease
+//             // outline: none
+//             color: $whitish
+//             padding: .7rem 0.4rem
+//             margin: .3rem 0rem
+//             background: $lightNavy
+//             border-radius: 2px
+//             text-align: center
+//             outline-color: $mainColor
+//             font-size: 1rem
+
+//             &::placeholder
+//                 color: $whitish
+//                 font-size: 1rem
+//                 letter-spacing: 2px
+//                 font-family: monospace
+
+//             &:focus, &:hover
+//                 background: $darkNavy
+//                 border-color: $mainColor
+//     textarea
+//         resize: none
+
+//     .submit
+//         background-color: inherit
+//         color: $mainColor
+//         border: 1px solid $mainColor
+//         padding: 1rem 0
+//         outline: none
+//         margin: 1rem 0rem
+//         transition: background 0.5s ease-in-out
+//         letter-spacing: 1px
+//         cursor: pointer
+//         font-family: 'Play', sans-serif
+//         background: $navy
+//         &:hover
+//             background: adjust-hue($darkNavy, 20deg)
+
+// // .left-border-animation
+// //     position: relative
+// //     overflow:
+// //     &::before
+// //         content: ""
+// //         width: 1px
+// //         height: 100%
+// //         background: $mainColor
+// //         position: absolute
+// //         top: 0
+// //         opacity: 0
+// //         transform: translateY(-100%)
+// //         transition: transform 0.5s ease, opacity 0.6s ease
+// //         left: 0
+// //         z-index: 4999
+// //     &:hover, &:focus
+// //         &::before
+// //             transform: translateY(0%)
+// //             opacity: 1
+
+    // 
+
+.contact
+    margin-top: 4rem
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        width: 100%
+        height: 4rem
+        border: 1px dotted teal
+        border-top: none
+        bottom: -1px
+        left: 0
+        z-index: 4
+
+    .contact-title
+        margin-bottom: 2rem
+        text-align: center
+        border: 1px dotted teal
+        border-bottom: none
+        color: teal
+        padding: 1rem 0.5rem
+        letter-spacing: 2px
+        &::before
+            // content: 
+        .heading-number
+            color: #66ffda
+            padding-right: 1rem
+.contact-container
     display: flex
     flex-direction: column
-    // padding: 1rem 0.9rem
+    justify-content: center
+    align-items: center
+    width: 100%
+    gap: 1rem
+.contact-details
+    display: flex
+    gap: 1rem
+    flex-direction: column
+    // width: 100%
+    justify-content: center
+    align-items: center
+
     & * a
         color: inherit
         text-decoration: none
+        text-align: left
         &:last-child
-            color: #ccd6f6
-            transition: color 0.5s ease
+            // color: $blackish
+            color: $greyish
+
+            transition: color 0.3s ease
             &:hover
-                color: #66ffda
+                color: $mainColor
 
     & > *
-        margin: .7rem 0rem
-        padding: 0.7rem 0.4rem
+        // padding: 0.7rem 0.4rem
         border-radius: 2px
-        background: #112240
-
+        color: $greyish
+        // flex: 1 1 200px
         display: flex
-        flex-direction: column
-        align-items: flex-start
+        // flex-direction: column
+        align-items: center
+        justify-content: center
         & > *
             padding: 0.7rem
-
 .contact-form-container
-    margin-top: 4rem
-    border-top: 1px solid #112240
-    border-radius: 2px
-    margin-bottom: 2rem
-    padding: 1rem 0.1rem
+
+    // margin-bottom: 2rem
+    // padding: 1rem 0.1rem
     display: flex
     flex-direction: column
-    margin: .5rem 0rem
-
-    & > *
-        margin: 0.5rem 0
+    align-items: center
+    width: 100%
+    max-width: 600px
     .form-feedback
         position: relative
         overflow: hidden
         max-height: 6rem
         min-height: 3rem
+        background: green
 
     .warning, .verification
         // display: none
@@ -62,24 +266,24 @@
     //     margin: 0.5rem 0
 
 .form-title
-    margin: .5rem 0
-    padding: 0.5rem 0
-    font-size: 1.1rem
-    text-align: justify
-    // color: #ccd6f6
-    color: #66ffda
+    // margin: .5rem 0
+    // padding: 0.5rem 0
+    font-size: 1.3rem
+    text-align: center
+    color: #ccd6f6
+    letter-spacing: 1px
+    font-weight: 100
 
 #contact-form
     width: 100%
-    display: flex
+    // max-width: 960px
+    // font-size: 1rem
     align-items: center
-    justify-content: center
-    flex-direction: column
-    font-size: 1rem
-
-    & > *
+    display: grid
+    gap: 1rem
+    grid-template-columns: repeat(auto-fit minmax(240px, 1fr))
+    div
         width: 100%
-        // margin-bottom: 0.5rem
         display: flex
         align-items: center
         justify-content: center
@@ -88,88 +292,62 @@
             width: 100%
             border: none
             // border-left: 2px solid transparent
-            transition: border-color 0.5s ease
-            outline: none
-            color: #ccd6f6
+            transition: all 0.5s ease-in
+            // outline: none
+            color: $whitish
+            font-weight: 400
+            letter-spacing: 1px
             padding: .7rem 0.4rem
-            margin: .3rem 0rem
-            background: #112240
+            // margin: .3rem 0rem
+            background: $darkNavy
             border-radius: 2px
-            &:focus
-                background: #233554
+            text-align: center
+            outline-color: $mainColor
+            &:focus, &:hover
+                background: darken($darkNavy, 50%)
+
+    .button-container
+        width: 100%
+
     textarea
         resize: none
+        // width: 600px
 
     .submit
-        background-color: inherit
-        color: #66ffda
-        border: 1px solid #66ffda
+        width: 50%
+        background-color: $darkNavy
+        color: $mainColor
+        border: 1px solid $mainColor
         padding: 1rem 0
         outline: none
-        margin: 1rem 0rem
-        transition: transform 0.5s ease-in-out
+        // margin: 1rem 0rem
+        transition: all 0.5s ease-in-out
         letter-spacing: 1px
         cursor: pointer
         font-family: 'Play', sans-serif
-        @include hover-animate-bg
+        // background: $darkGrey
+        &:hover
+            background: adjust-hue($mainColor, -5deg)
+            color: $darkNavy
 
-.left-border-animation
-    position: relative
-    overflow: hidden
-    &::before
-        content: ""
-        width: 1px
-        height: 100%
-        background: #66ffda
-        position: absolute
-        top: 0
-        opacity: 0
-        transform: translateY(-100%)
-        transition: transform 0.5s ease, opacity 0.6s ease
-        left: 0
-        z-index: 4999
-    &:hover, &:focus
-        &::before
-            transform: translateY(0%)
-            opacity: 1
-
-@media  (min-width: 600px)
-    .contact
-
-        position: relative
-        display: flex
-        align-items: center
-        justify-content: space-
-        padding-top: 3rem
-        .contact-details
-            // background: red
-            // flex: 0 1 20%
-            flex: 0 1 50%
-            border-top: 1px solid #112240
-            border-left: 1px solid #112240
-            border-bottom: 1px solid #112240
-            padding-left: 2rem
-            border-radius: 10px
-
-
-        .section-heading
-            position: absolute
-            // display: none
-            top: 0
-            left: 0
-        .form-title
-            // background: crimson
-            // display: none
-        .contact-form-container
-            // background: green
-            margin-left: 2rem
-            flex: 0 1 50%
-            border-top: 1px solid #112240
-            border-left: 1px solid #112240
-            border-bottom: 1px solid #112240
-            padding-left: 2rem
-            border-radius: 10px
-
-
-    .wide
-        // grid-column: span 4 / auto
+// .left-border-animation
+//     position: relative
+//     overflow: hidden
+//     &::before
+//         content: ""
+//         width: 1px
+//         height: 100%
+//         background: $eggYellow
+//         position: absolute
+//         top: 0
+//         opacity: 0
+//         transform: translateY(-100%)
+//         transition: transform 0.5s ease, opacity 0.6s ease
+//         left: 0
+//         z-index: 4999
+//     &:hover, &:focus
+//         &::before
+//             transform: translateY(0%)
+//             opacity: 1
+.wide-contact
+    grid-column: span 2 / auto

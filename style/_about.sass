@@ -1,26 +1,32 @@
 
 .skills
   display: flex
-  flex-direction: column
-  // max-width: 50ch
   align-items: center
-  justify-content: space-between
-  padding: 20px 0
+  justify-content: center
+  flex-wrap: wrap
   width: 100%
-  align-items: flex-start
+  gap: 2rem
+  text-align: justify
+  margin: 4rem 0
+  & > * 
+    flex: 1 1 240px
+  .skills-title
+
   .skills-list
     display: flex
-    align-items: flex-start
-    padding-top: 1rem
+    align-items: center
+    justify-content: flex-start
+    gap: 3rem
     width: 100%
-    padding-left: 0.5rem
+    & > *
+      display: flex
+      flex-direction: column
+      grid-gap: 0.5rem
+
 
   .skill
-
     position: relative
     padding-left: 1rem
-    padding-bottom:
-    padding-right: 3rem
 
     &::before
 
@@ -32,21 +38,31 @@
       font-size: 0.7rem
     img
       display: none
+
+.about-container
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  gap: 1.5rem
+
 .detailed-description
   width: 100%
   display: flex
   flex-direction: column
+  justify-content: center
   max-width: 960px
+  align-items: center
+  text-align: justify
+
   p
-    padding-bottom: 1rem
+    // padding-bottom: 1rem
 
   .hero-image
     height: 200px
     width: 200px
     width: fit-content
     position: relative
-    margin: 2rem 0
-    margin-bottom: 3rem
+    margin: 3rem 0
     position: relative
     z-index: 1
 
@@ -71,23 +87,50 @@
 .arsenal
   // height: 20px
   img
-    height: 1.5ch
-    width: 1.1ch
+    height: 3.5ch
+    width: 3.1ch
+.value-proposition
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 3rem
+  .value-proposition-title
+    padding-left: 0.5rem
+    line-height: normal
+    width: 100%
+    text-align: left
+    h3
+      font-size: 1.3rem
+      color: #ccd6f6
 
-@media  (min-width: 600px)
-  .about-container
-    display: grid
-    gap: 1rem
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
-    // grid-auto-rows: auto
-  .skills
+  .value-proposition-container
+    width: 100%
+    margin-top: 2rem
     display: flex
+    gap: 1.5rem
+    flex-wrap: wrap
+    & > *
+      flex: 1 1 240px
+  .value
+    background: #020c1b
+    display: flex
+    align-items: center
     flex-direction: column
-    align-items: flex-start
+    align-items: center
     justify-content: space-between
-    height: fit-content
-    padding-top: 0
-    .skills-list
-      display: 
-      padding: 1rem 0
-      display: flex
+    border-radius: 5px
+    padding: 1rem
+
+    p
+      text-align: center
+      max-width: 30ch
+
+    h3
+      padding-bottom: 2rem
+      font-size: 2rem
+      text-align: center
+      font-family: 'Play', sans-serif
+      // color: #66ffda
+      color: #ccd6f6
+
