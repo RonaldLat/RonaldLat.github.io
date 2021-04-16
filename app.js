@@ -110,17 +110,20 @@ tl = gsap.timeline({
 
   }
 })
-
 window.addEventListener('load', () => {
   setTimeout(() => {
     tl
 
+      .to('main', {
+        opacity: 1 ,
+
+      })
       .from('.greeting', {
         x: 30,
         opacity: 0,
 
       })
-      .to('.my-name', {
+      .from('.my-name', {
         y: 30,
         opacity: 0,
         ease: 'sine'
@@ -156,14 +159,16 @@ window.addEventListener('load', () => {
         delay: 1
 
       })
-      .from('aside', {
-        opacity: 0,
-        y: '50%',
+      .to('aside', {
+        opacity: 1,
         ease: 'back',
+        y: 0,
         duration: 2
 
       })
 
-  }, 4500);
+  }, 100);
 })
 
+let diamond = document.querySelectorAll('#diamond')
+let diamondPath = document.querySelectorAll('#diamondPath')

@@ -23,14 +23,14 @@ let cubeGrid = document.querySelector('.diamond-container')
 html.style.overflowY = 'hidden'
 
 window.addEventListener("load", function () {
-  setTimeout(() => {
+  // setTimeout(() => {
     loaderWrapper.style.opacity = "0"
-    setTimeout(() => {
+    // setTimeout(() => {
       loaderWrapper.style.display = "none"
 // was 3000
-    }, 300);
+    // }, 300);
     html.style.overflowY = 'unset'
 
 
-  }, 4000);
+  // }, 4000);
 });
