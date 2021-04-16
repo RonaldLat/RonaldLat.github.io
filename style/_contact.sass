@@ -1,173 +1,9 @@
-// .contact
-//     .contact-title
-//         color: $whitish
-//         margin-bottom: 2rem
-//         text-align: center
-// .contact-container
-//     display: flex
-//     justify-content: center
-//     flex-wrap: wrap
-//     width: 100%
-//     gap: 2rem
-//     & > *
-//         // flex: 1 1 400px
-// .contact-details
-//     margin-bottom: 2rem
-//     display: flex
-//     justify-content: space-between
-//     flex-wrap: wrap
-//     gap: 2rem
-//     width: 100%
-//     & * a
-//         color: inherit
-//         text-decoration: none
-//         &:last-child
-//             color: $whitish
-//             transition: color 0.3s ease
-//             &:hover
-//                 color: $mainColor
 
-//     & > *
-//         padding: 0.7rem 0.4rem
-//         border-radius: 2px
-//         background: $lightNavy
-//         flex: 1 1 200px
-//         display: flex
-//         // flex-direction: column
-//         align-items: center
-//         justify-content: center
-//         & > *
-//             padding: 0.7rem
-// .contact-form-container
-//     margin-top: 4rem
-//     border-radius: 2px
-//     margin-bottom: 2rem
-//     padding: 1rem 0.1rem
-//     display: flex
-//     flex-direction: column
-//     margin: .5rem 0rem
-//     max-width: 600px
-//     width: 100%
-
-//     & > *
-//         margin: 0.5rem 0
-//     .form-feedback
-//         position: relative
-//         overflow: hidden
-//         max-height: 6rem
-//         min-height: 3rem
-
-//     .warning, .verification
-//         // display: none
-//         margin: .2rem 0rem
-//         padding: 0.2rem 0.4rem
-//         position: absolute
-//         top: 0
-//         left: 0
-//         transform: translateX(calc( -100% + -2rem ))
-//         transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56)
-//         z-index: 1
-//     .verification
-//         display: block
-//         color: #23c552
-//     .warning
-//         display: block
-//         color: #F84F31
-//     // & > *
-//     //     margin: 0.5rem 0
-
-// .form-title
-//     margin: .5rem 0
-//     padding: 0.5rem 0
-//     font-size: 1.3rem
-//     text-align: center
-//     // color: #ccd6f6
-//     color: $mainColor
-
-// #contact-form
-//     padding: 0.5rem
-//     width: 100%
-//     display: flex
-//     align-items: center
-//     justify-content: center
-//     flex-direction: column
-//     font-size: 1rem
-
-//     & > *
-//         width: 100%
-//         // margin-bottom: 0.5rem
-//         display: flex
-//         align-items: center
-//         justify-content: center
-//         overflow: hidden
-
-//         & > *
-//             width: 100%
-//             border: none
-//             border-left: 2px solid $lightNavy
-//             transition: all 0.5s ease
-//             // outline: none
-//             color: $whitish
-//             padding: .7rem 0.4rem
-//             margin: .3rem 0rem
-//             background: $lightNavy
-//             border-radius: 2px
-//             text-align: center
-//             outline-color: $mainColor
-//             font-size: 1rem
-
-//             &::placeholder
-//                 color: $whitish
-//                 font-size: 1rem
-//                 letter-spacing: 2px
-//                 font-family: monospace
-
-//             &:focus, &:hover
-//                 background: $darkNavy
-//                 border-color: $mainColor
-//     textarea
-//         resize: none
-
-//     .submit
-//         background-color: inherit
-//         color: $mainColor
-//         border: 1px solid $mainColor
-//         padding: 1rem 0
-//         outline: none
-//         margin: 1rem 0rem
-//         transition: background 0.5s ease-in-out
-//         letter-spacing: 1px
-//         cursor: pointer
-//         font-family: 'Play', sans-serif
-//         background: $navy
-//         &:hover
-//             background: adjust-hue($darkNavy, 20deg)
-
-// // .left-border-animation
-// //     position: relative
-// //     overflow:
-// //     &::before
-// //         content: ""
-// //         width: 1px
-// //         height: 100%
-// //         background: $mainColor
-// //         position: absolute
-// //         top: 0
-// //         opacity: 0
-// //         transform: translateY(-100%)
-// //         transition: transform 0.5s ease, opacity 0.6s ease
-// //         left: 0
-// //         z-index: 4999
-// //     &:hover, &:focus
-// //         &::before
-// //             transform: translateY(0%)
-// //             opacity: 1
-
-    // 
 
 .contact
     margin-top: 4rem
     position: relative
+    width: 100%
     &::after
         content: ""
         position: absolute
@@ -187,6 +23,7 @@
         color: teal
         padding: 1rem 0.5rem
         letter-spacing: 2px
+
         &::before
             // content: 
         .heading-number
@@ -230,124 +67,175 @@
         justify-content: center
         & > *
             padding: 0.7rem
-.contact-form-container
 
-    // margin-bottom: 2rem
-    // padding: 1rem 0.1rem
+.contact-form-wrapper
     display: flex
-    flex-direction: column
     align-items: center
+    flex-direction: column
+    padding: 3rem 0.5rem
+    margin: 3rem 0
+    height: auto
+    gap: 3rem
+    min-height: 300px
+    background: $greyish
+    border-radius: 5px
     width: 100%
-    max-width: 600px
-    .form-feedback
-        position: relative
-        overflow: hidden
-        max-height: 6rem
-        min-height: 3rem
-        background: green
 
-    .warning, .verification
-        // display: none
-        margin: .2rem 0rem
-        padding: 0.2rem 0.4rem
+.form-feedback
+    display: none
+
+.contact-form-parent
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+.contact-form-parent #contactForm
+    transition: all 0.5s ease
+    position: relative
+    width: 100%
+    margin: 0 0.5rem
+    height: 100%
+
+    // display: none
+
+    .field-name,
+    .field-email,
+    .field-message,
+    .field-submit,
+    .field-finish
         position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: $whitish
+        min-height: 60px
+        max-width: 500px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-radius: 5px
+        padding: 0.5rem
+        // transition: all 0.5s ease
+
+    input, #message
+        background: none
+        border: none
+        color: $charcoalBlack
+        flex: 1
+        outline: none
+        height: 100%
+        padding: 0.5rem 0
+        transition: background 0.5s ease
+        border-radius: 5px
+        border-bottom: 1px dotted $charcoalBlack
+        &:hover
+            background: darken($whitish, 10%)
+        &::placeholder
+            text-align: center
+            color: $darkNavy
+            font-size: 1rem
+    #message
+        height: 100px
+        resize: none
+    i
+        padding: 10px
+        cursor: pointer
+        color: $darkNavy
+
+    .inactive
+        opacity: 0
+        pointer-events: none
+        // transform: translate(-50%, 50%)
+    .active
+        opacity: 1
+        pointer-events: all
+        // transform: translate(-50%, -50%)
+
+@keyframes shake
+    0%
+        transform: translate(-50%, -50%) rotate(0deg)
+    50%
+        transform: translate(-50%, -50%) rotate(10deg)
+    100%
+        transform: translate(-50%, -50%) rotate(0deg)
+#contactForm .field-finish
+    p
+        color: $darkNavy
+        font-family: 'Play', sans-serif
+#contactForm .field-submit
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    .submit
+        color: $mainColor
+        font-weight: 600
+        letter-spacing: 1px
+        outline: none
+        border: none
+        // justify-self: flex-end
+        padding: 0.6em .5em
+        background: $greyish
+        width: 100%
+        border-radius: 5px
+        font-size: 1rem
+        cursor: pointer
+        margin: 0 1rem
+
+.holla-prog
+    position: relative
+    width: 100%
+    min-height: 100px
+    padding: 1rem 0
+
+    .form-progress-bar
+        display: flex
+        gap: 1rem
+        margin: 2rem 0
+        justify-content: center
+        align-items: flex-start
+        position: absolute
+        background: none
         top: 0
         left: 0
-        transform: translateX(calc( -100% + -2rem ))
-        transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56)
-        z-index: 1
-    .verification
-        display: block
-        color: #23c552
-    .warning
-        display: block
-        color: #F84F31
-    // & > *
-    //     margin: 0.5rem 0
+        width: 100%
+        height: 100%
+
+        padding: 0.5rem
+        width: 100%
+        div
+            width: 0.7rem
+            height: 0.7rem
+            border-radius: 1px
+            background: $whitish
+    #holla
+        position: absolute
+        // background: none
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 3rem 0
+        opacity: 0.1
+
+        p
+            font-size: 3rem
+            color: $navy
+            z-index: 0
+            font-weight: 900
+            letter-spacing: 2px
 
 .form-title
     // margin: .5rem 0
     // padding: 0.5rem 0
     font-size: 1.3rem
     text-align: center
-    color: #ccd6f6
+    color: teal
+    padding-top: 1rem
     letter-spacing: 1px
     font-weight: 100
-
-#contact-form
-    width: 100%
-    // max-width: 960px
-    // font-size: 1rem
-    align-items: center
-    display: grid
-    gap: 1rem
-    grid-template-columns: repeat(auto-fit minmax(240px, 1fr))
-    div
-        width: 100%
-        display: flex
-        align-items: center
-        justify-content: center
-
-        & > *
-            width: 100%
-            border: none
-            // border-left: 2px solid transparent
-            transition: all 0.5s ease-in
-            // outline: none
-            color: $whitish
-            font-weight: 400
-            letter-spacing: 1px
-            padding: .7rem 0.4rem
-            // margin: .3rem 0rem
-            background: $darkNavy
-            border-radius: 2px
-            text-align: center
-            outline-color: $mainColor
-            &:focus, &:hover
-                background: darken($darkNavy, 50%)
-
-    .button-container
-        width: 100%
-
-    textarea
-        resize: none
-        // width: 600px
-
-    .submit
-        width: 50%
-        background-color: $darkNavy
-        color: $mainColor
-        border: 1px solid $mainColor
-        padding: 1rem 0
-        outline: none
-        // margin: 1rem 0rem
-        transition: all 0.5s ease-in-out
-        letter-spacing: 1px
-        cursor: pointer
-        font-family: 'Play', sans-serif
-        // background: $darkGrey
-        &:hover
-            background: adjust-hue($mainColor, -5deg)
-            color: $darkNavy
-
-// .left-border-animation
-//     position: relative
-//     overflow: hidden
-//     &::before
-//         content: ""
-//         width: 1px
-//         height: 100%
-//         background: $eggYellow
-//         position: absolute
-//         top: 0
-//         opacity: 0
-//         transform: translateY(-100%)
-//         transition: transform 0.5s ease, opacity 0.6s ease
-//         left: 0
-//         z-index: 4999
-//     &:hover, &:focus
-//         &::before
-//             transform: translateY(0%)
-//             opacity: 1
-.wide-contact
-    grid-column: span 2 / auto

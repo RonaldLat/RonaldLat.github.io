@@ -101,3 +101,69 @@ function skillIn() {
 // aos()
 // toggleNav();
 // pageIndicator();
+
+// gsap
+tl = gsap.timeline({
+  defaults: {
+    duration: 1.0,
+    // delay: 4,
+
+  }
+})
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    tl
+
+      .from('.greeting', {
+        x: 30,
+        opacity: 0,
+
+      })
+      .to('.my-name', {
+        y: 30,
+        opacity: 0,
+        ease: 'sine'
+      })
+      .from('.catch-phrase', {
+        x: 30,
+        opacity: 0,
+        ease: 'bounce'
+      })
+      .from('.brief-intro', {
+        y: 30,
+        opacity: 0,
+        ease: 'power3'
+      })
+
+      .from('.cta-button', {
+        opacity: 0,
+        ease: 'back',
+        y: 30,
+        duration: 0.5
+
+      })
+      .from('.nav-items ul li', {
+        opacity: 0,
+        ease: 'sine',
+        stagger: 0.5,
+        delay: 1
+      })
+      .from('.logo', {
+        opacity: 0,
+        x: -30,
+        ease: 'back',
+        delay: 1
+
+      })
+      .from('aside', {
+        opacity: 0,
+        y: '50%',
+        ease: 'back',
+        duration: 2
+
+      })
+
+  }, 4500);
+})
+

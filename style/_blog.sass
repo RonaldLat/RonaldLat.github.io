@@ -27,8 +27,7 @@
 
         border-radius: 5px
         width: 100%
-        // max-width: 80ch
-        transition: background 0.5s ease
+        transition: all 0.5s ease-in 0s
         display: flex
         flex-direction: column
         gap: 4px
@@ -37,6 +36,9 @@
         margin: 1rem 0
         // padding: 0.3rem 0.4rem
         text-align: center
+
+        &:hover
+            transform: scale(1.05)
 
         .article-card-image
             width: 100%
@@ -61,7 +63,7 @@
             justify-content: normal
             padding: 0.5rem
             border-radius: 5px
-            transition: 0.5s ease-in 0s 
+            transition: all 0.5s ease-in 0s
             border-top-left-radius: 0
             border-top-right-radius: 0
             width: 100%
@@ -69,8 +71,6 @@
             background: linear-gradient(to top,$greyish,rgba($greyish, 0.4))
             background-color: $darkNavy
 
-            &:hover
-                background: darken($greyish, 10%)
             p
                 color: #262626
                 font-weight: 400
@@ -94,6 +94,9 @@
                 color: white
                 color: $whitish
                 font-weight: 600
+                transition: color 0.5s ease
+                &:hover
+                    color: $mainColor
                 // text-shadow: 2px 1px 5px black
 
             .article-link
@@ -105,6 +108,7 @@
                 a
                     text-decoration: none
                     color: white
+                    transition: all 0.5s ease-in
 
                     &:hover
 

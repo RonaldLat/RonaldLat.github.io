@@ -199,6 +199,7 @@ body .section-heading .heading-number {
   width: 40px;
   height: 40px;
   margin: 100px auto;
+  display: none;
 }
 
 .sk-cube-grid .sk-cube {
@@ -281,9 +282,53 @@ body .section-heading .heading-number {
   }
 }
 
+.diamond-container {
+  width: 150px;
+  height: 150px;
+}
+
+#diamondSvg {
+  fill: transparent;
+}
+
+#path2 {
+  display: none;
+}
+
+#diamondPath {
+  width: 100%;
+  height: 100%;
+  stroke: #66ffda;
+  stroke-dasharray: 270;
+  stroke-dashoffset: 270;
+  -webkit-animation: diamond 4s  ease;
+          animation: diamond 4s  ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes diamond {
+  0% {
+    stroke-dashoffset: 270;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes diamond {
+  0% {
+    stroke-dashoffset: 270;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .contact {
   margin-top: 4rem;
   position: relative;
+  width: 100%;
 }
 
 .contact::after {
@@ -382,75 +427,32 @@ body .section-heading .heading-number {
   padding: 0.7rem;
 }
 
-.contact-form-container {
+.contact-form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 3rem 0.5rem;
+  margin: 3rem 0;
+  height: auto;
+  gap: 3rem;
+  min-height: 300px;
+  background: #8892b0;
+  border-radius: 5px;
   width: 100%;
-  max-width: 600px;
 }
 
-.contact-form-container .form-feedback {
-  position: relative;
-  overflow: hidden;
-  max-height: 6rem;
-  min-height: 3rem;
-  background: green;
+.form-feedback {
+  display: none;
 }
 
-.contact-form-container .warning, .contact-form-container .verification {
-  margin: .2rem 0rem;
-  padding: 0.2rem 0.4rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: translateX(calc( -100% + -2rem));
-          transform: translateX(calc( -100% + -2rem));
-  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
-  transition: -webkit-transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
-  transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
-  transition: transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56), -webkit-transform 0.6s cubic-bezier(0.36, 0, 0.66, -0.56);
-  z-index: 1;
-}
-
-.contact-form-container .verification {
-  display: block;
-  color: #23c552;
-}
-
-.contact-form-container .warning {
-  display: block;
-  color: #F84F31;
-}
-
-.form-title {
-  font-size: 1.3rem;
-  text-align: center;
-  color: #ccd6f6;
-  letter-spacing: 1px;
-  font-weight: 100;
-}
-
-#contact-form {
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -ms-grid;
-  display: grid;
-  gap: 1rem;
-  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit minmax(240px, 1fr));
-}
-
-#contact-form div {
+.contact-form-parent {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,56 +463,246 @@ body .section-heading .heading-number {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#contact-form div > * {
+.contact-form-parent #contactForm {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
   width: 100%;
+  margin: 0 0.5rem;
+  height: 100%;
+}
+
+.contact-form-parent #contactForm .field-name,
+.contact-form-parent #contactForm .field-email,
+.contact-form-parent #contactForm .field-message,
+.contact-form-parent #contactForm .field-submit,
+.contact-form-parent #contactForm .field-finish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ccd6f6;
+  min-height: 60px;
+  max-width: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.contact-form-parent #contactForm input, .contact-form-parent #contactForm #message {
+  background: none;
   border: none;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  color: #ccd6f6;
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding: .7rem 0.4rem;
-  background: #020c1b;
-  border-radius: 2px;
+  color: #040404;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: none;
+  height: 100%;
+  padding: 0.5rem 0;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  border-radius: 5px;
+  border-bottom: 1px dotted #040404;
+}
+
+.contact-form-parent #contactForm input:hover, .contact-form-parent #contactForm #message:hover {
+  background: #a1b3ee;
+}
+
+.contact-form-parent #contactForm input::-webkit-input-placeholder, .contact-form-parent #contactForm #message::-webkit-input-placeholder {
   text-align: center;
-  outline-color: #66ffda;
+  color: #020c1b;
+  font-size: 1rem;
 }
 
-#contact-form div > *:focus, #contact-form div > *:hover {
-  background: black;
+.contact-form-parent #contactForm input:-ms-input-placeholder, .contact-form-parent #contactForm #message:-ms-input-placeholder {
+  text-align: center;
+  color: #020c1b;
+  font-size: 1rem;
 }
 
-#contact-form .button-container {
-  width: 100%;
+.contact-form-parent #contactForm input::-ms-input-placeholder, .contact-form-parent #contactForm #message::-ms-input-placeholder {
+  text-align: center;
+  color: #020c1b;
+  font-size: 1rem;
 }
 
-#contact-form textarea {
+.contact-form-parent #contactForm input::placeholder, .contact-form-parent #contactForm #message::placeholder {
+  text-align: center;
+  color: #020c1b;
+  font-size: 1rem;
+}
+
+.contact-form-parent #contactForm #message {
+  height: 100px;
   resize: none;
 }
 
-#contact-form .submit {
-  width: 50%;
-  background-color: #020c1b;
-  color: #66ffda;
-  border: 1px solid #66ffda;
-  padding: 1rem 0;
-  outline: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  letter-spacing: 1px;
+.contact-form-parent #contactForm i {
+  padding: 10px;
   cursor: pointer;
-  font-family: 'Play', sans-serif;
-}
-
-#contact-form .submit:hover {
-  background: #66ffcd;
   color: #020c1b;
 }
 
-.wide-contact {
-  grid-column: span 2 / auto;
+.contact-form-parent #contactForm .inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-form-parent #contactForm .active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+#contactForm .field-finish p {
+  color: #020c1b;
+  font-family: 'Play', sans-serif;
+}
+
+#contactForm .field-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#contactForm .field-submit .submit {
+  color: #66ffda;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  padding: 0.6em .5em;
+  background: #8892b0;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.holla-prog {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem 0;
+}
+
+.holla-prog .form-progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  background: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.holla-prog .form-progress-bar div {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 1px;
+  background: #ccd6f6;
+}
+
+.holla-prog #holla {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 0;
+  opacity: 0.1;
+}
+
+.holla-prog #holla p {
+  font-size: 3rem;
+  color: #0A192F;
+  z-index: 0;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.form-title {
+  font-size: 1.3rem;
+  text-align: center;
+  color: teal;
+  padding-top: 1rem;
+  letter-spacing: 1px;
+  font-weight: 100;
 }
 
 .blog {
@@ -558,8 +750,8 @@ body .section-heading .heading-number {
 .blog-container article {
   border-radius: 5px;
   width: 100%;
-  -webkit-transition: background 0.5s ease;
-  transition: background 0.5s ease;
+  -webkit-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,6 +768,11 @@ body .section-heading .heading-number {
           justify-content: center;
   margin: 1rem 0;
   text-align: center;
+}
+
+.blog-container article:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .blog-container article .article-card-image {
@@ -619,8 +816,8 @@ body .section-heading .heading-number {
           justify-content: normal;
   padding: 0.5rem;
   border-radius: 5px;
-  -webkit-transition: 0.5s ease-in 0s;
-  transition: 0.5s ease-in 0s;
+  -webkit-transition: all 0.5s ease-in 0s;
+  transition: all 0.5s ease-in 0s;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   width: 100%;
@@ -628,10 +825,6 @@ body .section-heading .heading-number {
   background: -webkit-gradient(linear, left bottom, left top, from(#8892b0), to(rgba(136, 146, 176, 0.4)));
   background: linear-gradient(to top, #8892b0, rgba(136, 146, 176, 0.4));
   background-color: #020c1b;
-}
-
-.blog-container article .article-card:hover {
-  background: #69769c;
 }
 
 .blog-container article .article-card p {
@@ -660,6 +853,12 @@ body .section-heading .heading-number {
   color: white;
   color: #ccd6f6;
   font-weight: 600;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.blog-container article .article-card h1 > a:hover {
+  color: #66ffda;
 }
 
 .blog-container article .article-card .article-link {
@@ -673,6 +872,8 @@ body .section-heading .heading-number {
 .blog-container article .article-card .article-link a {
   text-decoration: none;
   color: white;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .blog-container article .article-card .article-link a:hover {
@@ -757,7 +958,7 @@ body .section-heading .heading-number {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 0.4rem;
+  border-radius: 6px;
   cursor: pointer;
   -webkit-transition: background 0.5s ease, -webkit-transform 0.5s ease-in-out;
   transition: background 0.5s ease, -webkit-transform 0.5s ease-in-out;

@@ -6,7 +6,7 @@ html {
 }
 body {
   /* background-color: #020c1b; */
-  background-color: #8892b0;
+  background-color: #0A192F;
 
   color: #040404;
   position: relative;
@@ -16,19 +16,25 @@ body {
   position: relative;
   overflow-x: hidden;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 main {
-  margin: 0 auto;
-  margin-top: 5rem;
-  max-width: 960px;
+  margin: 0 0.5rem;
+  max-width: 1200px;
   padding: 0 1rem;
   width: 100%;
+  padding-bottom: 7rem;
+  /* replace this bg with glassmorphism */
+  background-color: #8892b0;
+  min-height: 110vh;
   /* position: relative; */
 }
 main .article-content {
   margin: 0 auto;
   padding: 0.5rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
   /* grid-auto-rows: 600px; */
   text-align: justify;
@@ -67,8 +73,10 @@ main .article-content code {
 nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
+  transform: translate(-50%);
+  max-width: 1200px;
   padding: 0 1rem;
   height: auto;
   z-index: 30;
@@ -79,7 +87,8 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   background-color: #0a192f;
-  opacity: 0.8;
+  /* background-color: #112240; */
+  /* opacity: 0.8; */
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
