@@ -42,9 +42,13 @@ main .article-content {
   width: 100%;
 }
 
+main .article-content img {
+  max-width: 100%;
+  height: auto;
+}
 main .article-content p {
   text-align: justify;
-  margin: 1rem;
+  margin: 1.0rem;
 }
 main .article-content h2 {
   text-align: center;
