@@ -105,7 +105,7 @@ function skillIn() {
 // gsap
 tl = gsap.timeline({
   defaults: {
-    duration: 1.0,
+    duration: 0.5,
     // delay: 4,
 
   }
