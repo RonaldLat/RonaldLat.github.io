@@ -35,6 +35,8 @@ body {
   overflow-x: hidden;
   background: grey;
   min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: stretch;
   background-color: #0A192F;
   color: #8892b0;
   font-family: 'Poppins', sans-serif;
@@ -1369,6 +1371,80 @@ nav .nav-items ul li .nav-number {
   width: 100%;
 }
 
+.portofolio .portofolio-container .portofolio-iten {
+  width: 100%;
+  height: 500px;
+  background-image: url("/images/ideal-designer1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.portofolio .portofolio-container .portofolio-iten:nth-child(2) {
+  background-image: url("/images/ideal-designer2.png");
+}
+
+.portofolio .portofolio-container .portofolio-iten .svg-container {
+  height: 200px;
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(4, 4, 4, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(4, 4, 4, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(4, 4, 4, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.portofolio .portofolio-container .portofolio-iten .svg-container .portofolio-title, .portofolio .portofolio-container .portofolio-iten .svg-container .portofolio-category {
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #66ffda;
+  font-size: 1.1rem;
+}
+
+.portofolio .portofolio-container .portofolio-iten .svg-container .portofolio-title {
+  font-family: 'Play', sans-serif;
+}
+
+.portofolio .portofolio-container .portofolio-iten .svg-container .portofolio-category {
+  color: #8892b0;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.portofolio .portofolio-container .portofolio-iten .svg-container .project-buttons {
+  background: grey;
+}
+
+.portofolio .portofolio-container .portofolio-iten .svg-container svg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  stroke: #66ffda;
+  stroke-width: 1px;
+  fill: #0A192F;
+}
+
 .portofolio .portofolio-container .portofolio-item {
   width: 100%;
   display: -webkit-box;
@@ -1387,6 +1463,7 @@ nav .nav-items ul li .nav-number {
   border-radius: 10px;
   z-index: 2;
   min-height: 280px;
+  display: none;
 }
 
 .portofolio .portofolio-container .portofolio-item::before {
