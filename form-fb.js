@@ -25,7 +25,8 @@ let verification = document.querySelector('.verification')
 var messageRef = firebase.database().ref('messages');
 
 let submitBtn = document.querySelector('.submit');
-document.querySelector('form').addEventListener('submit', submitForm)
+submitBtn.addEventListener('click', submitForm)
+// document.querySelector('form').addEventListener('submit', submitForm)
 
 
 
@@ -38,21 +39,22 @@ function submitForm(e) {
 
     let name = getInputVal('#name')
     let email = getInputVal('#email')
-    let phone = getInputVal('#phone')
+    // let phone = getInputVal('#phone')
     let time = firebase.database.ServerValue.TIMESTAMP
     let message = getInputVal('#message')
 
-    if (name == '' || email == '' || phone == '' || message == '') {
-        warning.style.transform = 'translateX(0)'
+    if (name == '' || email == ''  || message == '') {
+        // warning.style.transform = 'translateX(0)'
 
-        setTimeout(() => {
-            warning.style.transform = 'translateX(-100%)'
+        // setTimeout(() => {
+        //     warning.style.transform = 'translateX(-100%)'
 
 
-        }, 4000);
+        // }, 4000);
+        return
     } else {
         //save message
-        saveMessage(name, phone, email, time, message)
+        saveMessage(name,  email, time, message)
 
 
     }
@@ -65,29 +67,29 @@ function getInputVal(id) {
 }
 
 //save message to  firebase
-function saveMessage(name, phone, email, time, message) {
+function saveMessage(name,  email, time, message) {
 
 
     let newMessageRef = messageRef.push();
     newMessageRef.set({
             name: name,
             email: email,
-            phone: phone,
             message: message,
             time: time
         })
         .then(() => {
+            console.log('submited')
 
             document.querySelector('form').reset()
 
-            verification.style.transform = 'translateX(0)'
+            // verification.style.transform = 'translateX(0)'
 
 
-            setTimeout(() => {
-                verification.style.transform = 'translateX(-100%)'
+            // setTimeout(() => {
+            //     verification.style.transform = 'translateX(-100%)'
 
 
-            }, 4000);
+            // }, 4000);
         });
 }
 
