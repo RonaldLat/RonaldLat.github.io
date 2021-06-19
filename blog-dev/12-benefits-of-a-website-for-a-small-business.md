@@ -1,10 +1,11 @@
 ---
 layout: default-blog.njk
 title: 12 Benefits Of A Website For A Small Business
-image: working-on-computer.png
+image: amazon-redesign-concept.png
 date: 2021-03-28
 tags: ["post"]
 ---
+<img src="../blog_images/amazon-redesign-concept.png">
 
 ## 12 Benefits Of A Website For A Small Business
 

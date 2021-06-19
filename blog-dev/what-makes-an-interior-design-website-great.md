@@ -1,8 +1,8 @@
 ---
 layout: default-blog.njk
 title: What makes an Interior Design Website Great?
-image: beautiful-mess.jpg
-date: 2021-03-28
+image: pink-design.webp
+date: 2021-04-02
 tags: ["post"]
 ---
 

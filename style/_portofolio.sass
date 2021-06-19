@@ -8,6 +8,7 @@
         width: 100%
         .portofolio-iten
             width: 100%
+            // width: 240px
             height: 500px
             background-image: url('/images/ideal-designer1.png')
             background-size: contain
@@ -15,7 +16,9 @@
             background-repeat: no-repeat
             position: relative
             &:nth-child(2)
-                background-image: url('/images/ideal-designer2.png')
+                width: 100%
+
+                background-image: url('/images/d-resort.png')
 
             .svg-container
                 // display: none
@@ -27,12 +30,10 @@
                 justify-content: center
                 gap: 0.5rem
                 position: absolute
-                bottom: 0
-                right: 0
-                // top: 50%
-                // left: 50%
-                // transform: translate(-50%, -50%)
-                background: rgba( $charcoalBlack, 0.40 )
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                background: rgba( $charcoalBlack, 0.90 )
                 box-shadow: 0 8px 32px 0 rgba( $charcoalBlack, 0.37 )
                 backdrop-filter: blur( 4.5px )
                 -webkit-backdrop-filter: blur( 4.5px )
@@ -42,7 +43,7 @@
                     font-weight: 800
                     letter-spacing: 1px
                     text-transform: uppercase
-                    color: $mainColor
+                    color: teal
                     font-size: 1.1rem
 
                 .portofolio-title
@@ -51,34 +52,42 @@
                 .portofolio-category
                     color: $greyish
                     letter-spacing: 5px
-                    font-weight: 600
-                .project-buttons
-                    background: grey
+                    font-weight: 700
+                    font-size: 0.9rem
+
+            .portofolio-buttons
+                background: grey
                 // width: 45%
-                    display: flex
-                    gap: 1rem
-                    align-items: center
-                    justify-content: center
+                display: flex
+                gap: 1rem
+                align-items: center
+                justify-content: center
+                background: transparent
+                button
                     background: transparent
-                    button
-                        // flex-grow: 1
-                        background: transparent
-                        outline: none
-                        border: none
+                    outline: none
+                    border: none
+                    cursor: pointer
 
-                        a
-                            text-decoration: none
-                            color: #ccd6f6
-                            font-size: 1rem
+                    a
+                        text-decoration: none
+                        color: $greyish
+                        font-size: 0.7rem
+                        i
+                            color: $greyish
+                            // font-size: 1rem
+                            transition: color 0.5s ease
+                            &:hover
+                                color: $mainColor
 
-                svg
-                    display: none
-                    width: 100%
-                    height: 100%
-                    stroke: $mainColor
-                    stroke-width: 1px
-                    // fill: rgba( 17, 34, 64, 0.40 )
-                    fill: $navy
+                // svg
+                //     display: none
+                //     width: 100%
+                //     height: 100%
+                //     stroke: $mainColor
+                //     stroke-width: 1px
+                //     // fill: rgba( 17, 34, 64, 0.40 )
+                //     fill: $navy
 
         .portofolio-item //this is a portofolio card/ item
             width: 100%

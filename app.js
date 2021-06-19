@@ -167,7 +167,7 @@ window.addEventListener('load', () => {
 
       })
 
-  }, 100);
+  }, 10);
 })
 
 let diamond = document.querySelectorAll('#diamond')
