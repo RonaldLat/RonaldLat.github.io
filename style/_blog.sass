@@ -1,115 +1,234 @@
 .blog
     margin-bottom: 4rem
 
-.recent-blog
-    margin-bottom: 2rem
-.more-posts
-    width: 100%
-    display: flex
-    align-items: center
-    a
-        text-decoration: none
-        color: #66ffda
-        border-bottom: 1px solid #66ffda
-        font-size: 1rem
-        margin: 2rem auto
-        transition: all 0.5s ease-in
-        &:hover
-            transform: scale(1.1)
-
-.blog-container
-    width: 100%
-    display: grid
-    gap: 1rem
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
-    // grid-auto-rows: 240px
-    article
-
-        border-radius: 5px
+    .recent-blog
+        margin-bottom: 2rem
+    .more-posts
         width: 100%
-        transition: all 0.5s ease-in 0s
+        display: flex
+        align-items: center
+        a
+            text-decoration: none
+            color: #66ffda
+            border-bottom: 1px solid $mainColor
+            font-size: 1rem
+            margin: 2rem auto
+            transition: all 0.5s ease-in
+            &:hover
+                transform: scale(1.1)
+
+    .blog-container4
+        width: 100%
+        display: grid
+        gap: 1rem
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+        // grid-auto-rows: 240px
+    .tmpl-home
+        background: $greyish
+        background: #BBBBBE
+        color: $charcoalBlack
+        width: 100%
+        padding: 0.5rem
+        margin: 0 auto
+        margin-top: 5rem
+    .post-tag
+        font-size: 0.8rem
+        text-align: center
+        padding: 0.1em 0.3em
+        // color: #9C9C9D
+        color: $charcoalBlack
+        border-bottom: 1px solid $mainColor
+        border-bottom-width: 0
+        transition: all o.5s ease-in
+        &:hover
+            border-bottom-width: 100%
+        &::before
+            content: "#"
+            color: $mainColor
+    .tags-list a
+        font-size: 1rem
+    .archive-link
+        color: $charcoalBlack
+        font-weight: 500
+        padding-left: 0.5rem
+        a
+            color: $darkNavy
+            border-bottom: 1px solid $mainColor
+    .blog-container //aka postlist
+        width: 100%
+        margin: 1rem auto
+        padding: 0.5rem
+        max-width: 1200px
+        display: grid
+        gap: 1rem
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+        // grid-auto-rows: 240px
+        .postlist-item
+
+            border-radius: 5px
+            width: 100%
+            transition: all 0.3s ease 0s
+            display: flex
+            flex-direction: column
+            gap: 4px
+            align-items: center
+            justify-content: center
+            margin: 1rem 0
+            max-width: 500px
+            // padding: 0.3rem 0.4rem
+            text-align: center
+            .postlist-date
+                padding: 0.1em
+                color: #9C9C9D
+
+            .article-card-image
+                width: 100%
+                height: 170px
+                display: flex
+                align-items: center
+                justify-content: center
+
+                img
+                    width: 100%
+                    height: 150px
+                    object-fit: cover
+                    border-radius: 5px
+                    border-bottom-left-radius: 0
+                    border-bottom-right-radius: 0
+
+            .article-card
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 0.5rem
+                justify-content: space-between
+                padding: 0.5rem
+                border-radius: 5px
+                transition: all 0.5s ease-in 0s
+                border-top-left-radius: 0
+                border-top-right-radius: 0
+                width: 100%
+                height: 100%
+                // background: linear-gradient(to top,$greyish,rgba($greyish, 0.4))
+                // background-color: $darkNavy
+                // background: darken(#8892b0, 10%)
+                background-color: #D2D1D1
+                &:hover
+                    background: darken($charcoalBlack, 10%)
+
+                p
+                    color: #262626
+                    font-weight: 400
+                    max-width: 80ch
+
+                h1
+                    font-size: 1.0rem
+                    font-weight: 400
+                    letter-spacing: 1px
+                    max-width: 80ch
+                    position: relative
+
+                h6
+                    font-weight: 400
+                    color: $charcoalBlack
+                    color: #9C9C9D
+                    max-width: 80ch
+                    // font-size: 0.8rem
+
+                h1 > a
+                    color: black
+                    text-decoration: none
+                    color: #54585D
+                    font-weight: 400
+                    transition: color 0.5s ease
+                    &:hover
+                        color: $mainColor
+                    // text-shadow: 2px 1px 5px black
+
+                // .article-link
+                //     border-radius: 5px
+                //     background-color: black
+                //     transition: all 0.5s ease-in
+                //     padding: 0.4em 0.8em
+
+                //     a
+                //         text-decoration: none
+                //         color: white
+                //         transition: all 0.5s ease-in
+
+                //         &:hover
+
+                //             color: #66ffda
+
+    // The article content
+
+    .tmpl-post
+        margin: 0 0.5rem
+        max-width: 1200px
+        padding: 0 1rem
+        width: 100%
+        background-color: $flatGrey
+        background-color: #BBBBBE
+        color: $charcoalBlack
+        min-height: 110vh
+
+    .article-content
+        margin: 0 auto
+        padding-top: 6rem
+        padding-bottom: 5rem
+        text-align: justify
+        max-width: 70ch
+        width: 100%
         display: flex
         flex-direction: column
-        gap: 4px
         align-items: center
         justify-content: center
-        margin: 1rem 0
-        // padding: 0.3rem 0.4rem
-        text-align: center
-
-        &:hover
-            transform: scale(1.05)
-
-        .article-card-image
+        .article-hero
             width: 100%
-            height: 170px
+            max-width: 100%
+            height: auto
+            max-height: 100%
+            background: $charcoalBlack
+        .below-title
             display: flex
             align-items: center
             justify-content: center
+            gap: 2rem
+            font-size: 0.7rem
+            width: fit-content
+            padding: 0.2em 0.3em
+            margin: 2.5rem 0
+            & > *
+                border-bottom: 1px solid $lightNavy
 
-            img
-                width: 100%
-                height: 150px
-                object-fit: cover
-                border-radius: 5px
-                border-bottom-left-radius: 0
-                border-bottom-right-radius: 0
-
-        .article-card
+        p
+            text-align: justify
+            margin: 1.0rem 0
+        h2, h3, h4
+            text-align: center
+        ul
+            text-align: left
+            margin-left: 3rem
+            list-style: lower-latin
+        .direct-link
+            display: none
+        .posts-pagination
+            background: $mainColor
+            padding: 0.2em 0.3em
             display: flex
             flex-direction: column
-            align-items: center
-            gap: 0.5rem
-            justify-content: space-between
-            padding: 0.5rem
-            border-radius: 5px
-            transition: all 0.5s ease-in 0s
-            border-top-left-radius: 0
-            border-top-right-radius: 0
-            width: 100%
-            height: 100%
-            background: linear-gradient(to top,$greyish,rgba($greyish, 0.4))
-            background-color: $darkNavy
-
-            p
-                color: #262626
-                font-weight: 400
-                max-width: 80ch
-
-            h1
-                font-size: 1.0rem
-                font-weight: 400
-                letter-spacing: 1px
-                max-width: 80ch
-                position: relative
-
-            h6
-                font-weight: 400
-                color: $charcoalBlack
-                max-width: 80ch
-
-            h1 > a
-                color: black
-                text-decoration: none
-                color: white
-                color: $whitish
-                font-weight: 600
-                transition: color 0.5s ease
-                &:hover
-                    color: $mainColor
-                // text-shadow: 2px 1px 5px black
-
-            .article-link
-                border-radius: 5px
-                background-color: black
-                transition: all 0.5s ease-in
-                padding: 0.4em 0.8em
-
+            gap: 1rem
+            margin: 0 auto
+            .prev-post, .next-post
+                color: $greyish
+                display: flex
+                align-items: center
+                justify-content: space-between
                 a
-                    text-decoration: none
-                    color: white
-                    transition: all 0.5s ease-in
-
-                    &:hover
-
-                        color: #66ffda
+                    border-bottom: 1px solid $lightNavy
+                    color: $navy
+                    margin-left: 0.5rem
+                &::marker
+                    display: none
+                    opacity: 0
+                    color: $greyish

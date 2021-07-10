@@ -115,7 +115,7 @@ window.addEventListener('load', () => {
     tl
 
       .to('main', {
-        opacity: 1 ,
+        opacity: 1,
 
       })
       .from('.greeting', {
@@ -172,3 +172,10 @@ window.addEventListener('load', () => {
 
 let diamond = document.querySelectorAll('#diamond')
 let diamondPath = document.querySelectorAll('#diamondPath')
+
+// pwa and service workers
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/sw.js')
+//     .then(() => console.log('service woker registered'))
+//     .catch(() => console.log('service worker not registered'))
+// }
