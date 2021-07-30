@@ -163,22 +163,6 @@ body .section-heading .heading-number {
   font-family: 'Play', sans-serif;
 }
 
-@media (min-width: 480px) {
-  body {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 5% auto 5%;
-        grid-template-columns: 5% auto 5%;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-  }
-  body aside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .loader-wrapper {
   background-color: #0A192F;
   min-width: 100vw;
