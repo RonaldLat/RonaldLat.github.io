@@ -5,12 +5,43 @@
 	
 	<link href="http://ronaldlat.github.io/feed/feed.xml" rel="self"/>
 	<link href="http://ronaldlat.github.io/blog"/>
-	<updated>2021-07-27T00:00:00Z</updated>
+	<updated>2021-08-01T00:00:00Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>Ronald Otieno</name>
 		<email>ronnlats@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Top 10 Most Useful Tmux commands</title>
+		<link href="http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/"/>
+		<updated>2021-08-01T00:00:00Z</updated>
+		<id>http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/</id>
+		<content type="html">&lt;p&gt;Tmux is a very powerful commandline tool for managing multple terminal windows and sessions.&lt;br /&gt;
+It is one of the tools you never know you need until you start using.&lt;/p&gt;
+&lt;h3 id=&quot;1.-starting-tmux&quot;&gt;1. Starting tmux &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#1.-starting-tmux&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;tmux&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2.-creating-named-tmux-session&quot;&gt;2. Creating named tmux session &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#2.-creating-named-tmux-session&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;tmux new -t session-name&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3.-detach-from-a-session&quot;&gt;3. Detach from a session &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#3.-detach-from-a-session&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix d&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;4.-attach-to-a-session&quot;&gt;4. Attach to a session &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#4.-attach-to-a-session&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;tmux attach -t session-name&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;5.-list-all-available-sessions&quot;&gt;5. List all available sessions &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#5.-list-all-available-sessions&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix w&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;6.-kill-or-close-a-pane&quot;&gt;6. Kill or Close a pane &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#6.-kill-or-close-a-pane&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix x&lt;/code&gt;&lt;br /&gt;
+... then accept by entering &lt;code&gt;y&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;7.-create-a-new-window&quot;&gt;7. Create a new window &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#7.-create-a-new-window&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix c&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;8.-go-to-next-window&quot;&gt;8. Go to next window &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#8.-go-to-next-window&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix n&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;9.-go-to-previous-window&quot;&gt;9. Go to previous window &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#9.-go-to-previous-window&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix p&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;10.-toggle-last-active-pane&quot;&gt;10. Toggle last active pane &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#10.-toggle-last-active-pane&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix ;&lt;/code&gt;&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>How To Build Offline DarkMode On Your Website</title>
@@ -272,6 +303,7 @@ A website which isn&#39;t regularly updated shows lack of commitment from the bu
 &lt;h4 id=&quot;final-words&quot;&gt;Final words &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#final-words&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;A website is not useful to your business if it isn&#39;t serving it&#39;s intended purpose.&lt;br /&gt;
 If you have any questions, need a website for your firm or you need help to get your current website to get you the results you desire, don&#39;t hesitate to contact me.&lt;/p&gt;
+&lt;p&gt;End.&lt;/p&gt;
 </content>
 	</entry>
 	

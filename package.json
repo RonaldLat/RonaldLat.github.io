@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel build --no-content-hash  src/index.html --dist-dir www --no-cache --no-source-maps --detailed-report",
+    "build": "parcel build --no-content-hash  src/index.html --dist-dir . --no-cache --no-source-maps --detailed-report",
     "serve": "parcel serve src/index.html"
   },
   "repository": {
