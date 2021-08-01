@@ -2,23 +2,21 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0A192F" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A192F">
     <title>Ronald Otieno - Web developer.</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200&family=Play:wght@400;700&display=swap"
-      rel="stylesheet" />
+    <link rel="preconnect" href="685644897700ae9bff03a496e534837e">
+    <link href="8337f1e307cddb93d4da1f893a787869" rel="stylesheet">
 
 
     <!-- <link rel="stylesheet" href="fonts/css/all.css" /> -->
 
-    <link rel="stylesheet" href="./style/style.sass" />
-    <script src="https://kit.fontawesome.com/4bb691d9cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="42c285e581d6d5ebe63473eeb5bbf1f1">
+    <script src="af0b02d8ba11d4c854d79fd323770397" crossorigin="anonymous"></script>
 
-    <link rel="icon" type="image/x-icon" href="favicon.png" />
-    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="32f47379aefb7e324e670289623fc737">
+    <link rel="manifest" href="8e7347be820c7af6152700c9a8ffb4bb">
   </head>
 
   <body>
@@ -38,15 +36,12 @@
     <main>
       <div class="loader-wrapper">
         <div class="diamond-container">
-          <svg id="diamondSvg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+          <svg id="diamondSvg" xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 84 96">
             <title>Home</title>
             <g transform="translate(-8.000000, -2.000000)">
               <g transform="translate(11.000000, 5.000000)">
-                <path id="path2"
-                  d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
-                  fill="currentColor"></path>
-                <polygon id="diamondPath" stroke="currentColor" stroke-width="5" stroke-linecap="round"
-                  stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon>
+                <path id="path2" d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z" fill="currentColor"></path>
+                <polygon id="diamondPath" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon>
               </g>
             </g>
           </svg>
@@ -69,15 +64,12 @@
           <i class="fas fa-bars"></i>
         </div> -->
         <a href="/" class="logo">
-          <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+          <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 84 96">
             <title>Home</title>
             <g transform="translate(-8.000000, -2.000000)">
               <g transform="translate(11.000000, 5.000000)">
-                <path
-                  d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
-                  fill="currentColor"></path>
-                <polygon id="Shape" stroke="currentColor" stroke-width="5" stroke-linecap="round"
-                  stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon>
+                <path d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z" fill="currentColor"></path>
+                <polygon id="Shape" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon>
               </g>
             </g>
           </svg>
@@ -88,7 +80,7 @@
               <a href="#about"> <span class="nav-number">01. </span> <span class="nav-text">about</span> </a>
             </li>
             <li>
-              <a href="#portofolio"> <span class="nav-number">02. </span class="nav-text"> <span>portofolio</span> </a>
+              <a href="#portofolio"> <span class="nav-number">02. </span> <span>portofolio</span> </a>
             </li>
             <li>
               <a href="/blog/"> <span class="nav-number">03. </span> <span class="nav-text">blog</span> </a>
@@ -109,7 +101,7 @@
             <h2 class="my-name">ronald otieno.</h2>
 
             <h3 class="catch-phrase">
-              Freelance web developer <br />
+              Freelance web developer <br>
               & designer.
             </h3>
             <h5 class="brief-intro">
@@ -135,14 +127,13 @@
           <div class="detailed-description">
             <p>Hello! I'm Ronald, a web developer based in Nairobi, Kenya. </p>
             <div class="hero-image">
-              <img src="images/lat2-smaller.png" alt="passport photograph of myself" />
+              <img src="56f578987e275785c775d01c5beaf783" alt="passport photograph of myself">
             </div>
             <p>Creating websites and web applications that focus on User Exprience <strong>(UX)</strong> and helping
               clients achieve their goals are always on top of my Todo-list.</p>
 
-            <p>My hobbies are walking, reading and of course coding. I'm also a die-hard fan of The Gunners <span
-                <!--class="arsenal"><img src="images/arsenal-f-c-seeklogo.com.svg" alt="arsenal badge"></span></p>-->
-            </p>
+            <p>My hobbies are walking, reading and of course coding. I'm also a die-hard fan of The Gunners <span <!--class="arsenal"><img src="5cd02da0af689a65384b8cb182c257b4" alt="arsenal badge"></span></p>-->
+            <p></p>
 
           </div>
 
@@ -203,8 +194,8 @@
           </div>
 
         </div>
-        </div>
-        </div>
+        
+        
       </section>
 
       <section class="portofolio" id="portofolio">
@@ -223,12 +214,12 @@
               <h2 class="portofolio-category">website</h2>
               <div class="portofolio-buttons">
                 <button>
-                  <a href="https://boring-tesla-0143e9.netlify.app/" target="_blank">
+                  <a href="5c62777c97eba74d2d4d1f4cd5903d46" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </button>
                 <button>
-                  <a href="https://boring-tesla-0143e9.netlify.app/" target="_blank">
+                  <a href="5c62777c97eba74d2d4d1f4cd5903d46" target="_blank">
                     <i class="fas fa-external-link-alt"></i>
                   </a>
                 </button>
@@ -241,12 +232,12 @@
               <h2 class="portofolio-category">website</h2>
               <div class="portofolio-buttons">
                 <button title="View source code">
-                  <a href="https://boring-tesla-0143e9.netlify.app/" target="_blank">
+                  <a href="5c62777c97eba74d2d4d1f4cd5903d46" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </button>
                 <button title="Visit this website">
-                  <a href="https://boring-tesla-0143e9.netlify.app/" target="_blank">
+                  <a href="5c62777c97eba74d2d4d1f4cd5903d46" target="_blank">
                     <i class="fas fa-external-link-alt"></i>
                   </a>
                 </button>
@@ -266,19 +257,19 @@
             </div>
             <div class="project-buttons">
               <button>
-                <a href="https://boring-tesla-0143e9.netlify.app/" target="_blank">
+                <a href="5c62777c97eba74d2d4d1f4cd5903d46" target="_blank">
                   <i class="fab fa-github"></i>
                 </a>
               </button>
               <button>
-                <a href="https://boring-tesla-0143e9.netlify.app/" target="_blank">
+                <a href="5c62777c97eba74d2d4d1f4cd5903d46" target="_blank">
                   <i class="fas fa-external-link-alt"></i>
                 </a>
               </button>
             </div>
 
             <div class="portofolio-img">
-              <img src="images/dr-portofolio.png" alt="milly cakes website screenshot" />
+              <img src="b1242a1e47224cb7971e2aeb53623a55" alt="milly cakes website screenshot">
             </div>
           </div>
 
@@ -296,19 +287,19 @@
             </div>
             <div class="project-buttons">
               <button>
-                <a class="github-logo" href="https://kind-almeida-bdcbd0.netlify.app/#products" target="_blank">
+                <a class="github-logo" href="45f52e983685bd91b878e37ec3ebd1a6" target="_blank">
                   <i class="fab fa-github"></i>
                 </a>
               </button>
               <button>
-                <a href="https://kind-almeida-bdcbd0.netlify.app/#products" target="_blank">
+                <a href="45f52e983685bd91b878e37ec3ebd1a6" target="_blank">
                   <i class="fas fa-external-link-alt"></i>
                 </a>
               </button>
             </div>
 
             <div class="portofolio-img">
-              <img src="images/mc-portofolio.png" alt="dudi resort website screenshot" />
+              <img src="373a68b63975b9feb06fa7c709ce9455" alt="dudi resort website screenshot">
             </div>
           </div>
         </div>
@@ -383,7 +374,7 @@
           <div class="contact-container">
             <div class="contact-details ">
               <div>
-                <span><i class="fas fa-map-marker-alt"></i></i></span>
+                <span><i class="fas fa-map-marker-alt"></i></span>
                 <span>Kisumu-Busia Rd</span>
               </div>
               <div>
@@ -419,19 +410,18 @@
                 <form id="contactForm" action="">
                   <div class="field-name active">
                     <i class="fas fa-user"></i>
-                    <input spellcheck="false" type="text" name="name" id="name" placeholder="Name" required />
+                    <input spellcheck="false" type="text" name="name" id="name" placeholder="Name" required="">
                     <i class="fas fa-arrow-down"></i>
                   </div>
                   <div class="field-email inactive">
                     <i class="fas fa-envelope"></i>
-                    <input spellcheck="false" type="email" name="email" id="email" placeholder="Email" required />
+                    <input spellcheck="false" type="email" name="email" id="email" placeholder="Email" required="">
                     <i class="fas fa-arrow-down"></i>
                   </div>
 
                   <div class="field-message inactive">
                     <i class="fa fa-pencil"></i>
-                    <textarea spellcheck="false" name="message" id="message" cols="30" placeholder="Your message"
-                      rows="10"></textarea>
+                    <textarea spellcheck="false" name="message" id="message" cols="30" placeholder="Your message" rows="10"></textarea>
                     <i class="fas fa-arrow-down"></i>
                   </div>
 
@@ -455,32 +445,31 @@
         </section>
         <footer>
           <div class="social-icons">
-            <a href="https://github.com/RonaldLat" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://twitter.com/Ron_Lats/status/1319389114014355458" target="_blank"><i
-                class="fa fa-github"></i></a>
+            <a href="b63229cad97c7eae062a1a968b17ea50" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="3f986488ff98d02e6aa59fb22587f5a6" target="_blank"><i class="fa fa-github"></i></a>
           </div>
 
           <div class="copyrights">
             <span>Designed & Built by Ronald Otieno</span> <span>&copy2021</span>
           </div>
         </footer>
-    </main>
+    </section></main>
     <div></div>
     <aside class="aside-right">
       <div class="empty-flex"></div>
       <p>ronaldotieno@gmail.com</p>
       <div class="horizontal-line"></div>
     </aside>
-    <script src="loader.js"></script>
-    <script src="gsap.min.js"></script>
+    <script src="e2214d60fb8cd6f8539a142737443710"></script>
+    <script src="cb6195f39b0e26502f1d1c79093e55e7"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="7b4da7df0b8e2b2ed23d18f1c16ea7db"></script>
+    <script src="333f29fc3aed73f831d83674870e90c6"></script>
+    <script src="0781e6290bd5560cb658597650d1deb8"></script>
 
-    <script src="app.js"></script>
-    <script src="form-engine.js"></script>
-    <script src="form-fb.js"></script>
+    <script src="2ab3c1c1ee137210a8aa1f8ef723dc0d"></script>
+    <script src="3ed9ea0819424efade5b37d939a9b60b"></script>
+    <script src="7b2d16a32b7a1b33b80088c90547edc7"></script>
 
   </body>
 
