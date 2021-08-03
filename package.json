@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "parcel build --no-content-hash  src/index.html --dist-dir . --no-cache --no-source-maps --detailed-report",
-    "serve": "parcel serve src/index.html"
+    "serve": "parcel serve src/index.html",
+    "blog": "cp -fvr blog/ build"
   },
   "repository": {
     "type": "git",

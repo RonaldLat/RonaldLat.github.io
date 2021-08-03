@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Ronald Otieno&#39;s Blog</title>
+	<subtitle>I write about Web development and Internet marketing</subtitle>
+	
+	<link href="http://ronaldlat.github.io/feed/feed.xml" rel="self"/>
+	<link href="http://ronaldlat.github.io/blog"/>
+	<updated>2021-08-01T00:00:00Z</updated>
+	<id>https://example.com/</id>
+	<author>
+		<name>Ronald Otieno</name>
+		<email>ronnlats@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>Top 10 Most Useful Tmux commands</title>
+		<link href="http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/"/>
+		<updated>2021-08-01T00:00:00Z</updated>
+		<id>http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/</id>
+		<content type="html">&lt;p&gt;Tmux is a very powerful commandline tool for managing multple terminal windows and sessions.&lt;br /&gt;
+It is one of the tools you never know you need until you start using.&lt;/p&gt;
+&lt;h3 id=&quot;1.-starting-tmux&quot;&gt;1. Starting tmux &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#1.-starting-tmux&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;tmux&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2.-creating-named-tmux-session&quot;&gt;2. Creating named tmux session &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#2.-creating-named-tmux-session&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;tmux new -t session-name&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3.-detach-from-a-session&quot;&gt;3. Detach from a session &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#3.-detach-from-a-session&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix d&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;4.-attach-to-a-session&quot;&gt;4. Attach to a session &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#4.-attach-to-a-session&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;tmux attach -t session-name&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;5.-list-all-available-sessions&quot;&gt;5. List all available sessions &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#5.-list-all-available-sessions&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix w&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;6.-kill-or-close-a-pane&quot;&gt;6. Kill or Close a pane &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#6.-kill-or-close-a-pane&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix x&lt;/code&gt;&lt;br /&gt;
+... then accept by entering &lt;code&gt;y&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;7.-create-a-new-window&quot;&gt;7. Create a new window &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#7.-create-a-new-window&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix c&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;8.-go-to-next-window&quot;&gt;8. Go to next window &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#8.-go-to-next-window&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix n&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;9.-go-to-previous-window&quot;&gt;9. Go to previous window &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#9.-go-to-previous-window&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix p&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;10.-toggle-last-active-pane&quot;&gt;10. Toggle last active pane &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/10-most-useful-tmux-commands/#10.-toggle-last-active-pane&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;prefix ;&lt;/code&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How To Build Offline DarkMode On Your Website</title>
+		<link href="http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/"/>
+		<updated>2021-07-27T00:00:00Z</updated>
+		<id>http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/</id>
+		<content type="html">&lt;p&gt;Dark mode and offline web development patterns have been on the rise lately. But why?&lt;br /&gt;
+I will give one simple answer. Accessibility.&lt;br /&gt;
+If you want to satistfy your customers of the your top concern should be on how they access your website. If you improve their experience when they are on your website they will be happier. Happy customers keep coming back and this means more profit for your business.&lt;/p&gt;
+&lt;p&gt;You might wonder what dark mode and offline has to with making customers happier.&lt;br /&gt;
+Not everyone uses their phone under bright enviroment. And internet is expensive in some countries so some of your customers might save your website for offline viewing later on. I hope you get the point.&lt;br /&gt;
+Let&#39;s get started with adding this offline dark mode to your website.offline&lt;/p&gt;
+&lt;h3 id=&quot;why-use-localstorage%3F&quot;&gt;Why use localStorage? &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#why-use-localstorage%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;LocalStorage is simply a database that resides inside the web browser. It allows us to store and retrieve data on the clients machine for later use even without internet connection.&lt;br /&gt;
+We could have used cookies or caches to store the state of users preference (dark or light mode) but we will go with localStorage.&lt;br /&gt;
+LocalStorage is prefered because it has several advantages over the other storage options in this use case.&lt;/p&gt;
+&lt;h3 id=&quot;advantages-of-localstorage&quot;&gt;Advantages of localStorage &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#advantages-of-localstorage&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Free database that come with all browsers. No installation or hosting fee headaches.&lt;/li&gt;
+&lt;li&gt;No expiration. Data remains in the database as long as the browser lives, unless manually deleted.&lt;/li&gt;
+&lt;li&gt;A whooping 5mb space. That is more than enough for most projects.&lt;/li&gt;
+&lt;li&gt;Easy to use key-value pair system. It&#39;s easy as it sounds.&lt;/li&gt;
+&lt;li&gt;Client-based. No server overload or database queries. Everything works on the client&#39;s machine.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;make-a-simple-website&quot;&gt;Make A Simple Website &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#make-a-simple-website&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;We will need a website to add the dark mode to. So let&#39;s get started with it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+   &amp;lt;head&amp;gt;
+     &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+     &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+     &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+     &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot;&amp;gt;
+   &amp;lt;/head&amp;gt;
+   &amp;lt;body&amp;gt;
+    &amp;lt;main&amp;gt;
+      &amp;lt;button&amp;gt;darkMode Toggle&amp;lt;/button&amp;gt;
+      &amp;lt;h1 class=&amp;quot;heading&amp;quot;&amp;gt;welcome to dark mode&amp;lt;/h1&amp;gt;
+    &amp;lt;/main&amp;gt;
+   &amp;lt;/body&amp;gt;
+  &amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There is nothing special here. Just a simple site with button and heading elements wrapped inside a main tag.&lt;/p&gt;
+&lt;h3 id=&quot;create-and-link-css-file&quot;&gt;Create and link CSS file &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#create-and-link-css-file&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;We will use css for styling and javascript for adding functionality.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;body {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-transform: uppercase;
+}
+
+button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.darkMode {
+  background-color: black;
+  color: white;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Most of the styling rules are self-explanatory. The most import rules are in the &lt;code&gt;.darkMode&lt;/code&gt; class.&lt;br /&gt;
+In this class you will define how you want the dark mode version of your website to look. You will definetly make things more darker and in this case our background color is set to black and text is set to white. You can use any colors you prefer.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; .darkMode {
+    background-color: black;
+    color: white;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;create-and-link-javascript-file&quot;&gt;Create and link Javascript file &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#create-and-link-javascript-file&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In javascript is where all the magic happens. On a click of a button the entire background of the website will be changed by applying the &lt;code&gt;.darkMode&lt;/code&gt; class.&lt;br /&gt;
+The chosen preference will also be saved on the users browser on a database called localStorage.&lt;br /&gt;
+We will begin by defining a few variables.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let darkMode = localStorage.getItem(&#39;darkMode&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Instantiate the name of the variable will use to save user&#39;s selection in the localStorage.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let darkModeButton = document.querySelector(&#39;button&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we grab the button and store it in a variable so that we can easily refer to it.&lt;br /&gt;
+I am using the &lt;code&gt;button&lt;/code&gt; tag to grab it because it is the only button in the page. If you have more than one button use a class or id to refer to it.&lt;/p&gt;
+&lt;p&gt;The page will initially load on a light theme. But if the user had visited before and changed to dark mode we need to make it load on that setting. This &#39;if&#39; statement will help us achieve that.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if (darkMode == &#39;enabled&#39;){
+  enableDarkMode();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This statement will check the localStorage and read &lt;code&gt;darkMode&lt;/code&gt;&#39;s variable value. If it reads &lt;code&gt;&#39;enabled&#39;&lt;/code&gt; it will call the function &lt;code&gt;enableDarkMode()&lt;/code&gt; which will enable dark mode. Don&#39;t worry about the function as we will define it in the next line.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function enableDarkMode() {
+  document.querySelector(&amp;quot;main&amp;quot;).classList.add(&amp;quot;darkMode&amp;quot;);
+  localStorage.setItem(&amp;quot;darkMode&amp;quot;, &amp;quot;enabled&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first line of this function will grab the body element and add the css class &lt;code&gt;&#39;.darkMode&#39;&lt;/code&gt; which simply applies the rules defined in the css file.&lt;/p&gt;
+&lt;p&gt;The second line will update the value of &lt;code&gt;darkMode&lt;/code&gt; to &lt;code&gt;&#39;enabled&#39;&lt;/code&gt; in the localStorage. So that the chosen mode stays in memory in page reload or in case of internet loss.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function disableDarkMode() {
+  document.querySelector(&amp;quot;main&amp;quot;).classList.remove(&amp;quot;darkMode&amp;quot;);
+  localStorage.setItem(&amp;quot;darkMode&amp;quot;, null);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A function of disabling the dark mode is required in case the user wants a light theme later on. The above function does exactly that.&lt;br /&gt;
+It achieves this by doing the direct opposite of what &lt;code&gt;enableDarkMode()&lt;/code&gt; function does.&lt;br /&gt;
+The first line grabs the body element and removes the &#39;.darkMode&#39; class which is responsible for applying the dark mode.&lt;br /&gt;
+The second line updates the localStorage and changes the value of &lt;code&gt;darkMode&lt;/code&gt; to &lt;code&gt;null&lt;/code&gt;. You can think of &lt;code&gt;null&lt;/code&gt; is &lt;code&gt;disabled&lt;/code&gt;, you might even use it if you prefer it.&lt;/p&gt;
+&lt;p&gt;All the variables and functions been defined. But how do will apply them?&lt;br /&gt;
+That is where the button comes in. A user will click a button to toggle between the modes. On every click a function will be called which will implement the requested changes. An event listenter which will be listening for the &#39;click&#39; event will be added to the button.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;toggleButton.addEventListener(&amp;quot;click&amp;quot;, () =&amp;gt; {
+  darkMode = localStorage.getItem(&amp;quot;darkMode&amp;quot;);
+
+  if (darkMode !== &amp;quot;enabled&amp;quot;) {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When the button is clicked, the value of &lt;code&gt;darkMode&lt;/code&gt; will be read from the localStorage.&lt;br /&gt;
+This value is what is going to determine which function is going to be called.&lt;br /&gt;
+The &#39;if&#39; statement states that if the value of &lt;code&gt;darkMode&lt;/code&gt; is not &lt;code&gt;enabled&lt;/code&gt;, the &lt;code&gt;enableDarkMode()&lt;/code&gt; function will be called which in return will set the page to dark mode. Otherwise it will call the &lt;code&gt;disableDarkMode()&lt;/code&gt; function will result to the page being set to the default them.&lt;br /&gt;
+And that is how you enable dark to your website which works offline.&lt;/p&gt;
+&lt;h3 id=&quot;full-code&quot;&gt;Full code &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#full-code&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Here are all the codes used in this project.&lt;/p&gt;
+&lt;h4 id=&quot;html&quot;&gt;HTML &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#html&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;
+    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot; /&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;main&amp;gt;
+      &amp;lt;button&amp;gt;darkMode Toggle&amp;lt;/button&amp;gt;
+      &amp;lt;h1 class=&amp;quot;heading&amp;quot;&amp;gt;welcome to dark mode&amp;lt;/h1&amp;gt;
+    &amp;lt;/main&amp;gt;
+
+    &amp;lt;script src=&amp;quot;app.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;css&quot;&gt;CSS &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#css&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;body {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-transform: uppercase;
+}
+
+button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.darkMode {
+  background-color: black;
+  color: white;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;javascript&quot;&gt;Javascript &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/how-to-build-offline-darkmode-on-your-website/#javascript&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;let darkMode = localStorage.getItem(&amp;quot;darkMode&amp;quot;);
+let toggleButton = document.querySelector(&amp;quot;button&amp;quot;);
+
+if (darkMode == &amp;quot;enabled&amp;quot;) {
+  enableDarkMode();
+}
+
+function enableDarkMode() {
+  document.querySelector(&amp;quot;main&amp;quot;).classList.add(&amp;quot;darkMode&amp;quot;);
+  localStorage.setItem(&amp;quot;darkMode&amp;quot;, &amp;quot;enabled&amp;quot;);
+}
+
+function disableDarkMode() {
+  document.querySelector(&amp;quot;main&amp;quot;).classList.remove(&amp;quot;darkMode&amp;quot;);
+  localStorage.setItem(&amp;quot;darkMode&amp;quot;, null);
+}
+
+toggleButton.addEventListener(&amp;quot;click&amp;quot;, () =&amp;gt; {
+  darkMode = localStorage.getItem(&amp;quot;darkMode&amp;quot;);
+
+  if (darkMode !== &amp;quot;enabled&amp;quot;) {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>What is DNS and why should you care</title>
+		<link href="http://ronaldlat.github.io/posts/what-is-dns-and-why-should-you-care/"/>
+		<updated>2021-07-25T00:00:00Z</updated>
+		<id>http://ronaldlat.github.io/posts/what-is-dns-and-why-should-you-care/</id>
+		<content type="html">&lt;p&gt;The Domain Name System is like the phone book of the internet.&lt;br /&gt;
+Human readable URLs or domain names like &lt;code&gt;www.google.com&lt;/code&gt; are like home addresses. This URLs are mapped to IP addresses such as &lt;code&gt;172.16.254.3 &lt;/code&gt; which are locations of servers which host the website.&lt;/p&gt;
+&lt;p&gt;A server in simple terms is just a computer which is connected to the internet and has the files of a website. When you visit a website, the DNS maps the URL to the IP addresses of the computer that that hosts the website.&lt;/p&gt;
+&lt;p&gt;It queries the local machine first for address. If the local machine is empty it then queries a special kind of server called Recursive Resolver. It is recursive because it makes multiple requests to other servers. You can think of it as giving out different phonebooks to a classroom of students and asking them to search for a specic person&#39;s phone number. The students in this example are like other servers. They will do this at the same time and one of them will be able to find it. That is how Recursive Resolver works in a nutshell.&lt;/p&gt;
+&lt;p&gt;The other servers that Recursive Resolver queries are called TLD servers or Top Level Domain servers. They store data of top level domains such as .com, .net or .io. The Resolver gets a response of the authoritative name server&#39;s IP address which is the server of the requsted website.&lt;br /&gt;
+This is sent back to the client and is cached for future use. All this happens happens in seconds despite sounding very complicated.happens&lt;/p&gt;
+&lt;p&gt;When you buy a domain name from companies such as BlueHost or TrueHost, it is handled by a Registrar. The record is then maintained by a Registry who stores your DNS settings and distributes them to other DNS servers around the world.&lt;/p&gt;
+&lt;p&gt;After acquiring a domain name you will be asssigned a Zone File which you can use to configue your domain settings. Every Zone has SOA, Start Of Authority Record that tell other dns servers who is in charge of that domain.&lt;br /&gt;
+There is also the &#39;A&#39; record. It means &#39;Address&#39; and it maps or matches a domain or sub-domain to IP address of it&#39;s host.&lt;/p&gt;
+&lt;p&gt;In other cases we may want to redirect a domain to another domain on the internet instead of an IP address. In such case a CNAME or Canonical Name will be used to serve this purpose.&lt;br /&gt;
+Finally we have the NS or Name Server record. This is URL the internet can ping to find an IP address.&lt;br /&gt;
+DNS is import to understand because when you plan on having a website you will need to acquire a domain name and using DNS is unavoidable. Unless you will relegate this task to a Web developer, it is fundamental to understand what DNS is and how it works.&lt;br /&gt;
+This has been a brief overview of what Domain Name System or DNS is.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>What makes and interior design website great?</title>
+		<link href="http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/"/>
+		<updated>2021-07-01T00:00:00Z</updated>
+		<id>http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/</id>
+		<content type="html">&lt;h1 id=&quot;what-makes-an-interior-design-website-great%3F&quot;&gt;What makes an Interior Design Website Great? &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#what-makes-an-interior-design-website-great%3F&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Not all websites are created equally. Some are great, some not so great. In this article you are going to learn how to create or acquire a great website for for your Interior Design firm.&lt;/p&gt;
+&lt;p&gt;If I ware to tell you what is great interior design website in twenty seconds I&#39;d tell you that it&#39;s main objective should be to inform a visitor of all matters related to interior design.&lt;br /&gt;
+But we do have more than 20 seconds so let&#39;s dig a little deeper.&lt;/p&gt;
+&lt;!-- A great interior design website should have the following: --&gt;
+&lt;h3 id=&quot;1-adaptive-to-all-types-of-devices&quot;&gt;1 Adaptive to all types of devices &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#1-adaptive-to-all-types-of-devices&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;It is the year 2021 for Christ&#39;s sake. More than &lt;strong&gt;50%&lt;/strong&gt; of internet traffic come from mobile devices. No more developing websites that are only viewable on desktop only. Your websites should approach mobile-first design meaning it should be first usable on mobile before you even think of something else.&lt;/p&gt;
+&lt;p&gt;Otherwise you are literally saying no half on the internet traffic and that&#39;s half of the prospects that could be looking forward to doing business with you.&lt;br /&gt;
+That&#39;s a huge chunk of potential revenue that you shouldn&#39;t be missing out on.&lt;/p&gt;
+&lt;h3 id=&quot;2.-use-high-quality-professional-images&quot;&gt;2. Use high-quality professional images &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#2.-use-high-quality-professional-images&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A picture speaks a thousand words and in interior design it speaks everything about your business. Great photos will capture your visitors attention and that will result to them staying on your website longer enabling them to learn more about about your business and the value you can provide to them.&lt;/p&gt;
+&lt;p&gt;Display your best work in the best way possible and this will enthuse your visitors and they will be eager to book your services. You can&#39;t afford not to have great photos on your website. Invest in a professional photographer&#39;s services if you have to.&lt;/p&gt;
+&lt;h3 id=&quot;3.-fast-loading&quot;&gt;3. Fast loading &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#3.-fast-loading&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You should know that your website conversion rates drop up to 20% per second of site&#39;s load time. People have become accustomed to fast everything, fast food, fast cars, fast internet, fast dating ...oops speed dating. With the lack of patience these days people will not entertain a slow website. They will simply click the competitors link and you will be missing out on a huge piece of potential clients. Hire a professional web developer who will make your website jet-fast and blow the competition out of the water.&lt;/p&gt;
+&lt;h3 id=&quot;4.-has-a-call-to-action&quot;&gt;4. Has a call to action &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#4.-has-a-call-to-action&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You have a nice website which is fast, has great content, is adaptive to all devices, and has even great images. So what?&lt;/p&gt;
+&lt;p&gt;Your visitors have visited your website and they have experienced all that. Now what is it that your require them to do next? This is where Call To Action (CTA) comes into play. You might think that it is obvious what a visitor should do after visiting your website but you&#39;re very wrong.&lt;/p&gt;
+&lt;p&gt;You see all those &#39;Like&#39;, &#39;Subscribe&#39;, &#39;Join our newsletter&#39; etc. everywhere every time. Why? Because they work. People always need that extra guidance on what step to take next and you should be providing it if you want to stay in business.&lt;/p&gt;
+&lt;p&gt;Tell you visitors what desirable action you would like them to take next that will bring value to you your business.&lt;/p&gt;
+&lt;p&gt;For example ask them to drop their email so that you can send them your latest design trends that no one else has seen.&lt;br /&gt;
+You could later use this emails in your email marketing campaigns.&lt;/p&gt;
+&lt;h3 id=&quot;5.-regularly-updated.&quot;&gt;5. Regularly Updated. &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#5.-regularly-updated.&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;To wrap things up your website should be regularly to keep visitors coming back for more. What would do you do when you land on a page that was last updated 3 years ago? You will go trust the information? Will you go ahead and do business with the firm?&lt;/p&gt;
+&lt;p&gt;If your answers are &#39;no&#39; then you shouldn&#39;t be doing this mistake.&lt;br /&gt;
+A website which isn&#39;t regularly updated shows lack of commitment from the business and no one wants to work with a interior designer who isn&#39;t committed to his craft. You will simply miss out on a ton of business opportunities.&lt;/p&gt;
+&lt;h4 id=&quot;final-words&quot;&gt;Final words &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/what-makes-an-interior-design-website-great/#final-words&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;A website is not useful to your business if it isn&#39;t serving it&#39;s intended purpose.&lt;br /&gt;
+If you have any questions, need a website for your firm or you need help to get your current website to get you the results you desire, don&#39;t hesitate to contact me.&lt;/p&gt;
+&lt;p&gt;End.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>10 Benefits Of A Website For A Small Business</title>
+		<link href="http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/"/>
+		<updated>2021-07-01T00:00:00Z</updated>
+		<id>http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/</id>
+		<content type="html">&lt;p&gt;It&#39;s 2021 and having a website for your small business is a necessity, not an option.&lt;br /&gt;
+If you want to stay ahead of your competition among other reasons you should considering doing it. Here are few more reasons;&lt;/p&gt;
+&lt;h3 id=&quot;1.-increase-your-online-presence&quot;&gt;1. Increase Your Online Presence &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/#1.-increase-your-online-presence&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You are online right now aren&#39;t you? Your potential customers or clients probably are too. It is therefore wise to reach out to your potential buyers or clients where they are.&lt;/p&gt;
+&lt;p&gt;A recent study in January 2021 shows that &lt;strong&gt;4.67 billion&lt;/strong&gt; people which is &lt;strong&gt;59.5% of the global population&lt;/strong&gt; are active internet users. And &lt;strong&gt;92.6% (4.32 billion) are mobile users&lt;/strong&gt;. Just think of the difference a fraction of this traffic can do to your business. It is life changing of course.&lt;/p&gt;
+&lt;p&gt;Marketing your products or services to this large audience will increase your sales exponentially. Only if done correctly of course. A shot in the dark will get you undesirable results or no results at all.&lt;/p&gt;
+&lt;p&gt;It&#39;s up to you if you will take action to claim your share of the goldmine the internet has for you.&lt;/p&gt;
+&lt;h3 id=&quot;2.-get-useful-insight-and-data&quot;&gt;2. Get Useful Insight And Data &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/#2.-get-useful-insight-and-data&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Without data you are just another person with an opinion.&lt;br /&gt;
+A website will help you gain insights that can be very profitable to any kind of business. This are data that is hard of impossible to collect in a brick and motar setting.&lt;br /&gt;
+With a website you can get know:-&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unique visitors&lt;/li&gt;
+&lt;li&gt;Returning visitors&lt;/li&gt;
+&lt;li&gt;How many cart abandonments&lt;/li&gt;
+&lt;li&gt;Demograhy on your visitors&lt;/li&gt;
+&lt;li&gt;Geograhic locations of your visitors&lt;/li&gt;
+&lt;li&gt;Did they use a desktop or mobile&lt;/li&gt;
+&lt;li&gt;The content they are interested in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This information can easily be acquired by the right web analytics techniques and is very useful in making important business decisions. Gathering it in a physical location is quite a challenge as you can imagine. I have a few ideas though:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyse CCTV footage of your business - That requires a lot of time and effort which is better used to do more productive tasks&lt;/li&gt;
+&lt;li&gt;Ask every new visitor a couple of questions and record in a book or excel sheet - Is that even practical? Nobody even got time for that.&lt;br /&gt;
+My point here is you should let the website do the tedious job for you as you carry out the most important duties of your business. And make more money as a bonus.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3.-extension-of-your-existing-promotion-media&quot;&gt;3. Extension Of Your Existing Promotion Media &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/#3.-extension-of-your-existing-promotion-media&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Let&#39;s say you not new to the idea of marketing and you have a few tools in your arsenal that you have been using. Maybe you have banners, bronchures, t-shirts, mugs, calendars, television ads etc. Adding your business website to them will make your marketing effort more effective. The amount of information a banner, t-shirt or anything else you use is vey limited. The airtime you can acquire in television or radio is limited as well. But if potential customer can get your website out everything from your media, then you can lead them to somewhere you can communicate in details as possible.&lt;/p&gt;
+&lt;p&gt;If your existing promotion methods work for you, don&#39;t abandon them. Just supercharge them by extending their functionalities to make them even more effective and profitable.&lt;/p&gt;
+&lt;h3 id=&quot;4.-a-24%2F7%2F365-showroom-for-your-business&quot;&gt;4. A 24/7/365 Showroom For Your Business &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/#4.-a-24%2F7%2F365-showroom-for-your-business&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For instance a shop has open and closing hours and is managed by normal people who have limited energy to operate them. It also needs floor space and shelves for the products to occupie. But such problems are non existent in a website.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You don&#39;t need shelves or floor space to showcase you products&lt;/li&gt;
+&lt;li&gt;You have virtually unlimited space to list your products in whichever manner pleases you&lt;/li&gt;
+&lt;li&gt;Your products are there to be accessed at any time. There is no downtime for your products display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More interestingly you can also showcase you itangible products.&lt;br /&gt;
+Let&#39;s say you are destist. It is impossible to demonstrate to every potential client how you perfom your surgeries all day and night for them to be make a decision. But you can have a single professionally done video of you doing your best work on the homepage of your website. That way you will be marketing yourself whether you are sleeping, working or even enjoying your vacation in Hawai.&lt;/p&gt;
+&lt;h3 id=&quot;5.-build-authority-and-reputation&quot;&gt;5. Build Authority And Reputation &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/#5.-build-authority-and-reputation&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The only reason clients will spend their money on your product or service is because they have a problem that they want to solve.&lt;br /&gt;
+If you educate your prospects on how to solve a problem that is nagging them, they will will consider you as an authority in your field and they are more likely to buy from you. They also believe that you have their best interest at heart and you are not just some business around the corner looking to make a quick sale.&lt;/p&gt;
+&lt;p&gt;One of the best ways to show authority in your industry is to blog about useful solutions that a potential buyer might have that is related to your industry and business. This should not be difficult because you have experience in your field and potential buyers need it to solve their problems.&lt;/p&gt;
+&lt;p&gt;Survey shows that out of 61% of customers, blog influenced their decision to purchase. That means blogging and adding useful content in your website will skyrocket your business profit.&lt;/p&gt;
+&lt;h3 id=&quot;6.-make-most-customer-services-easier-and-cheaper&quot;&gt;6. Make Most Customer Services Easier And Cheaper &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/12-benefits-of-a-website-for-a-small-business/#6.-make-most-customer-services-easier-and-cheaper&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Customers will want to know a lot of things about your business before they decide to carry out any transaction with you.&lt;/p&gt;
+&lt;p&gt;They might want to know;&lt;br /&gt;
+your physical location if one exists,&lt;br /&gt;
+about your products and service,&lt;br /&gt;
+your pricing or rates or charges,&lt;br /&gt;
+current offers or discounts,&lt;br /&gt;
+days they can book appointment with you,&lt;br /&gt;
+and much more.&lt;/p&gt;
+&lt;p&gt;Laying out this pieces of information logically on your websites will save you a lot of time and resources you would be using to individually answer each potential customer or client&#39;s questions.&lt;br /&gt;
+A FAQs section can answer frequently asked questions about your business to everyone, saving you a lot of effort you&#39;d be using answerig phone calls or messages.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>What is PWA and reasons your business needs it</title>
+		<link href="http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/"/>
+		<updated>2020-06-21T00:00:00Z</updated>
+		<id>http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/</id>
+		<content type="html">&lt;img src=&quot;http://ronaldlat.github.io/img/lat2-smaller.png&quot; alt=&quot;ronald otieno &quot; /&gt;
+&lt;h2 id=&quot;what-is-pwa&quot;&gt;What is PWA &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#what-is-pwa&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A quick Google search will tell you a PWA is a website or web application that can be installed on your system. And I&#39;ll tell you it&#39;s simply a website with the behavior of a native app. Once installed, it&#39;s hard to tell the difference between it and a real app.&lt;/p&gt;
+&lt;p&gt;PWA allows cross-platform delivery of the a web app without the need of an app-store. Under the hood, they are simply web pages but on the surface they look and feel like an app. How amazing, huh?&lt;br /&gt;
+And by cross-platform I mean both mobile and desktop devices&lt;/p&gt;
+&lt;h3 id=&quot;pwa-features&quot;&gt;PWA Features &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#pwa-features&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;App-like user interface&lt;br /&gt;
+Mobile users have grown accustomed to native app experience when using their mobile devices. And pwa gives them exactly that.&lt;/li&gt;
+&lt;li&gt;Offline support&lt;br /&gt;
+With the use of service workers API, pwa can be made to work without an internet connection.&lt;br /&gt;
+During the initial visit to your website, the site&#39;s content is saved on the visitors&#39; device to be used in the event of no connection. This makes your website blazing fast with or without internet.&lt;/li&gt;
+&lt;li&gt;Responsive&lt;br /&gt;
+PWA&#39;s adjust to different kind of devices ranging from mobile, tablets to desktops.&lt;br /&gt;
+No one device is left handicapped when it comes to delivering great user experience.&lt;/li&gt;
+&lt;li&gt;Compatible with many browsers&lt;br /&gt;
+As I mentioned to you before, pwa uses a web browser engine in the background to render your web content. It goes without saying it greatly depends on your browser.&lt;br /&gt;
+Good news is that it is supported across major web browsers such as Google Chrome, Firefox and Safari.&lt;br /&gt;
+Who doesn&#39;t use a web browser? Therefore it has a wide reach to users and potential customers.&lt;/li&gt;
+&lt;li&gt;Easy installation&lt;br /&gt;
+Convincing someone to install anything is not an easy job. This is simplified in the pwa world as anyone visiting your website can be prompted by their web browser to add your website to their home screen. When they agree, that&#39;s it.&lt;br /&gt;
+You don&#39;t have to put your app in the app-stores and allocate a budget for advertising it.&lt;br /&gt;
+People love shortcuts on their devices and they will most probably agree to add your web app to their home screens&lt;/li&gt;
+&lt;li&gt;Self-updating&lt;br /&gt;
+How often do you update your apps?? If at all you do updates, do you do it soon after an update is availble?&lt;br /&gt;
+If you are like most people, you probably don&#39;t update your apps often and you don&#39;t do it soon enough.&lt;br /&gt;
+But with pwa, you don&#39;t have to update anything as pwa user and you don&#39;t have to publish any update anywhere as pwa owner. Just make any change in your website and it will reflect on your pwa as soon as your users are connected to the internet.&lt;/li&gt;
+&lt;li&gt;Push notification&lt;br /&gt;
+The pwa on your users devices is able to send real-time alerts and push notifications just like native apps like Whatsapp do even when the pwa isn&#39;t running.&lt;br /&gt;
+This increase customers engagemnent and a business can use this to it&#39;s advatage.&lt;/li&gt;
+&lt;li&gt;Perfomant&lt;br /&gt;
+PWAs use less data, storage space, processing power than native apps. This does&#39;t slow them down, instead they load content faster. Sometimes event faster than native applications&lt;/li&gt;
+&lt;li&gt;Secure&lt;br /&gt;
+HTTPS is the only protocol allowed for pwa. This is the highest level of security availble on the internet.&lt;/li&gt;
+&lt;li&gt;SEO-frindly&lt;br /&gt;
+PWAs are simply web pages under the surface. Making them searchable on the internet and showing up on the serch results just like regular websites. This can&#39;t be done with native apps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;pwa-advantages-for-a-business&quot;&gt;PWA Advantages for a business &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#pwa-advantages-for-a-business&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Here are the ways it might be beneficial to your business.&lt;/p&gt;
+&lt;h3 id=&quot;affordable-alternative-to-native-apps&quot;&gt;Affordable alternative to native apps &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#affordable-alternative-to-native-apps&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Both pwa and native apps deliver great customer experince but their cost of development and maintainance differ so much as you see;&lt;br /&gt;
+PWAs:&lt;/p&gt;
+&lt;h3 id=&quot;shorter-development-time&quot;&gt;Shorter development time &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#shorter-development-time&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Spinning up a simple website and publishing it on the internet is a walk in the park if you compare it to coding a native app for android or IOS.&lt;/p&gt;
+&lt;h3 id=&quot;organic-traffic&quot;&gt;Organic traffic &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#organic-traffic&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Organic traffic are visitors that come from search engines to your website after searching a term relevant to your business. Because a pwa is a website, it get the visitors with little effort. For a native app the only way to get traffic is if a user opens your app.&lt;/p&gt;
+&lt;h3 id=&quot;smaller-bugdet&quot;&gt;Smaller bugdet &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#smaller-bugdet&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;They take less time to develop, little effort to maintain and minimal to zero advertisemnt bugdet. PWAs are truly budget friendly.&lt;/p&gt;
+&lt;h3 id=&quot;increase-in-content-consumption&quot;&gt;Increase in content consumption &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#increase-in-content-consumption&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In order to convert your web visitors into a customer, the visitors have to know about you and your products. You give them this information through your content in form articles for example. With pwa&#39;s offline capabilities, content is always readily available regardless of intenet connection.&lt;/p&gt;
+&lt;h2 id=&quot;businesses-that-use-pwas&quot;&gt;Businesses that use PWAs &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#businesses-that-use-pwas&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Enough talk! Let me now show you business that are taking advatage of PWAs and they are killing it.&lt;/p&gt;
+&lt;h3 id=&quot;me&quot;&gt;me &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#me&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;That&#39;s right. I am using pwa in this website of mine. Visit the this homepage and find out how it looks.&lt;br /&gt;
+I talk the talk and walk the walk.&lt;/p&gt;
+&lt;h3 id=&quot;jumia&quot;&gt;jumia &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#jumia&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;results&quot;&gt;Results &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#results&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;5x less data used&lt;/li&gt;
+&lt;li&gt;33% higher conversion rate&lt;/li&gt;
+&lt;li&gt;50% decrease in bounce rate&lt;/li&gt;
+&lt;li&gt;12x more users vs native apps i.e Android and IOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;aliexpress&quot;&gt;aliexpress &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#aliexpress&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;results-1&quot;&gt;Results &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#results-1&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;104% more new users&lt;/li&gt;
+&lt;li&gt;20% increse in ad visibility&lt;/li&gt;
+&lt;li&gt;74% in time spent per session&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;twitter&quot;&gt;twitter &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#twitter&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;results-2&quot;&gt;Results &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#results-2&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;3% less disk storage&lt;/li&gt;
+&lt;li&gt;75% increase in number of tweets&lt;/li&gt;
+&lt;li&gt;65% increase in sessions per pages&lt;/li&gt;
+&lt;li&gt;20% decrease in bounce rate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;uber&quot;&gt;uber &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#uber&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;results-3&quot;&gt;Results &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#results-3&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;50kb disk storage&lt;/li&gt;
+&lt;li&gt;30% increase in trip requests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;forbes&quot;&gt;forbes &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#forbes&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;results-4&quot;&gt;Results &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#results-4&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;0.8 seconds to load&lt;/li&gt;
+&lt;li&gt;43% increase in sessions&lt;/li&gt;
+&lt;li&gt;100% increase in engagement&lt;/li&gt;
+&lt;li&gt;20% increase in ad views&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;lancome&quot;&gt;lancome &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#lancome&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;results-5&quot;&gt;Results &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#results-5&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1.7 seconds to load&lt;/li&gt;
+&lt;li&gt;36% increase in mobile revenue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;pinterest&quot;&gt;pinterest &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#pinterest&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;results-6&quot;&gt;Results &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#results-6&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;40% increse in sessions&lt;/li&gt;
+&lt;li&gt;44% increase in user generated ad revenue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion &lt;a class=&quot;direct-link&quot; href=&quot;http://ronaldlat.github.io/posts/reasons-to-turn-your-website-into-pwa/#conclusion&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Instead of businesses building new mobile apps, they are moving to a much simpler and effective solution. PWAs.&lt;br /&gt;
+PWA&#39;s make the buying and selling process simpler and more accessible for businesses and customers.&lt;br /&gt;
+Companies that use pwa don&#39;t need to adjust their apps to support Android, IOS or any other operating system. Instead they just need to utitileze the web technlogy to provide an app-like experience to their customers.&lt;br /&gt;
+It is cheaper, faster than native counterparts and can also work offline.&lt;br /&gt;
+Your business should not only have a PWA, it needs one. It&#39;s benefits are so great to miss. Don&#39;t be left behind&lt;/p&gt;
+</content>
+	</entry>
+</feed>
