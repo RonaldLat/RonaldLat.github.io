@@ -225,8 +225,12 @@ body {
   border-radius: 3px;
   background: #232425;
 }
+.article-content pre {
+  width: 100%;
+}
 .article-content pre > code {
   background: #232425;
+  width: 95%;
   max-width: 95%;
   display: block;
   text-align: unset;
