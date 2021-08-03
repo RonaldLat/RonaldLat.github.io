@@ -172,7 +172,7 @@ body {
 }
 
 .tmpl-post {
-  margin: 0 0.5rem;
+  margin: 0;
   max-width: 1200px;
   padding: 0 1rem;
   width: 100%;
@@ -194,6 +194,31 @@ body {
   align-items: center;
   justify-content: center;
 }
+.article-content ol, .article-content ul {
+  list-style: none;
+  counter-reset: lat-counter;
+}
+.article-content ol li, .article-content ul li {
+  counter-increment: lat-counter;
+  margin: 0.25rem;
+}
+.article-content ol li::before, .article-content ul li::before {
+  content: counter(lat-counter);
+  margin-right: 0.5rem;
+  text-align: center;
+  display: inline-block;
+  background: white;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+}
+.article-content ol ol li::before {
+  background: #7D7A7D K;
+}
+.article-content ol ol ol li::before {
+  background: #6F6F6F;
+}
 .article-content p > code {
   padding: 0.2rem;
   color: white;
@@ -202,7 +227,7 @@ body {
 }
 .article-content pre > code {
   background: #232425;
-  width: 100%;
+  max-width: 95%;
   display: block;
   text-align: unset;
   padding: 0.7rem;
