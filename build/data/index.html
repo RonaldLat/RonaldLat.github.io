@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Entries</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+
+  </head>
+  <body>
+    <h2>My Prospects</h2>
+    <div class="formData">
+      <table style="width: 100%" id="ex-table">
+        <tr id="tr">
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Time</th>
+        </tr>
+      </table>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyCnfRcx-ZKrZOFVSb5QNmLv9rfPiFv6pY8",
+        authDomain: "ronaldlat-fa29e.firebaseapp.com",
+        databaseURL: "https://ronaldlat-fa29e.firebaseio.com",
+      };
+      firebase.initializeApp(config);
+
+      let dataArr = [];
+      var database = firebase.database();
+      let result = database
+        .ref("messages")
+        .orderByChild("time")
+        .once("value", (snapshot) => {
+          snapshot.forEach((data) => {
+            dataArr.push(data.val());
+          });
+          dataArr.reverse();
+
+          var content = "";
+
+          dataArr.forEach((val) => {
+            var d = new Date(val.time);
+
+            var datestring =
+              d.getDate() +
+              "-" +
+              (d.getMonth() + 1) +
+              "-" +
+              d.getFullYear() +
+              " " +
+              d.getHours() +
+              ":" +
+              d.getMinutes();
+            content += "<tr>";
+            content += "<td>" + val.name + "</td>";
+            content += "<td>" + val.phone + "</td>";
+            content += "<td>" + val.email + "</td>";
+            content += "<td>" + val.message + "</td>";
+            content += "<td>" + datestring + "</td>";
+            let t = val.time;
+            // console.log(new Date(t));
+            content += "</tr>";
+            // console.log(val.email);
+          });
+          let table = document.querySelector("#ex-table");
+          table.innerHTML += content;
+        });
+      //   result.reverse();
+      // console.log(result)
+
+      //   database
+      //     .ref("messages")
+      //     .orderByChild("time")
+      //     .once("value", function (snapshot) {
+      //       if (snapshot.exists()) {
+      //         var content = "";
+
+      //         snapshot.forEach(function (data) {
+      //           var val = data.val();
+
+      //           var d = new Date(val.time);
+
+      //           var datestring =
+      //             d.getDate() +
+      //             "-" +
+      //             (d.getMonth() + 1) +
+      //             "-" +
+      //             d.getFullYear() +
+      //             " " +
+      //             d.getHours() +
+      //             ":" +
+      //             d.getMinutes();
+      //           content += "<tr>";
+      //           content += "<td>" + val.name + "</td>";
+      //           content += "<td>" + val.email + "</td>";
+      //           content += "<td>" + val.message + "</td>";
+      //           content += "<td>" + datestring + "</td>";
+      //           let t = val.time;
+      //           console.log(new Date(t));
+      //           content += "</tr>";
+      //         });
+      //         // $('#ex-table').append(content);
+      //         let table = document.querySelector("#ex-table");
+      //         table.innerHTML += content;
+      //       }
+      //     });
+    </script>
+  </body>
+</html>
