@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "snowpack dev",
-    "build": "snowpack build"
+    "build": "snowpack build",
+    "deploy": "firebase deploy --only hosting",
+    "clean": "rm -rfv build"
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,9 @@
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.4.3",
     "@snowpack/plugin-sass": "^1.4.0",
+    "autoprefixer": "^8.3.6",
+    "firebase-tools": "^9.16.5",
     "postcss": "^8.3.6",
-    "snowpack": "^3.8.3",
-    "autoprefixer": "^8.3.6"
+    "snowpack": "^3.8.3"
   }
 }
